@@ -1,0 +1,156 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+header {
+	width: 100%;
+	max-height: 10rem;
+	background-color:#FFFFFF;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 20px;
+	border-bottom:solid 2px orange;
+	position: fixed;
+	z-index: 1;
+}
+header div a img {
+    max-height: 128px;
+	height: auto;
+}
+
+header .seguro img {
+	max-height: 180px;
+	max-width: 180px;
+	height: auto;
+	width: auto;
+	margin-top: 2rem;
+	margin-right: 2rem;
+}
+
+
+
+main {
+	background-color: rgb(197, 193, 193);
+	
+}
+
+main .container {
+	display: flex;
+    width: 30vw;
+    height: 185vh;
+
+}
+
+main form {
+	background-color: #FFFFFF;
+	position: relative;
+	top: 12rem;
+	left: 26rem;
+    display: flex;
+    flex-direction: column;
+    width: 500vw;
+	height: 140vh;
+    justify-content: center;
+	border-radius: 1rem;
+	border: none;
+	
+}
+
+main form .titulo {
+	font-size: 33px;
+	color: rgb(238, 128, 2);
+	text-align: center;
+	font-weight: 300;
+    line-height: 40px;
+}
+
+main .formulario {
+    color: #3f3838;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+main .formulario input {
+    width: 400px;
+    height: 40px;
+    left: 123px;
+    top: 294px;
+    background: #FFFFFF;
+    border: 1px solid #9B9B9B;
+	border-radius: 0.3rem;
+	font-size: 16px;
+	padding-left: 0.4rem;
+	margin-top: 0.5rem;
+	outline-color:rgb(238, 128, 2);
+	outline: 1;
+}
+
+
+main form .entrar {
+	display: flex;
+	justify-content: center;
+	padding-top: 2rem;
+	
+}
+
+main form .entrar button {
+	width: 400px;
+	height: 40px;
+	font-size: 23px;
+	color: white;
+	background-color: rgb(238, 128, 2);
+	border: none;
+	border-radius: 0.3rem;
+	cursor: pointer;
+}
+
+main form .entrar button:hover {
+	background-color: rgb(197, 109, 9);
+}
+
+main .termos {
+    padding-right: 6rem;
+    padding-top: 2rem;
+	text-align: center;
+	color: #686060;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+}
+
+main .termos label {
+    padding-left: 0.3rem;
+   
+}
+
+main .termos a {
+    text-decoration: none;
+    color: rgb(238, 128, 2);
+}
+
+main .termos input:hover {
+    box-shadow: 0 1px 15px rgb(197, 109, 9);
+    
+}
+
+main .copy {
+	position: relative;
+	bottom: 2.5rem;
+	right: 10px;
+	font-size: 16px;
+	color: rgb(58, 52, 52);
+	text-align: center;
+	font-weight: 100;
+    
+}

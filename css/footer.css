@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+ footer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: #777777;
+  padding-top: 0.6rem;
+  box-shadow: 0px 1px 20px rgba(44, 42, 42, 0.65);
+  bottom: 0px;
+  position: relative;
+}
+
+.block {
+  display: inline;
+  justify-content: end;
+  display: block;
+  width: 100%;
+}
+
+ footer .rodape {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0.5rem;
+   
+ }
+
+ footer .link {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 1rem;
+    font-weight: bold;
+    height: auto;
+    width: 66%;
+    border-right: 2px solid #ffff;
+}
+
+ footer .link a {
+    text-decoration: none;
+    color:#ffff;;
+	  font-size: 18px;
+}
+
+ footer .link span {
+    color:#ffff;;
+	  font-size: 18px;
+}
+
+ footer .link .barra {
+   border-left: 2px solid #ffff;;
+   height: 20px;
+   padding-right: 2rem;
+   padding-left: 0.4rem;
+ }
+
+ .endereco {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   color:#ffff;;
+	 font-size: 14px;
+   font-weight: bold;
+   padding-left: 1.5rem;
+   padding-top: 1rem;
+   padding-right: 1rem;
+   width: 35%;
+}
+
+ .endereco p {
+   display: flex;
+   justify-content: flex-start;
+   
+ }
+
+ .endereco .icone {
+   display: flex;
+   padding-bottom: 1rem;
+   padding-top: 0.2rem;
+ }
+
+ .endereco .icone1 {
+   display: flex;
+   padding-bottom: 1rem;
+   padding-top: 0.2rem;
+   padding-left: 0.25rem;
+ }
+
+ .endereco i {
+   font-size: 20px;
+   padding-right: 1rem;
+ }
+
+ .copy {
+   display: flex;
+   background-color: #363333;
+   justify-content: center;
+   border-top: 2px solid #ffff;
+   padding: 0.5rem;
+   height: 2rem;
+   width: 100%;
+   color:#ffff;;
+	 font-size: 12px;
+   font-weight: bold;
+   
+ }
+
+footer .sociais {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4em;
+  width: 10rem;
+}
+
+footer .sociais img {
+  width: 25px;
+  
+}
+
+footer .pagamentos {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4em;
+  width: 15rem;
+}
+
+footer .pagamentos img {
+  width: 35px;
+  border-radius: 0.2em;
+}
+
+footer .segurança {
+  display: flex;
+  padding-bottom: 0.3rem;
+  width: 7rem;
+}
+
+footer .segurança img {
+  padding-top: 0.2rem;
+  width: 130px;
+  justify-content: flex-start;
+}
+
+footer .somos {
+  display: flex;
+  padding-bottom: 0.3rem;
+  width: auto;
+}
+
+footer .somos img {
+  width: 100px;
+  justify-content: flex-start;
+}

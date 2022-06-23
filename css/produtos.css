@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    padding-top: 2rem;
+    width: 100vw;
+    height: 100vh;
+}
+.corpo{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+.product{
+    
+    position: relative;
+    top: 150px;
+    left: 50px;
+}
+
+.product img{
+    width: 350px;  
+    height: 320px; 
+    object-fit: cover;
+    padding: 0px;
+}
+.informacao{
+    display: block;
+    position: relative;
+    color: #777777;
+    top: 120px;
+    font-size: 16px;
+    margin:100px;
+    margin-top: 25px;
+
+}
+.informacao ul > li{
+    display: block;
+    position: relative;
+    top: 65px;
+    margin-top: 20px;
+    color: #777777;
+}
+.informacao h2{
+    position: relative;
+    top: 55px;
+}
+.content h6{
+    position: relative;
+    margin: 30px;
+    left: 70px;
+}
+
+.content{
+    position: relative;
+    border: #777777 solid 2px;
+    width: 70%;
+    height: 500px;
+    right: 55px;
+    top: 150px;
+    font-size: 28px;
+    color: #777777;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+.filho{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    left: 13px;
+}
+.item{
+    position: relative;
+    margin-right: 25px;
+   border: #777777 solid 2px;
+   width: 120px;
+  height: 80px;
+}
+ p{
+    color: orange;
+    font-size: 18px ;
+    margin: 15px;
+    text-align: center;
+}
+.item:hover{
+    box-shadow: 0px 3px 21px -5px orange;
+    color: orange;
+    cursor: pointer;
+}
+.unidades{
+    position: relative;
+    text-align: center;
+    top: 15px;
+}
+.unidades option{
+    width: 100px;
+}
+.preco{
+    position: relative;
+    top: 70px;
+    text-align: center;
+    font-size: 20px;
+}
+#compre a{
+    width: 300px;
+   height: 50px;
+   position: relative;
+   top: 150px;
+   left: 30px;
+   border-radius: 11px;
+   background: orange;
+   box-shadow: 0px 5px 0px #c96f10;;
+   margin-top: 20px;
+   font-size: 23px;
+   font-weight: normal;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-decoration: none;
+   color: white;
+   font-weight: bold;
+}
+#compre a:hover{
+    background-color: green;
+    border: green solid;
+    box-shadow: 0px 5px 0px rgb(2, 43, 2);
+}
+
+
