@@ -36,22 +36,6 @@ main * {
   position: relative;
    animation: estilo 5s 3;
 }
-/*@keyframes estilo {
-    0% {
-      transform: translatex(-300px);
-      opacity: 0%;
-    }
-  
-    50% {
-      transform: translateY(0);
-      opacity: 100%;
-    }
-  
-    80% {
-      transform: translateY(-32px);
-    }
-  } */
-
   
 .informacao{
     display: flex;
