@@ -54,6 +54,7 @@ footer{
 	color: #FFFFFF;
 	border: 1.9px solid rgb(231, 226, 226);
 	border-radius: 1em;
+	margin-bottom: 3rem;
 }
 
 .item button a {
@@ -91,16 +92,20 @@ footer{
 	left: 5rem;
 	width: 200px;
 	font-size: 28px;
-	
 }
 
 .quantidade input, .quantidade label{
 	display: flex;
 	text-align: center;
 	width: 180px;
+	font-size: 24px;
+	color: #534d4d;
 }
-.quantidade{
-	padding-left: 1rem;
+
+
+
+.quantidade label{
+	justify-content: center;
 }
 
 .quantidade input{
@@ -110,9 +115,59 @@ footer{
 	margin-top: 1rem;
 	padding-bottom: 0.5rem;
 	align-items: center;
-	
-
 }
+
+.valor{
+	display: flex;
+	height: 10rem;
+	position: relative;
+	color: #777777;
+	left: 5rem;
+	width: 200px;
+	font-size: 28px;
+}
+
+.valor input, .valor label{
+	display: flex;
+	text-align: center;
+	width: 180px;
+	font-size: 24px;
+	color: #534d4d;
+}
+
+.valor{
+	padding-left: 1rem;
+}
+
+.valor label{
+	justify-content: center;
+}
+
+.valor input{
+	display: flex;
+	padding-top: 0.5rem;
+	border: orange 2px solid;
+	margin-top: 1rem;
+	padding-bottom: 0.5rem;
+	align-items: center;
+}
+
+.trash{
+	display: flex;
+	height: 10rem;
+	position: relative;
+	padding-left: 3rem;
+	padding-top: 3rem;
+	color: #777777;
+	left: 5rem;
+	width: 200px;
+}
+
+.trash i:hover {
+	color: orange;
+}
+
+
 
 .meucarrinho{
 	display: flex;
@@ -126,3 +181,33 @@ footer{
 	width: 40%;
 	font-size: 35px;
 }
+
+.finalizar {
+	padding-top: 2rem;
+	padding:0.5rem;
+	display: flex;
+	justify-content: flex-end;
+  width: 100%;
+  height: auto;
+}
+
+.finalizar button {
+	width: auto;
+	text-align: right;
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	border-radius: 0.2em;
+	border: orange 2px solid;
+	background-color: orange;
+	padding: 1rem;
+	padding-right: 2rem;
+	padding-left: 2rem;
+	margin: 2rem;
+}
+
+.finalizar button:hover {
+	background-color: grey;
+	color: white;
+}
+
