@@ -77,6 +77,7 @@ footer{
 .item h2{
 	display: flex;
 	height: 10rem;
+	margin-top: -3rem;
 	position: relative;
 	color: #777777;
 	left: 3rem;
@@ -92,6 +93,7 @@ footer{
 	left: 5rem;
 	width: 200px;
 	font-size: 28px;
+	margin-top: -2rem;
 }
 
 .quantidade input, .quantidade label{
@@ -125,6 +127,7 @@ footer{
 	left: 5rem;
 	width: 200px;
 	font-size: 28px;
+	margin-top: -2rem;
 }
 
 .valor input, .valor label{
@@ -161,6 +164,7 @@ footer{
 	color: #777777;
 	left: 5rem;
 	width: 200px;
+	margin-top: -2rem;
 }
 
 .trash i:hover {
