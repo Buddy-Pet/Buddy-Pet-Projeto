@@ -167,6 +167,10 @@ footer{
 	margin-top: -2rem;
 }
 
+.checkbox{
+	margin-top: -2rem;
+}
+
 .trash i:hover {
 	color: orange;
 }
