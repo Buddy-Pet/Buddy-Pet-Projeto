@@ -89,22 +89,7 @@ color: orange;
   height: 300px;
 }
 
-/* .galery{
-  width: 100%;
-  height: 20rem;
-  background-color: white;
-  overflow: hidden;
-}
-.galery .fotos{
-  width: 200%;
-  animation-name: animacao;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-}
 
-.galery .fotos img{
-  width: 100%;
-} */
 
 /*------------------------------Galeria-------------------------------*/
 .ofertas {
@@ -202,3 +187,4 @@ padding-top: 1.4rem;
 .ícones button:hover {
 border: solid 1px orange;
 }
+

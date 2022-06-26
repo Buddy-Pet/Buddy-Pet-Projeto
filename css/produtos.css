@@ -34,7 +34,7 @@ main * {
   width: 420px;
   height: 400px;
   position: relative;
-   animation: estilo 5s 3;
+  animation: estilo 5s 3;
 }
   
 .informacao{
