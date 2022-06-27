@@ -65,8 +65,43 @@ main {
   display: flex;
   justify-content: flex-start;
   width: 840px;
-  font-size: 26px;
   padding-bottom: 1rem;
   font-size: 27px;
   font: bolder;
+}
+
+@media screen and (max-width: 900px) {
+  .sobre {
+    display: flex;
+    justify-content: center;
+    width: 640px;
+    padding-left: 1.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.9rem;
+  }
+  .sobre h3 {
+    display: flex;
+    justify-content: flex-start;
+    width: 640px;
+    font-size: 24px;
+    font: bolder;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .sobre {
+    display: flex;
+    justify-content: center;
+    width: 320px;
+    padding-left: 1.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.9rem;
+  }
+  .sobre h3 {
+    display: flex;
+    justify-content: flex-start;
+    width: 320px;
+    font-size: 16px;
+    font: bolder;
+  }
 }
