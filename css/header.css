@@ -205,3 +205,18 @@ header .branco {
 	}
 
 }
+
+@media screen and (max-width: 785px){
+	.container{
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	.btn_icon_header {
+		position: relative;
+		left: 325px;
+		top: 0.5rem;
+	}
+
+}
