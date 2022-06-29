@@ -5,7 +5,7 @@
 }
 
 main {
-  height: 705px;
+  height: auto;
   border: 15px solid #FFFFFF;
   justify-content: center;
   display: flex;
@@ -15,8 +15,8 @@ main {
   font-size: 18px;
   font-weight: bold;
   align-items: center;
-  padding-top: 15rem;
-  margin-bottom: 8rem;
+  padding-top: 8rem;
+  margin-bottom: 2rem;
   }
 
 .quemsomos {
@@ -90,8 +90,19 @@ main {
 
 @media screen and (max-width: 900px) {
   main {
+    height: auto;
+    border: 15px solid #FFFFFF;
     justify-content: center;
-  }
+    display: flex;
+    flex-direction: column;
+    font-family:'Times New Roman', Times, serif;
+    color:#777777;
+    font-size: 18px;
+    font-weight: bold;
+    align-items: center;
+    padding-top: 6rem;
+    margin-bottom: 2rem;
+    }
   .quemsomos {
     display: flex;
     justify-content: center;
@@ -172,12 +183,25 @@ main {
 }
 
 @media screen and (max-width: 650px) {
+  main {
+    height: auto;
+    border: 15px solid #FFFFFF;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-family:'Times New Roman', Times, serif;
+    color:#777777;
+    font-size: 18px;
+    font-weight: bold;
+    align-items: center;
+    padding-top: 8rem;
+    margin-bottom: 2rem;
+    }
   .quemsomos {
     display: flex;
     justify-content: center;
     width: 650px;
     padding-left: 1.5rem;
-    padding-top: 12rem;
   }
   .quemsomos h1 {
     display: flex;
