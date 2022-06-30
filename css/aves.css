@@ -167,3 +167,30 @@ footer{
   margin: 10px;
 } */
 
+@media (max-width: 600px)
+{
+  .sidebar {
+    width: 0px;
+    height: 0px;
+    display: none;
+  }
+
+  .contain {
+    display: block;
+  }
+
+  .aves {
+    display: block;
+    position: relative;
+    
+    margin-left: 0px;
+  }
+
+  .produtos {
+    top: 0px;
+    margin-left: 0px;
+    
+   }
+
+   
+}
