@@ -5,6 +5,11 @@
 }
 
 
+header * {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 550;
+}
+
 header {
 	width: 100%;
 	max-height: 22vh;
@@ -249,7 +254,7 @@ header .formulario {
 	
 }
 
-@media screen and (max-width: 740px){
+@media screen and (max-width: 770px){
 	.carrinho {
 		display: none;
 	}
