@@ -7,7 +7,6 @@
 
 header * {
 	font-family: 'Roboto', sans-serif;
-	font-weight: 550;
 }
 
 header {
@@ -119,7 +118,8 @@ header form {
 }
 
 header form input {
-width: 90%;
+	width: 90%;
+	outline-color: orange;
 }
 
 form input, form button {
@@ -238,6 +238,10 @@ header .formulario {
 
 
 @media screen and (max-width: 820px){
+	.formulario form input {
+		margin-right: 0.3rem;
+	}
+
 	.logo_2 img{
 		margin-top: 0.6rem;
 		max-height: 70px;
