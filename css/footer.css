@@ -169,7 +169,7 @@ footer .somos img {
 
   footer .link .barra {
     display: flex;
-    height: 5vh;
+    height: 6vh;
   }
 
   footer .pagamentos, .sociais {
@@ -181,7 +181,7 @@ footer .somos img {
   }
 }
 
-@media screen and (max-width: 792px){
+@media screen and (max-width: 818px){
   footer .rodape {
     display: flex;
     flex-direction: column;
