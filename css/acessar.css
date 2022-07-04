@@ -153,12 +153,6 @@ main .copy {
 	right: 2rem;
 }
 
-header .logo_2 img{
-	display: none;
-	max-height: 100px;
-}
-
-
 .branco {
 	height: 2rem;
 }
@@ -167,10 +161,6 @@ header .logo_2 img{
 	header {
 		width: 100%;
 	}
-
-	/*header .logo img{
-		display: none;
-	}*/
 
 	header .logo img {
 		display: block;
