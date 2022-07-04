@@ -44,7 +44,7 @@ main .container {
     width: 30vw;
     height: 190vh;
 	mask-origin: 0;
-	margin-left: 32vw;
+	margin-left: 34vw;
 }
 
 main form {
@@ -99,8 +99,7 @@ main .formulario input {
 main form .entrar {
 	display: flex;
 	justify-content: center;
-	padding-top: 2rem;
-	
+		
 }
 
 main form .entrar button {
@@ -119,13 +118,13 @@ main form .entrar button:hover {
 }
 
 main .termos {
-    padding-right: 6rem;
-    padding-top: 2rem;
-	text-align: center;
+    text-align: center;
 	color: #686060;
     font-weight: 400;
     font-size: 17px;
     line-height: 21px;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 
 main .termos label {
@@ -169,24 +168,39 @@ main .copy {
 		bottom: 0.6rem;
 		max-height: 60px;
 	}
-
-	/*main .container {
-		height: 115vh;
+	main {
+		max-height: 220vh;
+		height: auto;
+	}
+	
+	main form {
+		height: 95%;
+		max-width: 150%;
+		width: auto;
 	}
 
-	main form{
-		margin-top: 30vh;
+	main .titulo {
+		margin-bottom: 2rem;
 	}
 
 	main form .entrar button {
-		width: 28vw;
+		margin-top: 2rem;
+		width: 35vw;
 	}
 
 	main .formulario input {
 		display: flex;
 		flex-direction: column;
-		width: 30vw;
-	}*/
+		width: 35vw;
+	}
+
+	main .copy {
+		margin-left: 2rem;
+		margin-top: 20vh;
+	}
+	
+
+	
 }
 
 @media screen and (max-width: 900px){
@@ -195,33 +209,62 @@ main .copy {
 		max-height: 95px;
 	}
 
-	/*main .container {
-		position: relative;
-		right: 2.5rem;
-		width: 50vw;
+	main {
+		max-height: 220vh;
+		height: auto;
 	}
 	
+	main form {
+		height: 95%;
+		max-width: 150%;
+		width: auto;
+	}
+
 	main form .entrar button {
-		width: 45vw;
+		width: 34vw;
 	}
 
 	main .formulario input {
 		display: flex;
 		flex-direction: column;
-		width: 50vw;
-	}*/
+		width: 34vw;
+	}
+
+	main .copy {
+		margin-left: 2rem;
+		margin-top: 20vh;
+	}
+	
+
 }
 
 @media screen and (max-width: 800px){
-	/*main form .entrar button {
-		width: 35vw;
+	main {
+		max-height: 220vh;
+		height: auto;
+	}
+	
+	main form {
+		height: 95%;
+		max-width: 180%;
+		width: auto;
+	}
+
+	main form .entrar button {
+		width: 40vw;
 	}
 
 	main .formulario input {
 		display: flex;
 		flex-direction: column;
 		width: 40vw;
-	}*/
+	}
+
+	main .copy {
+		margin-left: 2rem;
+		margin-top: 20vh;
+	}
+
 }
 
 @media screen and (max-width: 700px){
@@ -230,15 +273,33 @@ main .copy {
 		max-height: 90px;
 	}
 
-	/*main form .entrar button {
-		width: 35vw;
+	main {
+		height: 240vh;
+	}
+	
+	main form {
+		height: 90%;
+		max-width: 200%;
+		width: auto;
+	}
+
+	main form .entrar button {
+		width: 46vw;
 	}
 
 	main .formulario input {
 		display: flex;
 		flex-direction: column;
-		width: 40vw;
-	}*/
+		width: 46vw;
+	}
+
+	main .copy {
+		position: relative;
+		margin-left: 2rem;
+		top: 1rem;
+	}
+
+	
 }
 
 @media screen and (max-width: 600px){
@@ -253,24 +314,16 @@ main .copy {
 		max-height: 85px;
 	}
 
-	/*main form{
-		margin-top: 25vh;
-	}
-
-	main .copy {
-		margin-left: 3rem;
+	main {
+		max-height: 220vh;
 	}
 	
 	main form {
-		margin-bottom: 15rem;
+		height: 90%;
+		max-width: 230%;
+		width: auto;
 	}
 
-	main .container {
-		position: relative;
-		right: 5.5rem;
-		width: 70vw;
-	}
-	
 	main form .entrar button {
 		width: 50vw;
 	}
@@ -278,26 +331,13 @@ main .copy {
 	main .formulario input {
 		display: flex;
 		flex-direction: column;
-		width: 55vw;
-	}*/
-
-}
-
-@media screen and (max-width: 500px){
-	/*main .container {
-		position: relative;
-		right: 5.5rem;
-		width: 70vw;
-	}
-	
-	main form .entrar button {
 		width: 50vw;
 	}
 
-	main .formulario input {
-		display: flex;
-		flex-direction: column;
-		width: 55vw;
-	}*/
+	main .copy {
+		margin-left: 2rem;
+		margin-top: 7rem;
+	}
 
 }
+

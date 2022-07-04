@@ -44,7 +44,7 @@ main .container {
 	width: 30vw;
     height: 120vh;
 	mask-origin: 0;
-	margin-left: 32vw;
+	margin-left: 34vw;
 	
 }
 
@@ -172,10 +172,6 @@ main .copy {
 		max-height: 60px;
 	}
 
-	main .container {
-		height: 115vh;
-	}
-
 	main form{
 		margin-top: 30vh;
 	}
@@ -197,12 +193,6 @@ main .copy {
 		max-height: 95px;
 	}
 
-	main .container {
-		position: relative;
-		right: 2.5rem;
-		width: 50vw;
-	}
-	
 	main form .entrar button {
 		width: 50vw;
 	}
@@ -267,12 +257,6 @@ main .copy {
 		margin-bottom: 15rem;
 	}
 
-	main .container {
-		position: relative;
-		right: 5.5rem;
-		width: 70vw;
-	}
-	
 	main form .entrar button {
 		width: 50vw;
 	}
@@ -285,21 +269,3 @@ main .copy {
 
 }
 
-@media screen and (max-width: 500px){
-	main .container {
-		position: relative;
-		right: 5.5rem;
-		width: 70vw;
-	}
-	
-	main form .entrar button {
-		width: 50vw;
-	}
-
-	main .formulario input {
-		display: flex;
-		flex-direction: column;
-		width: 50vw;
-	}
-
-}
