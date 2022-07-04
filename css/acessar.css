@@ -108,7 +108,7 @@ main form .entrar {
 }
 
 main form .entrar button {
-	width: 28vw;
+	width: 30vw;
 	height: 40px;
 	font-size: 23px;
 	color: white;
@@ -116,6 +116,7 @@ main form .entrar button {
 	border: none;
 	border-radius: 0.3rem;
 	cursor: pointer;
+	margin-top: 0.4rem;
 }
 
 main form .entrar button:hover {
@@ -152,7 +153,7 @@ main .copy {
 }
 
 .branco {
-	height: 2rem;
+	height: 1.5rem;
 }
 
 @media screen and (max-width: 1024px){
@@ -180,7 +181,7 @@ main .copy {
 	}
 
 	main form .entrar button {
-		width: 28vw;
+		width: 30vw;
 	}
 
 	main .formulario input {
@@ -203,7 +204,7 @@ main .copy {
 	}
 	
 	main form .entrar button {
-		width: 45vw;
+		width: 50vw;
 	}
 
 	main .formulario input {
@@ -215,7 +216,7 @@ main .copy {
 
 @media screen and (max-width: 800px){
 	main form .entrar button {
-		width: 35vw;
+		width: 40vw;
 	}
 
 	main .formulario input {
@@ -232,7 +233,7 @@ main .copy {
 	}
 
 	main form .entrar button {
-		width: 35vw;
+		width: 40vw;
 	}
 
 	main .formulario input {
@@ -279,7 +280,7 @@ main .copy {
 	main .formulario input {
 		display: flex;
 		flex-direction: column;
-		width: 55vw;
+		width: 50vw;
 	}
 
 }
@@ -298,8 +299,7 @@ main .copy {
 	main .formulario input {
 		display: flex;
 		flex-direction: column;
-		width: 55vw;
+		width: 50vw;
 	}
 
-	
 }

@@ -33,35 +33,32 @@ header .seguro img {
 	margin-right: 2rem;
 }
 
-
-
-
-
 main {
 	background-color: rgb(197, 193, 193);
-	
+	width: 100%;
 }
 
 main .container {
 	display: flex;
+	justify-content: center;
     width: 30vw;
-    height: 185vh;
-
+    height: 190vh;
+	mask-origin: 0;
+	margin-left: 32vw;
 }
 
 main form {
 	background-color: #FFFFFF;
-	position: relative;
 	top: 12rem;
 	left: 26rem;
     display: flex;
     flex-direction: column;
     width: 500vw;
-	height: 140vh;
+	height: 145vh;
     justify-content: center;
 	border-radius: 1rem;
 	border: none;
-	
+	margin-top: 35vh;
 }
 
 main form .titulo {
@@ -84,7 +81,7 @@ main .formulario {
 }
 
 main .formulario input {
-    width: 400px;
+    width: 30vw;
     height: 40px;
     left: 123px;
     top: 294px;
@@ -107,7 +104,7 @@ main form .entrar {
 }
 
 main form .entrar button {
-	width: 400px;
+	width: 30vw;
 	height: 40px;
 	font-size: 23px;
 	color: white;
@@ -162,12 +159,9 @@ main .copy {
 		width: 100%;
 	}
 
-	header .logo img{
-		display: none;
-	}
-
-	header .logo_2 img {
+	header .logo img {
 		display: block;
+		max-height: 100px;
 	}
 
 	header .seguro img {
@@ -176,7 +170,7 @@ main .copy {
 		max-height: 60px;
 	}
 
-	main .container {
+	/*main .container {
 		height: 115vh;
 	}
 
@@ -192,11 +186,16 @@ main .copy {
 		display: flex;
 		flex-direction: column;
 		width: 30vw;
-	}
+	}*/
 }
 
 @media screen and (max-width: 900px){
-	main .container {
+	header .logo img {
+		display: block;
+		max-height: 95px;
+	}
+
+	/*main .container {
 		position: relative;
 		right: 2.5rem;
 		width: 50vw;
@@ -210,11 +209,11 @@ main .copy {
 		display: flex;
 		flex-direction: column;
 		width: 50vw;
-	}
+	}*/
 }
 
 @media screen and (max-width: 800px){
-	main form .entrar button {
+	/*main form .entrar button {
 		width: 35vw;
 	}
 
@@ -222,11 +221,16 @@ main .copy {
 		display: flex;
 		flex-direction: column;
 		width: 40vw;
-	}
+	}*/
 }
 
 @media screen and (max-width: 700px){
-	main form .entrar button {
+	header .logo img {
+		display: block;
+		max-height: 90px;
+	}
+
+	/*main form .entrar button {
 		width: 35vw;
 	}
 
@@ -234,7 +238,7 @@ main .copy {
 		display: flex;
 		flex-direction: column;
 		width: 40vw;
-	}
+	}*/
 }
 
 @media screen and (max-width: 600px){
@@ -244,12 +248,12 @@ main .copy {
 		bottom: 0.8rem;
 	}
 
-	header .logo_2 img {
+	header .logo img {
 		display: block;
-		max-height: 80px;
+		max-height: 85px;
 	}
 
-	main form{
+	/*main form{
 		margin-top: 25vh;
 	}
 
@@ -275,12 +279,12 @@ main .copy {
 		display: flex;
 		flex-direction: column;
 		width: 55vw;
-	}
+	}*/
 
 }
 
 @media screen and (max-width: 500px){
-	main .container {
+	/*main .container {
 		position: relative;
 		right: 5.5rem;
 		width: 70vw;
@@ -294,7 +298,6 @@ main .copy {
 		display: flex;
 		flex-direction: column;
 		width: 55vw;
-	}
+	}*/
 
-	
 }
