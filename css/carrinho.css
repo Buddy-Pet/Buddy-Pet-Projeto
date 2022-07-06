@@ -12,19 +12,14 @@ main * {
 	display: flex;
 	flex-direction: column;
 	padding-top: 10rem;
-	width: 99vw;
-	height: auto;
+	width: 100%;
+	height: 200vh;
 	padding-top: 8.2rem;
 	
 
 }
 
-footer{
-	display: flex;
-	position: relative;
-	top: auto;
-	
-}
+
 
 .item{
 	display: flex;
@@ -219,3 +214,162 @@ footer{
 	color: white;
 }
 
+@media screen and (max-width: 500px) {
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box
+	}
+
+
+	.corpo{
+		display: flex;
+		flex-direction: column;
+		width: 500px;
+		height: 100vh;
+	}
+	
+	.meucarrinho{
+		display: flex;
+		font-size: 20px;
+		width: 100px;
+		padding: 0;		
+	}
+
+	.item{
+		display: flex;
+		background-color:red;
+		width: 87%;
+		border: 2px solid orange;
+		height: 200px;
+		align-items: center;
+		padding-left: 0.3px;
+		padding-right: 0.3px;
+		padding-top: 0;
+	}
+	.item button {
+		display: block;
+		font-family:'Times New Roman', Times, serif;
+		padding: 0;
+	
+		background-color: white;
+		cursor: pointer;
+		color:white;
+		justify-content: flex-start;
+		border: none;
+		height: 80px;
+	}
+	.item button a img {
+		height: 100px;
+		padding-left: 0.1px;
+	}
+	.checkbox{
+		display: none;		
+
+	}
+
+	.item button p{
+		display: none;
+	}
+	.racao{
+		width: 70%;
+		display: flex;
+		flex-direction: row;
+		font-size: 18px;
+		padding-bottom: 15px;
+		margin-left: 2px;
+		padding-top: 1px;
+	}
+
+
+
+	.quantidade{
+		display: flex;
+		flex-direction: row;
+		height: 5rem;
+		position: relative;
+		color: #777777;
+		left: 1rem;
+		width: 100px;
+		font-size: 3px;
+	}
+	
+	.quantidade input, .quantidade label{
+		display: flex;
+		text-align: center;
+		width: 80px;
+		font-size: 15px;
+		color: #534d4d;
+	}
+
+	.quantidade label{
+		justify-content: center;
+	}
+	
+	.quantidade input{
+		display: flex;
+		padding-top: 0.5rem;
+		border: orange 2px solid;
+		margin-top: 0.5rem;
+		padding-bottom: 0.25rem;
+		align-items: center;
+	}
+	
+	.valor{
+		display: flex;
+		flex-direction: row;
+		height: 5rem;
+		position: relative;
+		color: #777777;
+		left: -0.1rem;
+		width: 100px;
+		font-size: 10px;
+	}
+	
+	.valor input, .valor label{
+		display: flex;
+		text-align: center;
+		width: 80px;
+		font-size: 18px;
+		color: #534d4d;
+	}
+	.valor label{
+		display: none;
+	}
+	
+	.valor label{
+		justify-content: center;
+	}
+	
+	.valor input{
+		display: flex;
+		border: none;
+		padding-bottom: 0.5rem;
+		align-items: center;
+	}
+	.item .trash{
+		display: flex;
+		flex-direction: row;
+		height: 10px;
+		width: 10px;
+	}
+
+	.contairner2{
+		display: flex;
+		flex-direction: row;
+		height: 50px;
+		padding-left: 2px;
+	}
+	
+	.item i{
+		margin: 0px;
+		padding: 0px;
+
+	}
+	form{
+		width: auto;
+	}
+	
+
+
+}
