@@ -22,11 +22,11 @@ header {
 }
 
 header form {
-background-color: orange;
-border: solid 1px orange;
-border-radius: 0.3em;
-padding: 0.3em;
-box-shadow: 0px 1px 10px rgba(159, 159, 159, 0.65);
+	background-color: orange;
+	border: solid 1px orange;
+	border-radius: 0.3em;
+	padding: 0.3em;
+	box-shadow: 0px 1px 10px rgba(159, 159, 159, 0.65);
 }
 
 nav {
@@ -38,17 +38,16 @@ nav {
 
 header .nav-bar {
 	display: flex;
+	flex-direction: row;
+	gap: 3em;
 	list-style: none;
-	margin: 0;
-	padding: 0;
-	height: 3rem;
+	align-items: center;
+	height: 40%;
 }
 
 header .nav-bar a {
 	display: flex;
-	padding-left: 2rem;
-	padding-right: 2rem;
-	padding-top: 1rem;
+	align-items: center;
 	text-decoration: none;
 	color:#777777;
 	font-size: 22px;
@@ -91,13 +90,26 @@ header .link {
 	color: orange;
 }
 
+.icon_x {
+	display: none;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	color:#777777;
+	
+	
+}
+
+.icon_x:hover {
+	color: orange;
+}
+
 header div a img {
 	max-height: 118px;
 }
 
-.logo_2 img{
+.logo_2 {
 	display: none;
-	
 }
 
 .container {
@@ -149,9 +161,8 @@ font-size: 35px;
 	height: 35px;
 }
 
-header .nav-bar a:hover {
-background-color: #FFFFFF;
-color: orange; 
+header .nav-bar:hover {
+	color: orange; 
 }
 
 header div i:hover {
@@ -160,8 +171,7 @@ color: orange;
 }
 
 header div a:hover {
-background-color: #FFFFFF;
-color: orange;
+	color: orange;
 }
 
 header .branco {
@@ -176,6 +186,11 @@ header .formulario {
 	
 }
 
+@keyframes showSidebar {
+	from {right: -100vw;}
+	top {right: -3vw;}
+}
+
 @media screen and (max-width: 1286px){
 	.login a{
 		display: block;
@@ -187,7 +202,29 @@ header .formulario {
 }
 
 @media screen and (max-width: 1146px){
-	.login a, header .nav-bar a {
+	header .nav-bar {
+		position: absolute;
+		flex-direction: column;
+		top: 0;
+		background-color: rgb(146, 146, 146); /*#ffffd9*/
+		height: 100vh;
+		width: 35vw;
+		padding: 1em;
+		animation-duration: 1s;
+		right: -100vw;
+		box-shadow: 0px 1px 20px rgba(159, 159, 159, 0.65);
+	}
+
+	header .nav-bar a {
+		color: #FFFFFF;
+	}
+
+	.icon_x {
+		display: block;
+		color: #FFFFFF;
+	}
+
+	.login a {
 		display: none;
 	}
 
@@ -201,7 +238,6 @@ header .formulario {
 		display: block;
 		max-height: 90px;
 		margin-top: 0.4rem;
-		margin-right: 0.2rem;
 	}
 
 	header {
@@ -256,7 +292,12 @@ header .formulario {
 	
 }
 
-@media screen and (max-width: 590px){
+@media screen and (max-width: 600px){
+	header form {
+		height: 5.5vh;
+		margin-top: 0.25rem;
+	}
+
 	.logo img{
 		margin-top: 0.6rem;
 		max-height: 80px;
@@ -264,9 +305,18 @@ header .formulario {
 
 }
 
-@media screen and (max-width: 540px){
+@media screen and (max-width: 500px){
 	header {
 		max-height: 15.5vh;
+	}
+
+	header form {
+		height: 5.2vh;
+		margin-top: 0.3rem;
+	}
+
+	header form input {
+		font-size: 18px;
 	}
 
 	.logo img{
