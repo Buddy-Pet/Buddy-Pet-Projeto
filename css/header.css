@@ -41,8 +41,8 @@ header .nav-bar {
 	flex-direction: row;
 	gap: 3em;
 	list-style: none;
-	align-items: center;
 	height: 40%;
+	padding-top: 1rem;
 }
 
 header .nav-bar a {
@@ -106,6 +106,7 @@ header .link {
 
 header div a img {
 	max-height: 118px;
+	padding-right: 1rem;
 }
 
 .logo_2 {
@@ -186,37 +187,63 @@ header .formulario {
 	
 }
 
-@keyframes showSidebar {
-	from {right: -100vw;}
-	top {right: -3vw;}
+header .favoritos, .conta, .cart, #arrow, #icon {
+	display: none;
 }
 
-@media screen and (max-width: 1286px){
-	.login a{
-		display: block;
-	}
+header #icon {
+	background-color: rgb(146, 146, 146);
+}
 
-	.cadastre a {
+@keyframes showSidebar {
+	from {right: -100vw;}
+	top {right: -1vw;}
+}
+
+@media screen and (max-width: 1319px){
+	header .entrar {
 		display: none;
 	}
+
+	header .cadastre {
+		position: relative;
+		padding-right: 2rem;
+	}
+
+	header #arrow {
+		position: relative;
+		bottom: 1.5rem;
+		display: flex;
+	} 
 }
 
 @media screen and (max-width: 1146px){
+	header {
+		max-height: 17vh;
+	}
+
+	header .btn_icon_header {
+		display: block;
+	}
+
 	header .nav-bar {
 		position: absolute;
 		flex-direction: column;
 		top: 0;
 		background-color: rgb(146, 146, 146); /*#ffffd9*/
 		height: 100vh;
-		width: 35vw;
+		max-width: 50vw;
+		width: auto;
 		padding: 1em;
 		animation-duration: 1s;
 		right: -100vw;
 		box-shadow: 0px 1px 20px rgba(159, 159, 159, 0.65);
+		
 	}
 
 	header .nav-bar a {
 		color: #FFFFFF;
+		
 	}
 
 	.icon_x {
@@ -224,24 +251,31 @@ header .formulario {
 		color: #FFFFFF;
 	}
 
-	.login a {
-		display: none;
-	}
-
-	.btn_icon_header {
-		display: block;
-		
-	}
-
-	
 	.logo img{
 		display: block;
 		max-height: 90px;
 		margin-top: 0.4rem;
 	}
 
-	header {
-		max-height: 17vh;
+	header #icon {
+		display: block;
+		padding-right: 1rem;
+	}
+
+
+
+	
+
+	
+}
+
+@media screen and (max-width: 1110px){
+	header #arrow {
+		display: none;
+	}
+
+	header .conta {
+		display: block;
 	}
 }
 
@@ -261,7 +295,7 @@ header .formulario {
 
 }
 
-@media screen and (max-width: 870px){
+@media screen and (max-width: 900px){
 	.carrinho{
 		position: relative;
 		right: 0.5rem;
@@ -269,6 +303,14 @@ header .formulario {
 	.btn_icon_header {
 		position: relative;
 		right: 0.5rem;
+	}
+
+	.cadastre {
+		display: none;
+	}
+
+	header .favoritos{
+		display: block;
 	}
 }
 
@@ -288,6 +330,10 @@ header .formulario {
 	.btn_icon_header {
 		position: relative;
 		right: 0.5rem;
+	}
+
+	header .cart {
+		display: block;
 	}
 	
 }
@@ -326,7 +372,7 @@ header .formulario {
 
 	.btn_icon_header {
 		position: relative;
-		right: 0.7rem;
+		right: 1.1rem;
 	}
 
 }
