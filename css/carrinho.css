@@ -4,8 +4,13 @@
 	box-sizing: border-box;
 }
 
-main * {
+body {
+	width: 100%;
+}
+
+main {
 	font-family: 'Roboto', sans-serif;
+	
 
 }
 .corpo{
@@ -71,50 +76,8 @@ main * {
 	border: solid 1px orange;
 }
 
-.item h2{
-	display: flex;
-	height: 10rem;
-	margin-top: -3rem;
-	position: relative;
-	color: #777777;
-	left: 3rem;
-	width: 40%;
-	font-size: 28px;
-}
-
-.quantidade{
-	display: flex;
-	height: 10rem;
-	position: relative;
-	color: #777777;
-	left: 5rem;
-	width: 200px;
-	font-size: 28px;
-	margin-top: -2rem;
-}
-
-.quantidade input, .quantidade label{
-	display: flex;
-	text-align: center;
-	width: 180px;
-	font-size: 24px;
-	color: #534d4d;
-}
 
 
-
-.quantidade label{
-	justify-content: center;
-}
-
-.quantidade input{
-	display: flex;
-	padding-top: 0.5rem;
-	border: orange 2px solid;
-	margin-top: 1rem;
-	padding-bottom: 0.5rem;
-	align-items: center;
-}
 
 .valor{
 	display: flex;
@@ -154,14 +117,10 @@ main * {
 
 .trash{
 	display: flex;
-	height: 10rem;
-	position: relative;
-	padding-left: 3rem;
-	padding-top: 3rem;
 	color: #777777;
-	left: 5rem;
-	width: 200px;
-	margin-top: -2rem;
+	
+	
+	
 }
 
 .checkbox{
@@ -214,6 +173,11 @@ main * {
 	background-color: grey;
 	color: white;
 }
+
+#excluir {
+	display: none;
+}
+
 /*================================ Media 500px ==========================================*/
 
 @media screen and (max-width: 500px) {
@@ -227,16 +191,17 @@ main * {
 		position: relative;
 		margin-right: 0;
 		margin-left: 0;
-		font-size: 20px;
+		font-size: 30px;
 		width: auto;
 		height: 10vh;
+		left: 1rem;
 		/* border: 1px solid black;	*/
 	}
 
 	.item{
 		display: flex;
 		/* width: 87%; */
-		/* border: 2px solid orange; */
+		/* border: 2px solid orange;  */
 		height: 200px;
 		align-items: center;
 		padding-left: 0.3px;
@@ -268,52 +233,36 @@ main * {
 		display: none;
 	}
 	.racao{
-		width: 70%;
+		width: 100%;
 		display: flex;
 		flex-direction: row;
 		font-size: 18px;
 		padding-bottom: 15px;
 		margin-left: 2px;
+		margin-right: 1rem;
 		padding-top: 1px;
+		
 	}
 
 	.conteiner {
 		display: flex;
 		flex-direction: column;
-		height: 15vh;
+		height: 25vh;
+		/* border: 1px solid black; */
 	}
 
-	.quantidade{
-		display: flex;
-		/* flex-direction: row; */
-		height: 5rem;
+	.quantidade {
 		position: relative;
-		color: #777777;
 		left: 1rem;
-		width: 100px;
-		font-size: 3px;
 		
 	}
-	
-	.quantidade input, .quantidade label{
+
+	#unid {
 		display: flex;
 		text-align: center;
-		width: 80px;
-		font-size: 15px;
-		color: #534d4d;
-	}
-
-	.quantidade label{
-		justify-content: center;
-	}
-	
-	.quantidade input{
-		display: flex;
-		padding-top: 0.5rem;
-		border: orange 2px solid;
-		margin-top: 0.5rem;
-		padding-bottom: 0.25rem;
-		align-items: center;
+		height: 5vh;
+		color: #777777;
+		border: 2px solid orange;
 	}
 	
 	.valor{
@@ -321,14 +270,11 @@ main * {
 		position: relative;
 		left: 1rem;
 		top: 3rem;
-		width: 30vw;
+		height: 7vh;
 		flex-direction: column;
 		font-size: 15px;
-		border: 1px solid #534d4d;
-	}
-
-	.valor .valor_text {
-		font-size: 20px;
+		padding: 0;
+		/* border: 1px solid #534d4d; */
 	}
 
 	.valor .valor_num {
@@ -339,26 +285,31 @@ main * {
 		
 	}
 	
-
-	
-	.item .trash{
+	.trash{
 		display: flex;
-		
+		flex-direction: column;
 		position: relative;
-		bottom: 2rem;
-		
-		
+		bottom: 3rem;
+		left: 1rem;
+		top: 4rem;
 	}
 
-		
-	.item i{
-		margin: 0px;
-		padding: 0px;
+	#excluir {
+		display: block;
+		color: #777777;
+	}
 
+	#lixo {
+		display: none;
 	}
-	form{
-		width: auto;
-	}
+	
+	.texto {
+		color: #777777;
+		position: relative;
+		bottom: 1.5rem;
+		
+	}		
+	
 	
 
 

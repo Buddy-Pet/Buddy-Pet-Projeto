@@ -132,7 +132,6 @@ main * {
   outline: none;
   background-color: white;
   border: 1px solid rgb(255, 145, 0);
-  /*box-shadow: 0px 1px 10px #777777;*/
   font-weight: 500;
   cursor: pointer;
 }
