@@ -13,13 +13,13 @@ main {
 	
 
 }
-.corpo{
+main{
 	display: flex;
 	flex-direction: column;
 	padding-top: 10rem;
 	width: 100%;
 	max-height: 100vh;
-	height: auto;
+	min-height: 100vh;
 	padding-top: 8.2rem;
 	
 
@@ -29,6 +29,7 @@ main {
 
 .item{
 	display: flex;
+	flex-wrap: wrap;
 	background-color: white;
 	/* border-bottom: solid 3px orange; */
 	width: 100%;
@@ -61,6 +62,8 @@ main {
 
 .item button a {
 	text-decoration: none;
+	width: 100%;
+	height: 100%;
 }
 
 .item button p {
@@ -80,14 +83,9 @@ main {
 
 
 .valor{
-	display: flex;
-	height: 10rem;
-	position: relative;
 	color: #777777;
-	left: 5rem;
-	width: 200px;
 	font-size: 28px;
-	margin-top: -2rem;
+
 }
 
 .valor input, .valor label{
@@ -136,11 +134,7 @@ main {
 .produtos{
 	display: flex;
 	height: 3rem;
-	/*position: relative;*/
-	/*padding-top: 2rem;
-	padding-bottom: 5rem;*/
 	color: #777777;
-	/*left: 5.8rem;*/
 	font-weight: bold;
 	font-size: 30px;
 }
@@ -178,6 +172,7 @@ main {
 	display: none;
 }
 
+
 /*================================ Media 500px ==========================================*/
 
 @media screen and (max-width: 500px) {
@@ -188,21 +183,17 @@ main {
 	
 	.produtos{
 		display: flex;
-		position: relative;
 		margin-right: 0;
 		margin-left: 0;
 		font-size: 30px;
 		width: auto;
-		height: 10vh;
-		left: 1rem;
-		/* border: 1px solid black;	*/
 	}
 
 	.item{
 		display: flex;
 		/* width: 87%; */
 		/* border: 2px solid orange;  */
-		height: 200px;
+		
 		align-items: center;
 		padding-left: 0.3px;
 		padding-right: 0.3px;
@@ -218,10 +209,11 @@ main {
 		color:white;
 		justify-content: flex-start;
 		border: none;
-		height: 80px;
+		height: 100px;
 	}
 	.item button a img {
-		height: 100px;
+		height: 100%;
+		width: 100%;
 		padding-left: 0.1px;
 	}
 	.checkbox{
@@ -246,16 +238,14 @@ main {
 
 	.conteiner {
 		display: flex;
-		flex-direction: column;
-		height: 25vh;
-		/* border: 1px solid black; */
+		flex-direction: row;
+		align-items: center;
+		width: 100%;
+		justify-content: center;
+		gap: 5%;
 	}
 
-	.quantidade {
-		position: relative;
-		left: 1rem;
-		
-	}
+
 
 	#unid {
 		display: flex;
@@ -267,14 +257,9 @@ main {
 	
 	.valor{
 		display: flex;
-		position: relative;
-		left: 1rem;
-		top: 3rem;
-		height: 7vh;
 		flex-direction: column;
 		font-size: 15px;
 		padding: 0;
-		/* border: 1px solid #534d4d; */
 	}
 
 	.valor .valor_num {
@@ -288,10 +273,7 @@ main {
 	.trash{
 		display: flex;
 		flex-direction: column;
-		position: relative;
-		bottom: 3rem;
-		left: 1rem;
-		top: 4rem;
+
 	}
 
 	#excluir {
@@ -305,12 +287,24 @@ main {
 	
 	.texto {
 		color: #777777;
-		position: relative;
-		bottom: 1.5rem;
-		
-	}		
-	
-	
+
+	}
+
+}
+ 
+@media screen and (max-width: 450px) {
+	.item button {
+		width: 30vw;
+	}
+
+	.item .texto{
+		width: 48vw;
+	}
+
+	.item{
+		justify-content: flex-start;
+		gap: 10%;
+	}
 
 
 }
