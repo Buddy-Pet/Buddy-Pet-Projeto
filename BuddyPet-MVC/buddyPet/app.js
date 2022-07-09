@@ -4,8 +4,21 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
+
 var usersRouter = require('./routes/users');
+var indexRouter = require('./routes/index');
+var cachorrosRouter = require('./routes/cachorros');
+var gatosRouter = require('./routes/gatos');
+var avesRouter = require('./routes/aves');
+var outrosRouter = require('./routes/outros');
+var politicasRouter = require('./routes/politicas');
+var produtosRouter = require('./routes/produtos');
+var promocoesRouter = require('./routes/promocoes');
+var criarContaRouter = require('./routes/criarConta');
+var quemsomosRouter = require('./routes/quemsomos');
+var carrinhoRouter = require('./routes/carrinho');
+var acessarRouter = require('./routes/acessar');
+
 
 var app = express();
 
@@ -21,6 +34,17 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/cachorros', cachorrosRouter);
+app.use('/gatos', gatosRouter);
+app.use('/aves', avesRouter);
+app.use('/outros', outrosRouter);
+app.use('/politicas', politicasRouter);
+app.use('/produtos', produtosRouter);
+app.use('/promocoes', promocoesRouter);
+app.use('/criarConta', criarContaRouter);
+app.use('/quemsomos', quemsomosRouter);
+app.use('/carrinho', carrinhoRouter);
+app.use('/acessar', acessarRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
