@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  height: auto;
+  border: 15px solid #FFFFFF;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  font-family:'Times New Roman', Times, serif;
+  color:#777777;
+  font-size: 18px;
+  font-weight: bold;
+  align-items: center;
+  padding-top: 8rem;
+  margin-bottom: 2rem;
+  }
+
+.quemsomos {
+  display: flex;
+  justify-content: center;
+  width: 840px;
+  padding-left: 1.5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.9rem;
+  font-size: 24px;
+}
+
+.quemsomos h1 {
+  display: flex;
+  justify-content: center;
+  width: 840px;
+  font-size: 42px;
+  font: bolder;
+}
+
+.sobre {
+  display: flex;
+  justify-content: center;
+  width: 840px;
+  padding-left: 1.5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.9rem;
+}
+
+.sobre h3 {
+  display: flex;
+  justify-content: flex-start;
+  width: 840px;
+  font-size: 27px;
+  font: bolder;
+}
+
+.textosobre p {
+  display: flex;
+  justify-content: flex-start;
+  width: 840px;
+  font-size: 18px;
+}
+
+.textosobre {
+  display: flex;
+  justify-content: center;
+  width: 840px;
+  padding-left: 1.5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.9rem;
+}
+
+.ondeficamos {
+  display: flex;
+  justify-content: center;
+  width: 840px;
+  padding-left: 1.5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.9rem;
+}
+
+.ondeficamos h3 {  
+  display: flex;
+  justify-content: flex-start;
+  width: 840px;
+  padding-bottom: 1rem;
+  font-size: 27px;
+  font: bolder;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    height: auto;
+    border: 15px solid #FFFFFF;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-family:'Times New Roman', Times, serif;
+    color:#777777;
+    font-size: 18px;
+    font-weight: bold;
+    align-items: center;
+    padding-top: 6rem;
+    margin-bottom: 2rem;
+    }
+  .quemsomos {
+    display: flex;
+    justify-content: center;
+    width: 640px;
+    padding-left: 1.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.9rem;
+    font-size: 18px;
+  }
+  .quemsomos h1 {
+      display: flex;
+      justify-content: center;
+      width: 840px;
+      padding-top: 2rem;
+      font-size: 36px;
+      font: bolder;
+  }
+  .sobre {
+    display: flex;
+    justify-content: center;
+    width: 640px;
+    padding-left: 1.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.9rem;
+  }
+  .sobre h3 {
+    display: flex;
+    justify-content: center;
+    width: 640px;
+    font-size: 24px;
+    font: bolder;
+  }
+  .textosobre p {
+    display: flex;
+    justify-content: flex-start;
+    width: 640px;
+    font-size: 18px;
+  }
+  .textosobre {
+    display: flex;
+    justify-content: center;
+    width: 640px;
+    padding-left: 1.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.9rem;
+  }
+  .sobre h3 {
+  display: flex;
+  justify-content: flex-start;
+  width: 640px;
+  font-size: 27px;
+  font: bolder;
+}
+  .ondeficamos {
+  display: flex;
+  justify-content: center;
+  width: 640px;
+  padding-left: 1.5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.9rem;
+}
+  .ondeficamos h3 {  
+  display: flex;
+  justify-content: flex-start;
+  width: 640px;
+  padding-bottom: 1rem;
+  font-size: 27px;
+  font: bolder;
+  }
+  .mapa {
+    display: flex;
+    justify-content: center;
+    width: 640px;
+    padding-left: 1.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  main {
+    height: auto;
+    border: 15px solid #FFFFFF;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-family:'Times New Roman', Times, serif;
+    color:#777777;
+    font-size: 18px;
+    font-weight: bold;
+    align-items: center;
+    padding-top: 8rem;
+    margin-bottom: 2rem;
+    }
+  .quemsomos {
+    display: flex;
+    justify-content: center;
+    width: 650px;
+    padding-left: 1.5rem;
+  }
+  .quemsomos h1 {
+    display: flex;
+    justify-content: center;
+    width: 840px;
+    padding-top: 0.5rem;
+    font-size: 36px;
+    font: bolder;
+}
+  .sobre {
+    display: flex;
+    justify-content: center;
+    width: 840px;
+    padding-left: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .sobre h3 {
+    display: flex;
+    justify-content: flex-start;
+    width: 320px;
+    font-size: 24px;
+    font: bolder;
+  }
+  .textosobre p {
+    display: flex;
+    justify-content: flex-start;
+    width: 320px;
+    font-size: 18px;
+  }
+  .textosobre {
+    display: flex;
+    justify-content: center;
+    width: 320px;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.9rem;
+  }
+  .ondeficamos {
+    display: flex;
+    justify-content: center;
+    width: 320px;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.9rem;
+  }
+  .ondeficamos h3 {  
+    display: flex;
+    justify-content: flex-start;
+    width: 320px;
+    padding-bottom: 1rem;
+    font-size: 27px;
+    font: bolder;
+  }
+  .mapa {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+  }
+}
