@@ -1,5 +1,5 @@
 const dados ={
-	title: "Home"
+	title: "Acessar Conta"
 }
 
 module.exports = dados
