@@ -3,7 +3,7 @@ var router = express.Router();
 
 
 /* GET home page. */
-router.get('/gatos', function(req, res, next) {
+router.get('/', function(req, res, next) {
   res.render('gatos', { title: 'Express' });
 });
 

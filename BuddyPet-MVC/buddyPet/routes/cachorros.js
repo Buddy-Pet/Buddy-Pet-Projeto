@@ -3,7 +3,7 @@ var router = express.Router();
 
 
 
-router.get('/cachorros', function(req, res, next) {
+router.get('/', function(req, res, next) {
   res.render('cachorros');
 });
 
