@@ -1,9 +1,8 @@
 var express = require('express');
+const acessarController = require('../controllers/acessar');
 var router = express.Router();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('acessar', { title: 'Express' });
-});
+
+router.get('/', acessarController.acessar);
 
 module.exports = router;
