@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Oxygen;
+}
+
+/*main{
+  height: 100vh;
+  width: 100%;
+  min-height: 150vh;
+  display: flex;
+  position: relative;
+  z-index: 2;
+}*/
+
+main *{
+  font-family: 'Roboto', sans-serif;
+
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  min-height: 150vh;
+  border: 15px solid #FFFFFF;
+  box-shadow: 0px 1px 20px rgba(159, 159, 159, 0.65);
+  padding-top: 8.5rem;
+  position: relative;
+
+}
+
+/*.galery{
+  width: 100%;
+  height: 310px;
+  background-color: white;
+  overflow: hidden;
+  position: absolute;
+  z-index: 3;
+  margin-left: 260px;
+}
+
+.galery .fotos{
+  width: 500%;
+  animation-name: animacao;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.galery .fotos img{
+  position: absolute;
+  z-index: 1;
+  width: 98%;
+  height: 300px;
+}*/
+
+.contain {
+  display: flex;
+}
+
+.cachorros {
+  display: flex;
+  flex-direction: column;
+  margin-left: 270px;
+  position: absolute;
+  z-index: 4;
+}
+
+.cachorros h4 {
+  display: flex;
+  color: gray;
+  margin-top: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.cachorros p {
+  color: gray;
+  font-size: 16px;
+  text-align: justify;
+  padding-right: 3rem;
+}
+
+ .produtos {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 260px;
+  top: 180px;
+  margin-right: 3rem;
+ }
+
+.imagens {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  height: 260px;
+  padding-bottom: 1.5rem;
+  }
+  
+  .imagens button {
+  display: block;
+  font-family:'Times New Roman', Times, serif;
+  padding: 1rem;
+  padding-bottom: 10px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  color: #FFFFFF;
+  border: 1.9px solid rgb(231, 226, 226);
+  border-radius: 0.5em;
+  margin-bottom: 2rem;
+}
+  
+  .imagens button a {
+  text-decoration: none;
+  }
+  
+  .imagens button p {
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  font-size: 18px;
+  color:#777777;
+  padding-top: 1.4rem;
+  }
+  
+  .imagens button:hover {
+  border: solid 1px orange;
+  }
+
+footer{
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+/* .carrossel{
+  width: 50%;
+  height: 15rem;
+  background-color: white;
+  overflow: hidden;
+  margin-left: 260px;
+  margin-top: 20rem;
+}
+.carrossel .fotos{
+  width: 100%;
+  height: 5rem;
+  animation-name: animacao2;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  border: 2px solid red;
+}
+
+.carrossel .fotos img{
+  width: 100%;
+}
+
+.carrossel .fotos button{
+  m
+argin: 10px;
+} */
