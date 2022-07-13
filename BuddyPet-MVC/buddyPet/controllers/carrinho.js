@@ -1,10 +1,10 @@
-const dados = require("../models/indexModel")
+const dados = require("../models/carrinhoModel")
 
-const indexController = {
+const carrinhoController = {
 	index: function(req, res, next) {
-		res.render('index', { title: dados.title });
+		res.render('carrinho', { title: dados.title });
 	}
 }
 
 
-module.exports = indexController
+module.exports = carrinhoController
