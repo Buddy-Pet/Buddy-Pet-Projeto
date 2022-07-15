@@ -1,10 +1,9 @@
 var express = require('express');
+const gatosController = require('../controllers/gatos');
 var router = express.Router();
 
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('gatos', { title: 'Express' });
-});
+
+router.get('/', gatosController.gatos);
 
 module.exports = router;

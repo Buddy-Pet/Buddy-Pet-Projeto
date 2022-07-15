@@ -1,9 +1,8 @@
 var express = require('express');
+const avesController = require('../controllers/aves');
 var router = express.Router();
 
 
-router.get('/', function(req, res, next) {
-  res.render('aves', { title: 'Express' });
-});
+router.get('/',avesController.aves);
 
 module.exports = router;

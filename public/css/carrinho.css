@@ -29,6 +29,8 @@ main{
 
 .item{
 	display: flex;
+	justify-content: center;
+	gap: 5%;
 	flex-wrap: wrap;
 	background-color: white;
 	/* border-bottom: solid 3px orange; */
@@ -37,16 +39,8 @@ main{
 	height: auto;
 	max-height: 100vh;
 	align-items: center;
-	padding-left: 3rem;
-}
+	}
 
-.item form{
-	padding-right: 2rem;
-}
-
-
-
-	
 .item button {
 	display: block;
 	font-family:'Times New Roman', Times, serif;
@@ -57,13 +51,16 @@ main{
 	color: #FFFFFF;
 	border: 1.9px solid rgb(231, 226, 226);
 	border-radius: 1em;
-	margin-bottom: 3rem;
 }
 
 .item button a {
 	text-decoration: none;
 	width: 100%;
 	height: 100%;
+}
+
+.item button a img{
+	width: 100%;
 }
 
 .item button p {
@@ -79,12 +76,25 @@ main{
 	border: solid 1px orange;
 }
 
+.item .texto{
+	font-size: 25px;
+	color: gray;
+}
+
+.conteiner{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	width: 40%;
+	gap: 5%;
+}
+
 
 
 
 .valor{
 	color: #777777;
-	font-size: 28px;
+	font-size: 24px;
 
 }
 
@@ -94,10 +104,6 @@ main{
 	width: 180px;
 	font-size: 24px;
 	color: #534d4d;
-}
-
-.valor{
-	padding-left: 1rem;
 }
 
 .valor label{
@@ -137,6 +143,7 @@ main{
 	color: #777777;
 	font-weight: bold;
 	font-size: 30px;
+	padding-left: 60px;
 }
 
 .finalizar {
@@ -172,139 +179,51 @@ main{
 	display: none;
 }
 
-
-/*================================ Media 500px ==========================================*/
-
-@media screen and (max-width: 500px) {
-
-	.corpo {
-		width: 100vw;
-	}
-	
-	.produtos{
-		display: flex;
-		margin-right: 0;
-		margin-left: 0;
-		font-size: 30px;
-		width: auto;
-	}
-
-	.item{
-		display: flex;
-		/* width: 87%; */
-		/* border: 2px solid orange;  */
-		
-		align-items: center;
-		padding-left: 0.3px;
-		padding-right: 0.3px;
-		padding-top: 0;
-	}
-	.item button {
-		display: block;
-		font-family:'Times New Roman', Times, serif;
-		padding: 0;
-	
-		background-color: white;
-		cursor: pointer;
-		color:white;
-		justify-content: flex-start;
-		border: none;
-		height: 100px;
-	}
-	.item button a img {
-		height: 100%;
-		width: 100%;
-		padding-left: 0.1px;
-	}
-	.checkbox{
-		display: none;		
-
-	}
-
-	.item button p{
-		display: none;
-	}
-	.racao{
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		font-size: 18px;
-		padding-bottom: 15px;
-		margin-left: 2px;
-		margin-right: 1rem;
-		padding-top: 1px;
-		
-	}
-
-	.conteiner {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		width: 100%;
-		justify-content: center;
-		gap: 5%;
+.descricao{
+	gap: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
 	}
 
 
 
-	#unid {
-		display: flex;
-		text-align: center;
-		height: 5vh;
-		color: #777777;
-		border: 2px solid orange;
-	}
-	
-	.valor{
-		display: flex;
-		flex-direction: column;
-		font-size: 15px;
-		padding: 0;
-	}
 
-	.valor .valor_num {
-		padding-top: 0.5rem;
-		color: orange;
-		font-weight: bold;
-		font-size: 20px;
-		
-	}
-	
-	.trash{
-		display: flex;
-		flex-direction: column;
+/*================================ Media 700px ==========================================*/
 
-	}
-
-	#excluir {
-		display: block;
-		color: #777777;
-	}
-
-	#lixo {
-		display: none;
-	}
-	
-	.texto {
-		color: #777777;
-
-	}
-
-}
- 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 700px) {
 	.item button {
 		width: 30vw;
 	}
-
+	
 	.item .texto{
 		width: 48vw;
 	}
 
 	.item{
 		justify-content: flex-start;
-		gap: 10%;
+		gap: 20%;
 	}
 
+	.conteiner{
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			gap: 10%;
+			width: 100%;
+	}
 
+	.quantidade, .valor, .trash{
+		width: max-content;
+	}
+
+	.descricao{
+		gap: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+		margin-bottom: 50px;
+	}
 }

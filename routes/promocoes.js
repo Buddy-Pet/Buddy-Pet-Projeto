@@ -1,9 +1,7 @@
 var express = require('express');
+const promocoesController = require('../controllers/promocoes');
 var router = express.Router();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('promocoes', { title: 'Express' });
-});
+router.get('/', promocoesController.promocoes);
 
 module.exports = router;

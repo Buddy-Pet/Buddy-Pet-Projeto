@@ -1,9 +1,7 @@
 var express = require('express');
+const criarcontaController = require('../controllers/criarConta');
 var router = express.Router();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('criarConta', { title: 'Express' });
-});
+router.get('/',criarcontaController.criarConta);
 
 module.exports = router;

@@ -1,9 +1,8 @@
 var express = require('express');
+const politicasController = require('../controllers/politicas');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('politicas', { title: 'Express' });
-});
+router.get('/', politicasController.politicas);
 
 module.exports = router;

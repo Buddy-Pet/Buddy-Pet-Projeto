@@ -1,7 +1,7 @@
 const dados = require("../models/gatosModel")
 
 const gatosController = {
-	index: function(req, res, next) {
+	gatos: function(req, res, next) {
 		res.render('gatos', { title: dados.title });
 	}
 }
