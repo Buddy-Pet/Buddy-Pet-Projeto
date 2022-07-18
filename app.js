@@ -16,7 +16,6 @@ var quemsomosRouter = require('./routes/quemsomos');
 var carrinhoRouter = require('./routes/carrinho');
 var acessarRouter = require('./routes/acessar');
 
-
 var app = express();
 
 // view engine setup
