@@ -3,9 +3,6 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
-
-
 var indexRouter = require('./routes/index');
 var cachorrosRouter = require('./routes/cachorros');
 var gatosRouter = require('./routes/gatos');
@@ -18,7 +15,6 @@ var criarContaRouter = require('./routes/criarConta');
 var quemsomosRouter = require('./routes/quemsomos');
 var carrinhoRouter = require('./routes/carrinho');
 var acessarRouter = require('./routes/acessar');
-
 
 var app = express();
 
