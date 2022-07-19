@@ -4,6 +4,6 @@ var router = express.Router();
 
 
 
-router.get('/', cachorrosController.cachorros);
+router.get('/produto1', cachorrosController.cachorros);
 
 module.exports = router;

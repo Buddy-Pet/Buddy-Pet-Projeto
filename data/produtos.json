@@ -1,0 +1,87 @@
+[{
+    "nome": "produto1",
+    "id": 1,
+    "preco": 10.00,
+    "imagens": "https://static.petz.com.br/novaLoja/images/home/golden.jpg",
+    "categoria": "cachorros",
+    "descricao": "produto1"
+},
+{
+    "nome": "produto2",
+    "id": 2,
+    "preco": 20.00,
+    "imagens": "https://static.petz.com.br/novaLoja/images/home/royal.jpg",
+    "categoria": "cachorro",
+    "descricao": "produto2"
+},
+{
+    "nome": "produto3",
+    "id": 3,
+    "preco": 30.00,
+    "imagens": "https://static.petz.com.br/novaLoja/images/home/bravecto.jpg",
+    "categoria": "cachorros",
+    "descricao": "produto3"
+},
+{
+    "nome": "produto4",
+    "id": 4,
+    "preco": 40.00,
+    "imagens": "https://static.petz.com.br/novaLoja/images/home/racao_hills.jpg",
+    "categoria": "cachorros",
+    "descricao": "produto4"
+},
+{
+    "nome": "produto5",
+    "id": 5,
+    "preco": 50.00,
+    "imagens": "https://static.petz.com.br/novaLoja/images/home/super-secao.jpg",
+    "categoria": "cachorros",
+    "descricao": "produto5"  
+},
+{
+    "nome": "produto6",
+    "id": 6,
+    "preco": 60.00,
+    "imagens": "https://static.petz.com.br/novaLoja/images/home/golden.jpg",
+    "categoria": "cachorros",
+    "descricao": "produto6"  
+},
+{
+    "nome": "produto7",
+    "id": 7,
+    "preco": 70.00,
+    "imagens": "https://static.petz.com.br/novaLoja/images/home/bravecto.jpg",
+    "categoria": "cachorros",
+    "descricao": "produto7"  
+},
+{
+    "nome": "produto8",
+    "id": 8,
+    "preco": 80.00,
+    "imagens": "https://static.petz.com.br/novaLoja/images/home/racao_hills.jpg",
+    "categoria": "cachorros",
+    "descricao": "produto8"  
+},
+{
+    "nome": "produto9",
+    "id": 9,
+    "preco": 90.00,
+    "imagens": "https://static.petz.com.br/novaLoja/images/home/super-secao.jpg",
+    "categoria": "cachorros",
+    "descricao": "produto9"  
+},
+{
+    "nome": "produto10",
+    "id": 10,
+    "preco": 100.00,
+    "imagens": "https://static.petz.com.br/novaLoja/images/home/golden.jpg",
+    "categoria": "cachorros",
+    "descricao": "produto10"  
+}
+]
+
+
+
+
+
+
