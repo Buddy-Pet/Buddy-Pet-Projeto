@@ -1,0 +1,12 @@
+Atividade do projeto integrador:
+
+1- criar o json com os dados (recursos (produtos, usuarios, etc)) do sistema;
+
+2- Definição Rotas (nome do arquivo no plural);
+
+3- Controller para o recursos (produtosController, usuariosController, etc);
+
+4- Criar o Modelo para o recursos (Produto, Usuario, etc);
+
+5- Implementar a função index do controller (buscar itens através do modelo e 
+   renderizar uma view passando os dados como parâmetros do res.render).
