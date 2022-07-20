@@ -3,7 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var indexRouter = require('./routes/index');
+var homeRouter = require('./routes/home');
 var cachorrosRouter = require('./routes/cachorros');
 var gatosRouter = require('./routes/gatos');
 var avesRouter = require('./routes/aves');
@@ -27,7 +27,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/', indexRouter)
+app.use('/', homeRouter)
 app.use('/cachorros', cachorrosRouter);
 app.use('/gatos', gatosRouter);
 app.use('/aves', avesRouter);
