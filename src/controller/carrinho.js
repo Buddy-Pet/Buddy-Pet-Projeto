@@ -1,4 +1,4 @@
-const dados = require("../models/carrinhoModel")
+const dados = require("../model/carrinhoModel")
 
 const carrinhoController = {
 	carrinho: function(req, res, next) {

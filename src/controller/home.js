@@ -1,4 +1,4 @@
-const dados = require("../models/homeModel")
+const dados = require("../model/homeModel")
 
 const homeController = {
 	home: function(req, res, next) {

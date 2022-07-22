@@ -1,5 +1,5 @@
 var express = require('express');
-const promocoesController = require('../controllers/promocoes');
+const promocoesController = require('../controller/promocoes');
 var router = express.Router();
 
 router.get('/', promocoesController.promocoes);

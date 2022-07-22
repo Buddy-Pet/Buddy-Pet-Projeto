@@ -1,4 +1,4 @@
-const dados = require("../models/outrosModel")
+const dados = require("../model/outrosModel")
 
 const outrosController = {
 	outros: function(req, res, next) {

@@ -1,4 +1,4 @@
-const dados = require("../models/avesModel")
+const dados = require("../model/avesModel")
 
 const avesController = {
 	aves: function(req, res, next) {
