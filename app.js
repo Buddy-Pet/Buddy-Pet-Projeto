@@ -9,7 +9,6 @@ const gatosRouter = require('./src/routes/gatos');
 const avesRouter = require('./src/routes/aves');
 const outrosRouter = require('./src/routes/outros');
 const politicasRouter = require('./src/routes/politicas');
-const produtosRouter = require('./src/routes/produtos');
 const promocoesRouter = require('./src/routes/promocoes');
 const criarContaRouter = require('./src/routes/criarConta');
 const quemsomosRouter = require('./src/routes/quemsomos');
@@ -33,12 +32,14 @@ app.use('/gatos', gatosRouter);
 app.use('/aves', avesRouter);
 app.use('/outros', outrosRouter);
 app.use('/politicas', politicasRouter);
-app.use('/produtos', produtosRouter);
 app.use('/promocoes', promocoesRouter);
 app.use('/criarConta', criarContaRouter);
 app.use('/quemsomos', quemsomosRouter);
 app.use('/carrinho', carrinhoRouter);
 app.use('/acessar', acessarRouter);
+
+// CRUD
+app.use('/produtos', require('./src/routes/produtos'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
