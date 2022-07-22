@@ -1,5 +1,5 @@
 var express = require('express');
-const acessarController = require('../controller/acessar');
+const acessarController = require('../controller/acessarController');
 var router = express.Router();
 
 
