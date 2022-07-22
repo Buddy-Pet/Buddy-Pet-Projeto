@@ -28,22 +28,21 @@ module.exports = {
 
 	update(id, data){
 		// Busca sempre a primeira ocorrência e caso não encontre, retorna null
-		const produto = produto.find(produto => produto.id == id);
+		const produto = produtos.find(produto => produto.id == id);
 
-		if(produto){
+		if (!produto) {
 			return "Produto não encontrado";
 		}
 
-		produto.id = produto.length + 1;
 		produto.nome = data.nome;
 		produto.preco = data.preco;
 		produto.descricao = data.descricao;
-		produto.categoria = data.categoria;
+		produto.categoria = data.categoria
 
-		return produtos;
+		return produto;
 	},
 
-	destroy(id){
+	delete(id){
 		produtos = produtos.filter(produto => produto.id != id)
 
 		return produtos;
