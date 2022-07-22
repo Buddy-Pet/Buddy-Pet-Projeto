@@ -1,25 +1,25 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-var homeRouter = require('./routes/home');
-var cachorrosRouter = require('./routes/cachorros');
-var gatosRouter = require('./routes/gatos');
-var avesRouter = require('./routes/aves');
-var outrosRouter = require('./routes/outros');
-var politicasRouter = require('./routes/politicas');
-var produtosRouter = require('./routes/produtos');
-var promocoesRouter = require('./routes/promocoes');
-var criarContaRouter = require('./routes/criarConta');
-var quemsomosRouter = require('./routes/quemsomos');
-var carrinhoRouter = require('./routes/carrinho');
-var acessarRouter = require('./routes/acessar');
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const homeRouter = require('./src/routes/home');
+const cachorrosRouter = require('./src/routes/cachorros');
+const gatosRouter = require('./src/routes/gatos');
+const avesRouter = require('./src/routes/aves');
+const outrosRouter = require('./src/routes/outros');
+const politicasRouter = require('./src/routes/politicas');
+const produtosRouter = require('./src/routes/produtos');
+const promocoesRouter = require('./src/routes/promocoes');
+const criarContaRouter = require('./src/routes/criarConta');
+const quemsomosRouter = require('./src/routes/quemsomos');
+const carrinhoRouter = require('./src/routes/carrinho');
+const acessarRouter = require('./src/routes/acessar');
 
-var app = express();
+const app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname,'src','views'));
 app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
