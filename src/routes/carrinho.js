@@ -1,5 +1,5 @@
 var express = require('express');
-const carrinhoController = require('../controllers/carrinho');
+const carrinhoController = require('../controller/carrinhoController');
 var router = express.Router();
 
 /* GET home page. */

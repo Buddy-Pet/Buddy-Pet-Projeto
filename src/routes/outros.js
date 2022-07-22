@@ -1,8 +1,8 @@
 var express = require('express');
-const quemsomosController = require('../controllers/quemsomos');
+const outrosController = require('../controller/outrosController');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/',quemsomosController.quemsomos);
+router.get('/', outrosController.outros);
 
 module.exports = router;

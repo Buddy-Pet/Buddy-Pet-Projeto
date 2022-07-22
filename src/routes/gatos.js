@@ -1,5 +1,5 @@
 var express = require('express');
-const gatosController = require('../controllers/gatos');
+const gatosController = require('../controller/gatosController');
 var router = express.Router();
 
 

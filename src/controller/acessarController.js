@@ -1,4 +1,4 @@
-const dados = require("../models/acessarModel")
+const dados = require("../model/acessarModel")
 
 const acessarController = {acessar: function(req, res, next) {
 		res.render('acessar', { title: dados.title });

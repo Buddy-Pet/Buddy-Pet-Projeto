@@ -1,4 +1,4 @@
-const dados = require("../models/criarContaModel")
+const dados = require("../model/criarContaModel")
 
 const criarcontaController = {
 	criarConta: function(req, res, next) {
