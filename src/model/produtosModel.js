@@ -1,33 +1,40 @@
-let produtos = require('../data/produtosData')
+let manipularDados = require('../helper/manipularDados')
 
 module.exports = {
 	findAll(){
-		return produtos;
+		return manipularDados.lerDados('../data/produtosData.json');
 	},
 
 	findById(id){
-		// Filter sempre retorna um array
+		const produtos = this.findAll();
+
 		return produtos.filter(produto => produto.id == id)
 	},
 
 	findByCategory(categoria){
-		// Filter sempre retorna um array
+		const produtos = this.findAll();
+
 		return produtos.filter(produto => produto.categoria == categoria)
 	},
 
 	store(data){
+		const produtos = this.findAll();
+		
 		const produto = {
 			...data,
-			id: produtos.length + 1
+			id: produtos.at(-1).id + 1
 		}
 
 		produtos.push(produto);
+		
+		manipularDados.gravarDados('../data/produtosData.json', produtos);
 
 		return produtos;
 	},
 
 	update(id, data){
-		// Busca sempre a primeira ocorrência e caso não encontre, retorna null
+		const produtos = this.findAll();
+
 		const produto = produtos.find(produto => produto.id == id);
 
 		if (!produto) {
@@ -39,19 +46,19 @@ module.exports = {
 		produto.descricao = data.descricao;
 		produto.categoria = data.categoria
 
+		manipularDados.gravarDados('../data/produtosData.json', produtos);
+
 		return produto;
 	},
 
 	delete(id){
+		let produtos = this.findAll();
+
 		produtos = produtos.filter(produto => produto.id != id)
+
+		manipularDados.gravarDados('../data/produtosData.json', produtos);
 
 		return produtos;
 	}
 }
 
-
-/*const dados ={
-	title: "Produtos"
-}
-
-module.exports = dados*/
