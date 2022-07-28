@@ -1,10 +1,10 @@
-const dados = require("../model/quemsomosModel")
+const dados = require("../model/quemSomosModel")
 
-const quemsomosController = {
+const quemSomosController = {
 	quemsomos: function(req, res, next) {
-		res.render('quemsomos', { title: dados.title });
+		res.render('quemSomos', { title: dados.title });
 	}
 }
 
 
-module.exports = quemsomosController
+module.exports = quemSomosController
