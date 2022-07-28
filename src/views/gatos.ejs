@@ -24,38 +24,29 @@
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/gatos.css">
     <link rel="stylesheet" href="css/animation.css">
-    
 </head>
+
+<!-- ==============================BODDY============================BODDY============================ -->
+
 <body>
   
-    <!--============================================= Header================================================== -->
+  <!--=============================HEADER==============================HEADER==================== -->
 
   <%- include('partials/header') %>
     
-    <!--============================================= Sidebar================================================== -->
+  <!--==============================MAIN===============================MAIN=========================== -->
+  
   <main>
-    
-
-      <!---<div class="galery">
-        <nav class="fotos">
-          <img src="img/banner1.gif" alt="">
-          <img src="img/banner2.webp" alt="">
-          <img src="img/banner3.gif" alt="">
-          <img src="img/banner4.gif" alt="">
-          <img src="img/banner1.gif" alt="">
-        </nav> 
-      </div>--->
-      <div class="contain">
-        <div class="sidebar">
-          <h4>Filtro</h4>
-
-          <a href="#"><i class="fas fa-drumstick-bite"></i><span>Ração e Petiscos</span></a>
-          <a href="#"><i class="fas fa-capsules"></i><span>Farmácia e Beleza</span></a>
-          <a href="#"><i class="fas fa-blind"></i><span>Coleiras e Guias</span></a>
-          <a href="#"><i class="fas fa-futbol"></i><span>Brinquedos</span></a>
-          <a href="#"><i class="fas fa-home"></i><span>Casas e Camas</span></a>
-          <a href="#"><i class="fas fa-gear"></i><span>Acessórios</span></a>
-        </div>
+    <div class="contain">
+      <div class="sidebar">
+        <h4>Filtro</h4>
+        <a href="#"><i class="fas fa-drumstick-bite"></i><span>Ração e Petiscos</span></a>
+        <a href="#"><i class="fas fa-capsules"></i><span>Farmácia e Beleza</span></a>
+        <a href="#"><i class="fas fa-blind"></i><span>Coleiras e Guias</span></a>
+        <a href="#"><i class="fas fa-futbol"></i><span>Brinquedos</span></a>
+        <a href="#"><i class="fas fa-home"></i><span>Casas e Camas</span></a>
+        <a href="#"><i class="fas fa-gear"></i><span>Acessórios</span></a>
+      </div>
     
       <div class="gatos">
         <h4>Gatos</h4>
@@ -80,29 +71,12 @@
      </div>
   </main>
 
+  <!--===============================FOOTER===============================FOOTER============================== -->
 
-    <!--============================================= footer================================================== -->
+  <%- include('partials/footer') %>
 
-    <%- include('partials/footer') %>
+  <!--===============================FOOTER===============================FOOTER============================== -->
 
 </body>
-<script>
-  var header = document.getElementById('header');
-  var nav_bar = document.getElementById('nav_bar');
-  var showSidebar = false;
-
-  function toggleSidebar()
-  {
-    showSidebar = !showSidebar;
-    if(showSidebar)
-    {
-      nav_bar.style.right = '-1vw';
-    }
-    else
-    {
-      nav_bar.style.right = '-100vw';
-    }
-  }
-</script>
 </html>
 

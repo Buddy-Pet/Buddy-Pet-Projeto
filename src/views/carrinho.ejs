@@ -19,13 +19,14 @@
   </title>
 </head>
 
-<!-- ========================BODDY========================BODDY======================== -->
+<!-- ========================BODDY===============================BODDY======================== -->
 
 <body>
 
   <!-- ========================HEADER========================HEADER======================== -->
 
-  <%- include('partials/header') %>  
+  <%- include('partials/header') %>
+
   <!-- ========================MAIN========================MAIN======================== -->
 
   <main class="corpo">
@@ -63,29 +64,11 @@
     </div>  
   </main>
 
-   
+  <!-- ========================FOOTER========================FOOTER======================== -->
 
-<!-- ========================FOOTER========================FOOTER======================== -->
+  <%- include('partials/footer') %>
 
-      <%- include('partials/footer') %>
+  <!-- ========================FOOTER========================FOOTER======================== -->
   
 </body>
-<script>
-  var header = document.getElementById('header');
-  var nav_bar = document.getElementById('nav_bar');
-  var showSidebar = false;
-
-  function toggleSidebar()
-  {
-    showSidebar = !showSidebar;
-    if(showSidebar)
-    {
-      nav_bar.style.right = '-1vw';
-    }
-    else
-    {
-      nav_bar.style.right = '-100vw';
-    }
-  }
-</script>
 </html>
