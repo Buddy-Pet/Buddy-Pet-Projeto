@@ -11,7 +11,7 @@ const outrosRouter = require('./src/routes/outros');
 const politicasRouter = require('./src/routes/politicas');
 const promocoesRouter = require('./src/routes/promocoes');
 const criarContaRouter = require('./src/routes/criarConta');
-const quemsomosRouter = require('./src/routes/quemsomos');
+const quemSomosRouter = require('./src/routes/quemSomos');
 const carrinhoRouter = require('./src/routes/carrinho');
 const acessarRouter = require('./src/routes/acessar');
 
@@ -34,7 +34,7 @@ app.use('/outros', outrosRouter);
 app.use('/politicas', politicasRouter);
 app.use('/promocoes', promocoesRouter);
 app.use('/criarConta', criarContaRouter);
-app.use('/quemsomos', quemsomosRouter);
+app.use('/quemsomos', quemSomosRouter);
 app.use('/carrinho', carrinhoRouter);
 app.use('/acessar', acessarRouter);
 

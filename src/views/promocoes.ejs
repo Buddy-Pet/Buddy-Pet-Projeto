@@ -1,40 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/b9dfb2e070.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <title>
-      <%= title %>
-    </title>
-    <link href="/BuddyPet/css/gatos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/promocoes.css">
-    <link rel="stylesheet" href="css/animation.css">
-</head>
 
-<!-- ========================BODDY========================BODDY======================== -->
+<!-- ========================HEAD============================HEAD=============================== -->
+  
+<%- include('partials/head',{links:['header','sidebar','promocoes','animation','footer']}) %>
+
+<!-- ========================BODDY===========================BODDY============================ -->
 
 <body>
 
-  <!-- ========================HEADER========================HEADER======================== -->
+  <!-- ========================HEADER==========================HEADER========================== -->
   
   <%- include('partials/header') %>
     
-  <!-- ========================MAIN========================MAIN======================== -->
+  <!-- ========================MAIN============================MAIN=========================== -->
 
   <main>
     <div class="contain">
