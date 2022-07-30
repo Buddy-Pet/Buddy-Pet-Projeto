@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- ========================HEAD===============================HEAD========================== -->
+  
+<%- include('partials/head',{links:['header','carrinho','footer']}) %>
+
+<!-- ========================BODDY===============================BODDY========================== -->
+
+<body>
+
+  <!-- ========================HEADER========================HEADER========================== -->
+
+  <%- include('partials/header') %>
+
+  <!-- ========================MAIN========================MAIN=============================== -->
+
+  <main class="corpo">
+
+    <div class="produtos"><p>Produtos</p></div>
+    <div class="itens">
+      <div class="item">
+        <div class="descricao">
+          <button type="submit"><a href=""><img src="https://static.petz.com.br/novaLoja/images/home/golden.jpg" alt=""><p>Produto 1</p></a></button>
+          <div class="texto">Ração Golden Special para Cães Adultos Frango e Carne 15 kg</div>
+        </div>
+        <div class="conteiner">
+          <form class="quantidade">
+            <select id="unid">
+              <option selected disabled>QUANTIDADE</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </form>
+          
+          <div class="valor">
+            <div class="valor_num">R$ 129,90</div>  
+          </div>
+          <div class="trash">
+            <a id="excluir" href="">Excluir</a>
+            <i id="lixo" class="fa fa-trash-o" style="font-size:26px"></i>
+          </div>
+      </div>
+    </div>
+      
+      
+    </div>  
+  </main>
+
+  <!-- ========================FOOTER========================FOOTER======================== -->
+
+  <%- include('partials/footer') %>
+
+  <!-- ========================FOOTER========================FOOTER======================== -->
+  
+</body>
+</html>

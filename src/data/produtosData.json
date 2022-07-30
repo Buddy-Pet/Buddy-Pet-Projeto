@@ -1,0 +1,16 @@
+[
+    {
+        "nome": "Petisco",
+        "preco": 12,
+        "descricao": "adulto",
+        "categoria": "cachorro",
+        "id": 2
+    },
+    {
+        "nome": "Rção Golden",
+        "preco": 140,
+        "descricao": "Premium Especial - 14Kg",
+        "categoria": "cachorro",
+        "id": 3
+    }
+]
