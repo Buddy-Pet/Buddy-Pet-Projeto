@@ -1,3 +1,4 @@
+const { lerDados } = require("../helper/manipularDados");
 const produtosModel = require("../model/produtosModel")
 
 module.exports = {
@@ -44,7 +45,20 @@ module.exports = {
 		const produtosAtualizado = produtosModel.delete(id);
 
 		res.send(produtosAtualizado);
-	}	
+	},
+
+	// cachorros: function(req, res, next){
+	// 	res.render('produtos', {title: 'Cachorros', description: "", produtos: produtos.filter(produto => produto.category === 'cachorros')});
+	// },
+	// gatos: function(req, res, next){
+	// 	res.render('produtos', {title: 'gatos', description: "", produtos: produtos.filter(produto => produto.category === 'gatos')});
+	// },
+	// aves: function(req, res, next){
+	// 	res.render('produtos', {title: 'aves', description: "", produtos: produtos.filter(produto => produto.category === 'aves')});
+	// },
+	// outros: function(req, res, next){
+	// 	res.render('produtos', {title: 'outros', description: "", produtos: produtos.filter(produto => produto.category === 'outros')});
+	// }
 }
 
 
