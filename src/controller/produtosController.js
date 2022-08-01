@@ -57,7 +57,7 @@ module.exports = {
 		res.render('produtos', {title: 'Aves', description: "Pássaros são aves bastante singulares e especiais, principalmente por manterem os dias dos tutores mais felizes com suas diferentes cantorias, cores e diversidades. Mas é preciso tomar alguns cuidados para ter um viveiro ou gaiola com pássaros e, principalmente, oferecer tudo que eles precisam para viver bem", produtos:produtosModel.findByCategory('Aves')});
 	},
 	outros: function(req, res, next){
-		res.render('produtos', {title: 'Outros', description: "Os animais de estimação pequenos necessitam de muito cuidado e atenção. Isso porque eles são muito mais sensíveis que os bichinhos domésticos de portes maiores e dependem totalmente de seus tutores. Portanto, para garantir o bem-estar do seu amigo pet, é preciso se atentar a alguns fatores.", produtos:produtosModel.findByCategory('outros')});
+		res.render('produtos', {title: 'Outros', description: "", produtos:produtosModel.findByCategory('outros')});
 	}
 }
 
