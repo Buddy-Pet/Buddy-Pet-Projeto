@@ -1,8 +1,8 @@
-const dados = require("../model/avesModel")
+const dados = require("../model/produtosModel")
 
 const avesController = {
 	aves: function(req, res, next) {
-		res.render('aves', { title: dados.title });
+		res.render('aves', { title: "aves", produtos:dados.findByCategory("aves") });
 	}
 }
 

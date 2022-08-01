@@ -48,16 +48,16 @@ module.exports = {
 	},
 
 	cachorros: function(req, res, next){
-		res.render('produtos', {title: 'Cachorros', description: "", produtos: produtosModel.findByCategory('cachorros') });
+		res.render('produtos', {title: 'Cachorros', description: "Todo tutor de cachorro deve estar atento às necessidades e cuidados básicos para uma vida pet tranquila, saudável e feliz. Pensando nisso, é imprescindível obter itens como uma ração de qualidade, brinquedos educativos, casinha de cachorro, medicamentos e outros objetos indispensáveis.", produtos: produtosModel.findByCategory('cachorros') });
 	},
 	gatos: function(req, res, next){
-		res.render('produtos', {title: 'Gatos', description: "", produtos: produtosModel.findByCategory('gatos')});
+		res.render('produtos', {title: 'Gatos', description: "O gato é um dos animais domésticos mais procurados para companhia. Independentes, esses animais carregam fortes heranças de seus ancestrais felinos, como o instinto da caça, muito reproduzido em suas brincadeiras. Esse animal adorável, no entanto, precisa de cuidados para viver mais e com bem-estar. Na Buddy Pet você encontra alimentos, medicamentos, brinquedos e todos os artigos para seu gato!", produtos: produtosModel.findByCategory('gatos')});
 	},
 	aves: function(req, res, next){
-		res.render('produtos', {title: 'Aves', description: "", produtos:produtosModel.findByCategory('Aves')});
+		res.render('produtos', {title: 'Aves', description: "Pássaros são aves bastante singulares e especiais, principalmente por manterem os dias dos tutores mais felizes com suas diferentes cantorias, cores e diversidades. Mas é preciso tomar alguns cuidados para ter um viveiro ou gaiola com pássaros e, principalmente, oferecer tudo que eles precisam para viver bem", produtos:produtosModel.findByCategory('Aves')});
 	},
 	outros: function(req, res, next){
-		res.render('produtos', {title: 'Outros', description: "", produtos:produtosModel.findByCategory('outros')});
+		res.render('produtos', {title: 'Outros', description: "Os animais de estimação pequenos necessitam de muito cuidado e atenção. Isso porque eles são muito mais sensíveis que os bichinhos domésticos de portes maiores e dependem totalmente de seus tutores. Portanto, para garantir o bem-estar do seu amigo pet, é preciso se atentar a alguns fatores.", produtos:produtosModel.findByCategory('outros')});
 	}
 }
 
