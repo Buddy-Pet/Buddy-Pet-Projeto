@@ -1,3 +1,4 @@
+const { lerDados } = require("../helper/manipularDados");
 const produtosModel = require("../model/produtosModel")
 
 module.exports = {
@@ -44,7 +45,20 @@ module.exports = {
 		const produtosAtualizado = produtosModel.delete(id);
 
 		res.send(produtosAtualizado);
-	}	
+	},
+
+	cachorros: function(req, res, next){
+		res.render('produtos', {title: 'Cachorros', description: "", produtos: produtosModel.findByCategory('cachorros') });
+	},
+	gatos: function(req, res, next){
+		res.render('produtos', {title: 'Gatos', description: "", produtos: produtosModel.findByCategory('gatos')});
+	},
+	aves: function(req, res, next){
+		res.render('produtos', {title: 'Aves', description: "", produtos:produtosModel.findByCategory('Aves')});
+	},
+	outros: function(req, res, next){
+		res.render('produtos', {title: 'Outros', description: "", produtos:produtosModel.findByCategory('outros')});
+	}
 }
 
 

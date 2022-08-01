@@ -14,6 +14,7 @@ const criarContaRouter = require('./src/routes/criarConta');
 const quemSomosRouter = require('./src/routes/quemSomos');
 const carrinhoRouter = require('./src/routes/carrinho');
 const acessarRouter = require('./src/routes/acessar');
+const produtosRouter = require('./src/routes/produtos');
 
 const app = express();
 
@@ -39,7 +40,7 @@ app.use('/carrinho', carrinhoRouter);
 app.use('/acessar', acessarRouter);
 
 // CRUD
-app.use('/produtos', require('./src/routes/produtos'));
+app.use('/produtos', produtosRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

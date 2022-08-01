@@ -4,13 +4,16 @@
         "preco": 12,
         "descricao": "adulto",
         "categoria": "cachorro",
-        "id": 2
+        "id": 2,
+        "imagem": "https://static.petz.com.br/novaLoja/images/home/golden.jpg"
+
     },
     {
-        "nome": "Rção Golden",
+        "nome": "Ração Golden",
         "preco": 140,
         "descricao": "Premium Especial - 14Kg",
         "categoria": "cachorro",
-        "id": 3
+        "id": 3,
+        "imagem": "https://static.petz.com.br/novaLoja/images/home/royal.jpg"
     }
 ]
