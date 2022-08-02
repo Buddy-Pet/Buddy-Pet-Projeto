@@ -13,7 +13,12 @@ module.exports = {
 			produtos = produtosModel.findAll();
 		}
 		
-		res.send(produtos);
+		// res.send(produtos);
+		res.render('cachorros',{title: "Cachorros", produtos})
+		res.render('gatos',{title: "Gatos", produtos})
+		res.render('aves',{title: "Aves", produtos})
+		res.render('outros',{title: "Outros Pets", produtos})
+		res.render('promocoes',{title: "Promoções", produtos})
 	},
 
 	show(req, res){
@@ -47,18 +52,18 @@ module.exports = {
 		res.send(produtosAtualizado);
 	},
 
-	cachorros: function(req, res, next){
-		res.render('produtos', {title: 'Cachorros', description: "", produtos: produtosModel.findByCategory('cachorros') });
-	},
-	gatos: function(req, res, next){
-		res.render('produtos', {title: 'Gatos', description: "", produtos: produtosModel.findByCategory('gatos')});
-	},
-	aves: function(req, res, next){
-		res.render('produtos', {title: 'Aves', description: "", produtos:produtosModel.findByCategory('Aves')});
-	},
-	outros: function(req, res, next){
-		res.render('produtos', {title: 'Outros', description: "", produtos:produtosModel.findByCategory('outros')});
-	}
+	// cachorros: function(req, res, next){
+	// 	res.render('produtos', {title: 'Cachorros', description: "", produtos: produtosModel.findByCategory('cachorros') });
+	// },
+	// gatos: function(req, res, next){
+	// 	res.render('produtos', {title: 'Gatos', description: "", produtos: produtosModel.findByCategory('gatos')});
+	// },
+	// aves: function(req, res, next){
+	// 	res.render('produtos', {title: 'Aves', description: "", produtos:produtosModel.findByCategory('Aves')});
+	// },
+	// outros: function(req, res, next){
+	// 	res.render('produtos', {title: 'Outros', description: "", produtos:produtosModel.findByCategory('outros')});
+	// }
 }
 
 
