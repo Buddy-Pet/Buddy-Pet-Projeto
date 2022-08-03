@@ -14,18 +14,14 @@ module.exports = {
 		}
 		
 		// res.send(produtos);
-		res.render('cachorros',{title: "Cachorros", produtos})
-		res.render('gatos',{title: "Gatos", produtos})
-		res.render('aves',{title: "Aves", produtos})
-		res.render('outros',{title: "Outros Pets", produtos})
-		res.render('promocoes',{title: "Promoções", produtos})
+		res.render('produtos',{title: "Cachorros", produtos})
 	},
 
 	show(req, res){
 		const { id } = req.params;
 		const produto = produtosModel.findById(id);
 
-		res.send(produto);
+		res.render('detalhesProduto',{title: 'Detalhes do Produto', produto});
 	},
 
 	store(req, res){
