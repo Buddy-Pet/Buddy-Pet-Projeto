@@ -1,83 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
-<!-- ========================HEAD==============================HEAD======================== -->
+<!-- ========================HEAD=============================HEAD============================= -->
   
-<%- include('partials/head',{links:['header','produtos','footer']}) %>
+<%- include('partials/head',{links:['header','sidebar','cachorros','animation','footer']}) %>
 
-<!-- ========================BODDY=============================BODDY======================== -->
+<!-- =============================BODDY========================BODDY================================ -->
 
 <body>
+  
+  <!--=============================HEADER==============================HEADER=============================== -->
 
-<!-- ========================HEADER===========================HEADER======================== -->
+  <%- include('partials/header') %>
+    
+  <!--==============================MAIN===============================MAIN==================================== -->
+  <main>
+    <div class="contain">
+      <div class="sidebar">
+        <h4>Filtro</h4>
+        <a href="#"><i class="fas fa-drumstick-bite"></i><span>Ração e Petiscos</span></a>
+        <a href="#"><i class="fas fa-capsules"></i><span>Farmácia e Beleza</span></a>
+        <a href="#"><i class="fas fa-blind"></i><span>Coleiras e Guias</span></a>
+        <a href="#"><i class="fas fa-futbol"></i><span>Brinquedos</span></a>
+        <a href="#"><i class="fas fa-home"></i><span>Casas e Camas</span></a>
+        <a href="#"><i class="fas fa-gear"></i><span>Acessórios</span></a>
+      </div>
+    
+      <div class="cachorros">
+        <h4>Cachorros</h4>
+        <p>Todo tutor de cachorro deve estar atento às necessidades e cuidados básicos para uma vida pet tranquila, saudável e feliz. Pensando nisso, é imprescindível obter itens como uma ração de qualidade, brinquedos educativos, casinha de cachorro, medicamentos e outros objetos indispensáveis. </p>
+      </div>
 
-<%- include('partials/header') %>
+      <div class="produtos">
+        <div class="imagens">
 
-<!-- ========================MAIN==============================MAIN======================== -->
+          <% produtos.forEach(produto => { %>
+            <button type="submit">
+              <a href="/produtos/<%= produto.id %> "><img src=<%= produto.imagem %> 
+                 alt=""><p><%= produto.nome %> </p></button></a>
+           
+          <% }) %>
+        </div>
+      </div>
+     </div>
+  </main>
 
-<main class="corpo"> >
+  <!--===============================FOOTER===============================FOOTER============================== -->
 
-<section class="firstbloco">
-  <div class="product">
-     <img src="./img/racao-golden-special-para-caes-adultos-frango-e-carne-3310549-15kg-Frente.webp" alt="racaoSeca">
-  </div>
+  <%- include('partials/footer') %>
 
-<div class="informacao">
-<h2>Ração Golden Special para Cães Adultos Frango e Carne 15 kg</h2>
-    <ul>
-        <li>- Indicada para cães adultos;</li>
-        <li>- Blend de proteínas;</li>
-        <li>- Músculos mais fortes;</li>
-        <li>- Redução do odor das fezes;</li>
-        <li>- Mais rendimento por quilo;</li>
-        <li>- Saúde e vitalidade;</li>
-        <li>- Livre de aromatizantes e corantes artificiais.</li>
-      </ul>
-    </div>
-
-
-
-    <section class="content">
-      <form class="tamanho">
-        <select id="peso">
-          <option selected disabled>Selecione o tamanho</option>
-          <option value="1">1Kg</option>
-          <option value="3">3Kg</option>
-          <option value="15">15Kg</option>
-          <option value="20">20Kg</option>
-        </select>
-        <br><br>
-       </form>
-
-       <div class="preco">
-        <p>a partir de</p>
-        <h1>R$ 53,90</h1>
-        <P>ou 3x de R$ 17,96</P>
-       </div>
-
-       <div class="container">
-        <form class="unidades">
-          <select id="unid">
-            <option selected disabled>UNIDADES</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        
-          <button type="submit">Comprar</button>
-        </form>
-       </div>
-
-  </section>
-</main>
-
-<!-- ========================FOOTER========================FOOTER======================== -->
-
-<%- include('partials/footer') %>
-
-<!-- ========================FOOTER========================FOOTER======================== -->
+  <!--===============================FOOTER===============================FOOTER============================== -->
 
 </body>
 </html>
+
