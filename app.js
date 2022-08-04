@@ -10,6 +10,7 @@ const quemSomosRouter = require('./src/routes/quemSomos');
 const carrinhoRouter = require('./src/routes/carrinho');
 const acessarRouter = require('./src/routes/acessar');
 const produtosRouter = require('./src/routes/produtos');
+//const detalhesProdutoRouter = require('./src/routes/detalhesProduto');
 
 const app = express();
 
@@ -28,6 +29,7 @@ app.use('/criarConta', criarContaRouter);
 app.use('/quemsomos', quemSomosRouter);
 app.use('/carrinho', carrinhoRouter);
 app.use('/acessar', acessarRouter);
+//app.use('/detalhesProduto', detalhesProdutoRouter);
 
 // CRUD
 app.use('/produtos', produtosRouter);
