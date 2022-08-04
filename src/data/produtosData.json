@@ -1,5 +1,9 @@
 [
 {
+    "titulo":"",
+    "texto": ""
+},
+{
     "nome": "Petisco",
     "preco": 12,
     "descricao": "adulto",

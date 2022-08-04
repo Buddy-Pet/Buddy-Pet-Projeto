@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<!-- ========================HEAD=============================HEAD============================= -->
+  
+<%- include('partials/head',{links:['header','criarConta']}) %>
+
+<!-- ============================BODDY========================BODDY============================= -->
+
+<body>
+
+    <!-- ========================HEADER========================HEADER======================== -->
+
+    <%- include("partials/header2") %>
+  
+    <!-- ==========================MAIN============================MAIN========================== -->
+    
+    <h1>Cadastrar Produto</h1>
+    <form>
+        <label for="secao-produto">Qual é a Seção do Produto?</label>
+        <br>
+        <select name="secao-produto" id="secao-produto">
+            <option selected disabled>Selecione a Seção</option>
+            <option value="CACHORROS">Cachorros</option>
+            <option value="GATOS">Gatos</option>
+            <option value="AVES">Aves</option>
+        </select>
+        <br>
+        <br>
+        <label for="tipo-produto">Tipo de Produto:</label>
+        <br>
+        <select name="tipo-produto" id="tipo-produto">
+            <option selected disabled>Selecione o tipo de Produto</option>
+            <option value="RAÇÕES">Rações</option>
+            <option value="REMÉDIOS">Remédios</option>
+            <option value="VACINAS">Vacinas</option>
+            <option value="CASINHAS">Casinhas</option>
+        </select>
+        <br>
+        <br>
+        <label for="nome-produto">Nome do Produto:</label>
+        <br>
+        <input type="text" id="nome-produto" name="nome-produto" placeholder="Digite o nome do Produto" required>
+        <br>
+        <br>
+        <label for="preco-produto">Preço do Produto:</label>
+        <br>
+        <input type="text" id="preco-produto" name="preco-produto" placeholder="Digite o preço do Produto" required>
+        <br>
+        <br>
+        <label for="descricao-produto">Descrição do Produto:</label>
+        <br>
+        <textarea name="descricao-produto" id="descricao-produto" cols="30" rows="10"></textarea>
+        <br>
+        <br>
+        <label for="imagem-produto">Anexe uma imagem do Produto:</label>
+        <br>
+        <input type="file" name="imagem-produto" accept=".jpg">
+        <br>
+        <br>
+        <button type="reset">Limpar Campos</button>
+        <br>
+        <br>
+        <button type="submit" onclick="cadastroProduto()">Cadastrar Produto</button>
+    </form>
+</body>
+</html>
