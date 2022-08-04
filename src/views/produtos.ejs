@@ -22,23 +22,20 @@
 
       <%- include('partials/filter') %>
 
-      <!--==============================FILTER===============================FILTER==================================== -->
+      <!--==============================DESCRIPTION===============================DESCRIPTION==================================== -->
     
       <div class="cachorros">
-        <% produtos.forEach(produto => { %>
-          <h4><%= produto.titulo %></h4>
-          <p><%= produto.texto %></p>
-        <% }) %>
-        
+          <h4><%= title %></h4>
+          <p><%= description %></p>
       </div>
+
+      <!--==============================PRODUCTS===============================PRODUCTS==================================== -->
 
       <div class="produtos">
         <div class="imagens">
-
           <% produtos.forEach(produto => { %>
             <button type="submit"><a href="/produtos/<%= produto.id %> "><img src=<%= produto.imagem %> alt=""><p><%= produto.nome %></p></a></button>
           <% }) %>
-
         </div>
       </div>
      </div>

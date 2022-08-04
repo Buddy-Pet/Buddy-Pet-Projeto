@@ -15,7 +15,6 @@ const quemSomosRouter = require('./src/routes/quemSomos');
 const carrinhoRouter = require('./src/routes/carrinho');
 const acessarRouter = require('./src/routes/acessar');
 const produtosRouter = require('./src/routes/produtos');
-//const formularioCriarProdutosRouter = require('./src/routes/formularioCriarProdutos');
 
 const app = express();
 
@@ -39,12 +38,11 @@ app.use('/criarConta', criarContaRouter);
 app.use('/quemsomos', quemSomosRouter);
 app.use('/carrinho', carrinhoRouter);
 app.use('/acessar', acessarRouter);
-//app.use('/formularioCriarProdutos', formularioCriarProdutosRouter);
 
 // CRUD
 app.use('/produtos', produtosRouter);
 
-// catch 404 and forward to error handler
+// catch 404 and forward to nerror handler
 app.use(function(req, res, next) {
   next(createError(404));
 });
