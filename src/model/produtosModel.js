@@ -44,7 +44,8 @@ module.exports = {
 		produto.nome = data.nome;
 		produto.preco = data.preco;
 		produto.descricao = data.descricao;
-		produto.categoria = data.categoria
+		produto.categoria = data.categoria;
+		produto.tipoProduto = data.tipoProduto
 
 		manipularDados.gravarDados('../data/produtosData.json', produtos);
 

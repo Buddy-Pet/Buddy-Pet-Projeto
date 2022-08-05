@@ -39,6 +39,11 @@ module.exports = {
 		res.render('produtos', { ...detalhesPagina[category], produtos: produtos })
 	},
 
+	criarProdutos(req, res){
+		
+		res.render('formularioCriarProdutos', { title: "Formulário" });
+	},
+
 	show(req, res){
 		const { id } = req.params;
 		const produto = produtosModel.findById(id);
@@ -47,18 +52,18 @@ module.exports = {
 	},
 
 	store(req, res){
-		const { nome, preco, descricao, categoria } = req.body;
+		const { nome, preco, descricao, categoria, tipoProduto } = req.body;
 
-		const produtos = produtosModel.store({ nome, preco, descricao, categoria })
+		const produtos = produtosModel.store({ nome, preco, descricao, categoria, tipoProduto })
 
 		res.send(produtos);
 	},
 
 	update(req, res){
 		const { id } = req.params;
-		const { nome, preco, descricao, categoria } = req.body;
+		const { nome, preco, descricao, categoria, tipoProduto } = req.body;
 
-		const produtoAtualizado = produtosModel.update(id, { nome, preco, descricao, categoria })
+		const produtoAtualizado = produtosModel.update(id, { nome, preco, descricao, categoria, tipoProduto })
 		
 		res.send(produtoAtualizado);
 	},
