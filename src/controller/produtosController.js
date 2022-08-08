@@ -44,11 +44,18 @@ module.exports = {
 		res.render('formularioCriarProdutos', { title: "Formulário" });
 	},
 
+	/*edit(req, res){
+		const { id } = req.params;
+		const produto = produto.findById(id);
+		res.render('formularioEditarProdutos', { title: "Formulário" });
+	},*/
+
 	show(req, res){
 		const { id } = req.params;
 		const produto = produtosModel.findById(id);
 
-		res.render('detalhesProduto',{title: 'Detalhes do Produto', produto});
+		res.render('formularioEditarProdutos', { title: "Formulário", produto });
+		//res.render('detalhesProduto',{title: 'Detalhes do Produto', produto});
 	},
 
 	store(req, res){

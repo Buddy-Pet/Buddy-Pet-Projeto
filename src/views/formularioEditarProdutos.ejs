@@ -7,25 +7,25 @@
 </head>
 <body>
     <h1>Editar Produto</h1>
-    <form>
+    <form action="/produtos/editar/<%= produto.id %>?_method=PUT" method="POST">
         <label for="secao-produto">Qual é a Seção do Produto?</label>
         <br>
-        <select name="secao-produto" id="secao-produto">
+        <select name="categoria" id="secao-produto">
             <option selected disabled>Selecione a Seção</option>
-            <option value="CACHORROS">Cachorros</option>
-            <option value="GATOS">Gatos</option>
-            <option value="AVES">Aves</option>
+            <option value="cachorros">Cachorros</option>
+            <option value="gatos">Gatos</option>
+            <option value="aves">Aves</option>
         </select>
         <br>
         <br>
         <label for="tipo-produto">Tipo de Produto:</label>
         <br>
-        <select name="tipo-produto" id="tipo-produto">
+        <select name="tipoProduto" id="tipo-produto">
             <option selected disabled>Selecione o tipo de Produto</option>
-            <option value="RAÇÕES">Rações</option>
-            <option value="REMÉDIOS">Remédios</option>
-            <option value="VACINAS">Vacinas</option>
-            <option value="CASINHAS">Casinhas</option>
+            <option value="racoes">Rações</option>
+            <option value="remedios">Remédios</option>
+            <option value="vacinas">Vacinas</option>
+            <option value="casinhas">Casinhas</option>
         </select>
         <br>
         <br>
@@ -38,22 +38,22 @@
         <br>
         <label for="editar-nome-produto">Editar Nome do Produto:</label>
         <br>
-        <input type="text" id="editar-nome-produto" name="editar-nome-produto" placeholder="Digite o novo nome do Produto" required>
+        <input type="text" id="editar-nome-produto" name="nome" placeholder="Digite o novo nome do Produto" required>
         <br>
         <br>
         <label for="editar-preco-produto">Editar Preço do Produto:</label>
         <br>
-        <input type="number" id="editar-preco-produto" name="editar-preco-produto" placeholder="Digite o novo preço do Produto" required>
+        <input type="number" id="editar-preco-produto" name="preco" placeholder="Digite o novo preço do Produto" required>
         <br>
         <br>
         <label for="editar-descricao-produto">Editar Descrição do Produto:</label>
         <br>
-        <textarea name="editar-descricao-produto" id="editar-descricao-produto" cols="30" rows="10"></textarea>
+        <textarea name="descricao" id="editar-descricao-produto" cols="30" rows="10"></textarea>
         <br>
         <br>
         <label for="editar-imagem-produto">Anexe uma nova imagem do Produto:</label>
         <br>
-        <input type="file" name="editar-imagem-produto" accept=".jpg">
+        <input type="file" name="imagem" accept=".jpg">
         <br>
         <br>
         <button type="reset">Limpar Campos</button>
