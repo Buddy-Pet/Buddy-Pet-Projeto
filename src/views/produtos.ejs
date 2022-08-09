@@ -14,31 +14,27 @@
   <%- include('partials/header') %>
     
   <!--==============================MAIN===============================MAIN==================================== -->
+  
   <main>
     <div class="contain">
-      <div class="sidebar">
-        <h4>Filtro</h4>
-        <a href="#"><i class="fas fa-drumstick-bite"></i><span>Ração e Petiscos</span></a>
-        <a href="#"><i class="fas fa-capsules"></i><span>Farmácia e Beleza</span></a>
-        <a href="#"><i class="fas fa-blind"></i><span>Coleiras e Guias</span></a>
-        <a href="#"><i class="fas fa-futbol"></i><span>Brinquedos</span></a>
-        <a href="#"><i class="fas fa-home"></i><span>Casas e Camas</span></a>
-        <a href="#"><i class="fas fa-gear"></i><span>Acessórios</span></a>
-      </div>
+
+      <!--==============================FILTER===============================FILTER==================================== -->
+
+      <%- include('partials/filter') %>
+
+      <!--==============================DESCRIPTION===============================DESCRIPTION==================================== -->
     
       <div class="cachorros">
-        <h4>Cachorros</h4>
-        <p>Todo tutor de cachorro deve estar atento às necessidades e cuidados básicos para uma vida pet tranquila, saudável e feliz. Pensando nisso, é imprescindível obter itens como uma ração de qualidade, brinquedos educativos, casinha de cachorro, medicamentos e outros objetos indispensáveis. </p>
+          <h4><%= title %></h4>
+          <p><%= description %></p>
       </div>
+
+      <!--==============================PRODUCTS===============================PRODUCTS==================================== -->
 
       <div class="produtos">
         <div class="imagens">
-
           <% produtos.forEach(produto => { %>
-            <button type="submit">
-              <a href="/produtos/<%= produto.id %> "><img src=<%= produto.imagem %> 
-                 alt=""><p><%= produto.nome %> </p></button></a>
-           
+            <button type="submit"><a href="/produtos/<%= produto.id %> "><img src=<%= produto.imagem %> alt=""><p><%= produto.nome %></p></a></button>
           <% }) %>
         </div>
       </div>

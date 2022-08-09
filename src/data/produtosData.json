@@ -1,51 +1,75 @@
 [
-{
-    "nome": "Petisco",
-    "preco": 12,
-    "descricao": "adulto",
-    "categoria": "cachorros",
-    "id": 2,
-    "imagem": "https://static.petz.com.br/novaLoja/images/home/golden.jpg"
-
-},
-{
-    "nome": "Ração Golden",
-    "preco": 140,
-    "descricao": "Premium Especial - 14Kg",
-    "categoria": "cachorros",
-    "id": 3,
-    "imagem": "https://static.petz.com.br/novaLoja/images/home/royal.jpg"
-},
-{
-    "nome": "Ração para Gatos",
-    "preco": 120,
-    "descricao": "Premium Especial - 14Kg",
-    "categoria": "gatos",
-    "id": 3,
-    "imagem": "https://static.petz.com.br/novaLoja/images/home/royal.jpg"
-},
-{
-    "nome": "Ração para Aves",
-    "preco": 120,
-    "descricao": "Premium Especial - 14Kg",
-    "categoria": "aves",
-    "id": 3,
-    "imagem": "https://static.petz.com.br/novaLoja/images/home/royal.jpg"
-},
-{
-    "nome": "Ração para Roedores",
-    "preco": 120,
-    "descricao": "Premium Especial - 14Kg",
-    "categoria": "outros",
-    "id": 3,
-    "imagem": "https://static.petz.com.br/novaLoja/images/home/royal.jpg"
-},
-{
-    "nome": "Oferta do dia",
-    "preco": 120,
-    "descricao": "Premium Especial - 14Kg",
-    "categoria": "promocoes",
-    "id": 3,
-    "imagem": "https://static.petz.com.br/novaLoja/images/home/royal.jpg"
-}
+    {
+        "nome": "Petisco",
+        "preco": 12,
+        "descricao": "adulto",
+        "categoria": "cachorros",
+        "id": 2,
+        "imagem": "https://static.petz.com.br/novaLoja/images/home/golden.jpg"
+    },
+    {
+        "nome": "Ração Golden",
+        "preco": 140,
+        "descricao": "Premium Especial - 14Kg",
+        "categoria": "cachorros",
+        "id": 3,
+        "imagem": "https://static.petz.com.br/novaLoja/images/home/royal.jpg"
+    },
+    {
+        "nome": "Ração para Gatos",
+        "preco": 120,
+        "descricao": "Premium Especial - 14Kg",
+        "categoria": "gatos",
+        "id": 4,
+        "imagem": "https://static.petz.com.br/novaLoja/images/home/royal.jpg"
+    },
+    {
+        "nome": "Ração para Aves",
+        "preco": 20,
+        "descricao": "Premium Especial - 14Kg",
+        "categoria": "aves",
+        "id": 5,
+        "imagem": "https://static.petz.com.br/novaLoja/images/home/royal.jpg"
+    },
+    {
+        "nome": "Ração para Roedores",
+        "preco": 30,
+        "descricao": "Premium Especial - 14Kg",
+        "categoria": "outros",
+        "id": 6,
+        "imagem": "https://static.petz.com.br/novaLoja/images/home/royal.jpg"
+    },
+    {
+        "nome": "Oferta do dia",
+        "preco": 60,
+        "descricao": "Premium Especial - 14Kg",
+        "categoria": "promocoes",
+        "id": 7,
+        "imagem": "https://static.petz.com.br/novaLoja/images/home/royal.jpg"
+    },
+    {
+        "nome": "Oferta do dia",
+        "preco": 40,
+        "descricao": "Premium Especial - 14Kg",
+        "categoria": "promocoes",
+        "id": 8,
+        "imagem": "https://static.petz.com.br/novaLoja/images/home/royal.jpg"
+    },
+    {
+        "nome": "Oferta do dia",
+        "preco": 30,
+        "descricao": "Premium Especial - 14Kg",
+        "categoria": "promocoes",
+        "id": 9,
+        "imagem": "https://static.petz.com.br/novaLoja/images/home/royal.jpg"
+    },
+    {
+        "nome": "Ração Atakama ",
+        "preco": "185",
+        "descricao": "Ração filhote de 14kg.",
+        "categoria": "cachorros",
+        "tipoProduto": "racoes",
+        "id": 10,
+        "imagem": "https://static.petz.com.br/novaLoja/images/home/royal.jpg"
+    }
 ]
