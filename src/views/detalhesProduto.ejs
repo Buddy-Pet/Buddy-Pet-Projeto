@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- ========================HEAD==============================HEAD======================== -->
+  
+<%- include('partials/head',{links:['header','produtos','footer','sidebar', 'animation']}) %>
+
+<!-- ========================BODDY=============================BODDY======================== -->
+
+<body>
+
+<!-- ========================HEADER===========================HEADER======================== -->
+
+<%- include('partials/header') %>
+
+<!-- ========================MAIN==============================MAIN======================== -->
+
+<main class="corpo"> >
+
+<section class="firstbloco">
+  <div class="product">
+     <img src=<%= produto.imagem %>  alt="racaoSeca">
+  </div>
+
+<div class="informacao">
+<h2><%= produto.nome %> </h2>
+    <!-- <ul>
+        <li>- Indicada para cães adultos;</li>
+        <li>- Blend de proteínas;</li>
+        <li>- Músculos mais fortes;</li>
+        <li>- Redução do odor das fezes;</li>
+        <li>- Mais rendimento por quilo;</li>
+        <li>- Saúde e vitalidade;</li>
+        <li>- Livre de aromatizantes e corantes artificiais.</li>
+      </ul> -->
+
+    <p>
+      <% produto.descricao %> 
+    </p>
+    </div>
+
+
+
+    <section class="content">
+      <form class="tamanho">
+        <select id="peso">
+          <option selected disabled>Selecione o tamanho</option>
+          <option value="1">1Kg</option>
+          <option value="3">3Kg</option>
+          <option value="15">15Kg</option>
+          <option value="20">20Kg</option>
+        </select>
+        <br><br>
+       </form>
+
+       <div class="preco">
+        <p>a partir de</p>
+        <h1><% produto.preco %> </h1>
+        <P>ou 3x de R$ 17,96</P>
+       </div>
+
+       <div class="container">
+        <form class="unidades">
+          <select id="unid">
+            <option selected disabled>UNIDADES</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        
+          <button type="submit">Comprar</button>
+        </form>
+       </div>
+
+  </section>
+</main>
+
+<!-- ========================FOOTER========================FOOTER======================== -->
+
+<%- include('partials/footer') %>
+
+<!-- ========================FOOTER========================FOOTER======================== -->
+
+</body>
+</html>
