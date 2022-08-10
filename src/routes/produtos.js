@@ -9,7 +9,7 @@ router.get('/criar', produtosController.criarProdutos);
 router.get('/editar/:id', produtosController.show);
 router.put('/editar/:id', produtosController.update);
 
-router.get('/:id', produtosController.show);
+router.get('/detalhesProduto/:id', produtosController.show);
 
 router.get('/', produtosController.index);
 
