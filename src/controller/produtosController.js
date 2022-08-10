@@ -54,8 +54,8 @@ module.exports = {
 		const { id } = req.params;
 		const produto = produtosModel.findById(id);
 
-		res.render('formularioEditarProdutos', { title: "Formulário", produto });
-		//res.render('detalhesProduto',{title: 'Detalhes do Produto', produto});
+		// res.render('formularioEditarProdutos', { title: "Formulário", produto });
+		res.render('detalhesProduto',{title: 'Detalhes do Produto', produto});
 	},
 
 	store(req, res){

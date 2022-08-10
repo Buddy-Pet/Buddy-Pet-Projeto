@@ -31,29 +31,6 @@ main {
 
 }
 
-/*.galery{
-  width: 100%;
-  height: 310px;
-  background-color: white;
-  overflow: hidden;
-  position: absolute;
-  z-index: 3;
-  margin-left: 260px;
-}
-
-.galery .fotos{
-  width: 500%;
-  animation-name: animacao;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-}
-
-.galery .fotos img{
-  position: absolute;
-  z-index: 1;
-  width: 98%;
-  height: 300px;
-}*/
 
 .contain {
   display: flex;
@@ -117,10 +94,17 @@ main {
   border: 1.9px solid rgb(231, 226, 226);
   border-radius: 0.5em;
   margin-bottom: 2rem;
+  margin-right: 15px;
 }
   
   .imagens button a {
   text-decoration: none;
+  }
+
+  .imagens button a img{
+  height: 150px;
+  width: 150px;
+  
   }
   
   .imagens button p {

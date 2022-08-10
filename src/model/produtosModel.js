@@ -8,7 +8,7 @@ module.exports = {
 	findById(id){
 		const produtos = this.findAll();
 
-		return produtos.filter(produto => produto.id == id)
+		return produtos.find(produto => produto.id == id)
 	},
 
 	findByCategory(categoria){

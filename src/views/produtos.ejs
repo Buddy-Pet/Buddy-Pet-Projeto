@@ -3,7 +3,7 @@
 
 <!-- ========================HEAD=============================HEAD============================= -->
   
-<%- include('partials/head',{links:['header','sidebar','produtos','animation','footer']}) %>
+<%- include('partials/head',{links:['header','sidebar','produtos','footer']}) %>
 
 <!-- =============================BODDY========================BODDY================================ -->
 
@@ -34,7 +34,7 @@
       <div class="produtos">
         <div class="imagens">
           <% produtos.forEach(produto => { %>
-            <button type="submit"><a href="/produtos/<%= produto.id %> "><img src=<%= produto.imagem %> alt=""><p><%= produto.nome %></p></a></button>
+            <button type="submit"><a href="/produtos/detalhesProduto/<%= produto.id %> "><img src=<%= produto.imagem %> alt=""><p><%= produto.nome %></p></a></button>
           <% }) %>
         </div>
       </div>
