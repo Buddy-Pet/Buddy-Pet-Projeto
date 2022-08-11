@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  main {
+    height: 705px;
+    border: 15px solid #FFFFFF;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-family:'Times New Roman', Times, serif;
+    color:#777777;
+    font-size: 18px;
+    font-weight: bold;
+    align-items: center;
+    position: relative;
+    top: 150px;
+    z-index: 2;
+    }
+
+  main h1 {
+    justify-content: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .politicaprivacidade, .politicaseguranca, .politicatroca {
+    text-align: center;
+  }
+  
+  textarea {
+    background: #efefef;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    resize: none;
+    font-size: large;
+    color: #777777;
+    border: 1px double gray;
+  }
+
+  .conteudoFixo {
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+}
+
+.textoseguranca {
+    height:100%;
+    width:100%;
+    position:left;
+    overflow-y: hidden;
+    border: 1px solid #000000;
+    position: relative;
+}
+.textoprivacidade {
+  height:100%;
+  width:100%;
+  position:left;
+  overflow-y: hidden;
+  border: 1px double #000000;
+  position: relative;
+}
+
+.textotroca {
+  height:100%;
+  width:100%;
+  position:left;
+  overflow: hidden;
+  border: 1px double #000000;
+  position: relative;
+}
+main .textoseguranca {
+height: 100%;
+width: 60%;
+}
+
+main .textoprivacidade {
+  height: 100%;
+  width: 60%;
+  }
+
+main .textotroca {
+    height: 100%;
+    width: 60%;
+    }
+
+footer{
+  display: block;
+  position: relative;
+  top: 10px;
+  z-index: 2;
+  top: 200px;
+}
+
+@media screen and (max-width: 700px) {
+  main h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .politicatroca{
+    width: 50%;
+  }
+}
