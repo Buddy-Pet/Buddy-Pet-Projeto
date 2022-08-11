@@ -4,17 +4,13 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const homeRouter = require('./src/routes/home');
-const cachorrosRouter = require('./src/routes/cachorros');
-const gatosRouter = require('./src/routes/gatos');
-const avesRouter = require('./src/routes/aves');
-const outrosRouter = require('./src/routes/outros');
 const politicasRouter = require('./src/routes/politicas');
-const promocoesRouter = require('./src/routes/promocoes');
 const criarContaRouter = require('./src/routes/criarConta');
 const quemSomosRouter = require('./src/routes/quemSomos');
 const carrinhoRouter = require('./src/routes/carrinho');
 const acessarRouter = require('./src/routes/acessar');
 const produtosRouter = require('./src/routes/produtos');
+//const detalhesProdutoRouter = require('./src/routes/detalhesProduto');
 
 const app = express();
 
@@ -27,22 +23,18 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/', homeRouter)
-app.use('/cachorros', cachorrosRouter);
-app.use('/gatos', gatosRouter);
-app.use('/aves', avesRouter);
-app.use('/outros', outrosRouter);
+app.use('/', homeRouter);
 app.use('/politicas', politicasRouter);
-app.use('/promocoes', promocoesRouter);
 app.use('/criarConta', criarContaRouter);
 app.use('/quemsomos', quemSomosRouter);
 app.use('/carrinho', carrinhoRouter);
 app.use('/acessar', acessarRouter);
+//app.use('/detalhesProduto', detalhesProdutoRouter);
 
 // CRUD
 app.use('/produtos', produtosRouter);
 
-// catch 404 and forward to error handler
+// catch 404 and forward to nerror handler
 app.use(function(req, res, next) {
   next(createError(404));
 });
