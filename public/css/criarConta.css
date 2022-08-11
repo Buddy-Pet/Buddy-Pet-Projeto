@@ -1,0 +1,343 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+header {
+	width: 100%;
+	max-height: 10rem;
+	background-color:#FFFFFF;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 20px;
+	border-bottom:solid 2px orange;
+	position: fixed;
+	z-index: 1;
+}
+header div a img {
+    max-height: 128px;
+	height: auto;
+}
+
+header .seguro img {
+	max-height: 180px;
+	max-width: 180px;
+	height: auto;
+	width: auto;
+	margin-top: 2rem;
+	margin-right: 2rem;
+}
+
+main {
+	background-color: rgb(197, 193, 193);
+	width: 100%;
+}
+
+main .container {
+	display: flex;
+	justify-content: center;
+    width: 30vw;
+    height: 190vh;
+	mask-origin: 0;
+	margin-left: 34vw;
+}
+
+main form {
+	background-color: #FFFFFF;
+	top: 12rem;
+	left: 26rem;
+    display: flex;
+    flex-direction: column;
+    width: 500vw;
+	height: 145vh;
+    justify-content: center;
+	border-radius: 1rem;
+	border: none;
+	margin-top: 35vh;
+}
+
+main form .titulo {
+	font-size: 33px;
+	color: rgb(238, 128, 2);
+	text-align: center;
+	font-weight: 300;
+    line-height: 40px;
+}
+
+main .formulario {
+    color: #3f3838;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+main .formulario input {
+    width: 30vw;
+    height: 40px;
+    left: 123px;
+    top: 294px;
+    background: #FFFFFF;
+    border: 1px solid #9B9B9B;
+	border-radius: 0.3rem;
+	font-size: 16px;
+	padding-left: 0.4rem;
+	margin-top: 0.5rem;
+	outline-color:rgb(238, 128, 2);
+	outline: 1;
+}
+
+
+main form .entrar {
+	display: flex;
+	justify-content: center;
+		
+}
+
+main form .entrar button {
+	width: 30vw;
+	height: 40px;
+	font-size: 23px;
+	color: white;
+	background-color: rgb(238, 128, 2);
+	border: none;
+	border-radius: 0.3rem;
+	cursor: pointer;
+}
+
+main form .entrar button:hover {
+	background-color: rgb(197, 109, 9);
+}
+
+main .termos {
+    text-align: center;
+	color: #686060;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+main .termos label {
+    padding-left: 0.3rem;
+   
+}
+
+main .termos a {
+    text-decoration: none;
+    color: rgb(238, 128, 2);
+}
+
+main .termos input:hover {
+    box-shadow: 0 1px 15px rgb(197, 109, 9);
+    
+}
+
+main .copy {
+	position: relative;
+	bottom: 2.5rem;
+	right: 10px;
+	font-size: 16px;
+	color: rgb(58, 52, 52);
+	text-align: center;
+	font-weight: 100;
+    
+}
+
+@media screen and (max-width: 1024px){
+	header {
+		width: 100%;
+	}
+
+	header .logo img {
+		display: block;
+		max-height: 100px;
+	}
+
+	header .seguro img {
+		position: relative;
+		bottom: 0.6rem;
+		max-height: 60px;
+	}
+	main {
+		max-height: 220vh;
+		height: auto;
+	}
+	
+	main form {
+		height: 95%;
+		max-width: 150%;
+		width: auto;
+	}
+
+	main .titulo {
+		margin-bottom: 2rem;
+	}
+
+	main form .entrar button {
+		margin-top: 2rem;
+		width: 35vw;
+	}
+
+	main .formulario input {
+		display: flex;
+		flex-direction: column;
+		width: 35vw;
+	}
+
+	main .copy {
+		margin-left: 2rem;
+		margin-top: 20vh;
+	}
+	
+
+	
+}
+
+@media screen and (max-width: 900px){
+	header .logo img {
+		display: block;
+		max-height: 95px;
+	}
+
+	main {
+		max-height: 220vh;
+		height: auto;
+	}
+	
+	main form {
+		height: 95%;
+		max-width: 150%;
+		width: auto;
+	}
+
+	main form .entrar button {
+		width: 34vw;
+	}
+
+	main .formulario input {
+		display: flex;
+		flex-direction: column;
+		width: 34vw;
+	}
+
+	main .copy {
+		margin-left: 2rem;
+		margin-top: 20vh;
+	}
+	
+
+}
+
+@media screen and (max-width: 800px){
+	main {
+		max-height: 220vh;
+		height: auto;
+	}
+	
+	main form {
+		height: 95%;
+		max-width: 180%;
+		width: auto;
+	}
+
+	main form .entrar button {
+		width: 40vw;
+	}
+
+	main .formulario input {
+		display: flex;
+		flex-direction: column;
+		width: 40vw;
+	}
+
+	main .copy {
+		margin-left: 2rem;
+		margin-top: 20vh;
+	}
+
+}
+
+@media screen and (max-width: 700px){
+	header .logo img {
+		display: block;
+		max-height: 90px;
+	}
+
+	main {
+		height: 240vh;
+	}
+	
+	main form {
+		height: 90%;
+		max-width: 200%;
+		width: auto;
+	}
+
+	main form .entrar button {
+		width: 46vw;
+	}
+
+	main .formulario input {
+		display: flex;
+		flex-direction: column;
+		width: 46vw;
+	}
+
+	main .copy {
+		position: relative;
+		margin-left: 2rem;
+		top: 1rem;
+	}
+
+	
+}
+
+@media screen and (max-width: 600px){
+	header .seguro img {
+		position: relative;
+		max-height: 50px;
+		bottom: 0.8rem;
+	}
+
+	header .logo img {
+		display: block;
+		max-height: 85px;
+	}
+
+	main {
+		max-height: 220vh;
+	}
+	
+	main form {
+		height: 90%;
+		max-width: 230%;
+		width: auto;
+	}
+
+	main form .entrar button {
+		width: 50vw;
+	}
+
+	main .formulario input {
+		display: flex;
+		flex-direction: column;
+		width: 50vw;
+	}
+
+	main .copy {
+		margin-left: 2rem;
+		margin-top: 7rem;
+	}
+
+}
+
