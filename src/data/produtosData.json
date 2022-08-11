@@ -1,160 +1,182 @@
 [
     {
-        "nome": "Petisco",
-        "preco": 12,
-        "descricao": "adulto",
+        "nome": "Petisco KelDog",
+        "preco": 6,
+        "descricao": "Costelinha - 70g",
         "categoria": "cachorros",
+        "tipoProduto": "petisco",
+        "id": 1,
+        "imagem": "https://static.petz.com.br/fotos/1447781821012.jpg"
+    },
+    {
+        "nome": "Petisco Whiskas",
+        "preco": 12,
+        "descricao": "Gatos Adultos 40 g",
+        "categoria": "gatos",
+        "tipoProduto": "petisco",
         "id": 2,
-        "imagem": "https://static.petz.com.br/novaLoja/images/home/golden.jpg"
+        "imagem": "https://static.petz.com.br/fotos/1599136729044.jpg"
     },
     {
         "nome": "Ração Golden",
-        "preco": 140,
-        "descricao": "Premium Especial - 14Kg",
+        "preco": 170,
+        "descricao": "Frango e Arroz - 15kg",
         "categoria": "cachorros",
+        "tipoProduto": "racao",
         "id": 3,
-        "imagem": "https://static.petz.com.br/novaLoja/images/home/royal.jpg"
+        "imagem": "https://static.petz.com.br/fotos/1658421127153.jpg"
     },
     {
-        "nome": "Ração para Gatos",
-        "preco": 120,
-        "descricao": "Premium Especial - 14Kg",
+        "nome": "Ração Premier",
+        "preco": 30,
+        "descricao": "Sabor Salmão",
         "categoria": "gatos",
+        "tipoProduto": "racao",
         "id": 4,
-        "imagem": "https://static.petz.com.br/novaLoja/images/home/royal.jpg"
+        "imagem": "https://static.petz.com.br/fotos/1656341614080.jpg"
     },
     {
-        "nome": "Ração para Aves",
-        "preco": 20,
-        "descricao": "Premium Especial - 14Kg",
-        "categoria": "aves",
+        "nome": "Areia Higiênica",
+        "preco": 35,
+        "descricao": "Pipicat Classic para Gatos",
+        "categoria": "gatos",
+        "tipoProduto": "areia",
         "id": 5,
-        "imagem": "https://static.petz.com.br/novaLoja/images/home/royal.jpg"
+        "imagem": "https://static.petz.com.br/fotos/1618514739796.jpg"
     },
     {
-        "nome": "Ração para Roedores",
+        "nome": "Ração Nutrópica",
         "preco": 30,
-        "descricao": "Premium Especial - 14Kg",
-        "categoria": "outros",
+        "descricao": "Calopsita",
+        "categoria": "aves",
+        "tipoProduto": "racao",
         "id": 6,
-        "imagem": "https://static.petz.com.br/novaLoja/images/home/royal.jpg"
+        "imagem": "https://static.petz.com.br/fotos/1552672478326.jpg"
     },
     {
-        "nome": "Oferta do dia",
-        "preco": 60,
-        "descricao": "Premium Especial - 14Kg",
-        "categoria": "promocoes",
-        "id": 7,
-        "imagem": "https://static.petz.com.br/novaLoja/images/home/royal.jpg"
-    },
-    {
-        "nome": "Oferta do dia",
-        "preco": 40,
-        "descricao": "Premium Especial - 14Kg",
-        "categoria": "promocoes",
-        "id": 8,
-        "imagem": "https://static.petz.com.br/novaLoja/images/home/royal.jpg"
-    },
-    {
-        "nome": "Oferta do dia",
+        "nome": "Ração Megazoo",
         "preco": 30,
-        "descricao": "Premium Especial - 14Kg",
-        "categoria": "promocoes",
-        "id": 9,
-        "imagem": "https://static.petz.com.br/novaLoja/images/home/royal.jpg"
+        "descricao": "Hamsters",
+        "categoria": "outros",
+        "tipoProduto": "racao",
+        "id": 7,
+        "imagem": "https://static.petz.com.br/fotos/1490381963261.jpg"
     },
     {
-        "nome": "Ração Atakama ",
-        "preco": "185",
-        "descricao": "Ração filhote de 14kg.",
+        "nome": "Eliminador de Odor",
+        "preco": 48,
+        "descricao": "Tira Cheiro Spray 500m",
+        "categoria": "promocoes",
+        "tipoProduto": "acessorios",
+        "id": 8,
+        "imagem": "https://static.petz.com.br/fotos/1608057554730.jpg"
+    },
+    {
+        "nome": "Kit Higiênico",
+        "preco": 35,
+        "descricao": "3 Peças Azul para Gatos",
+        "categoria": "promocoes",
+        "tipoProduto": "acessorios",
+        "id": 9,
+        "imagem": "https://static.petz.com.br/fotos/1623420928581.jpg"
+    },
+    {
+        "nome": "Kit Higiênico",
+        "preco": 35,
+        "descricao": "3 Peças Rosa para Gatos",
+        "categoria": "promocoes",
+        "tipoProduto": "acessorios",
+        "id": 10,
+        "imagem": "https://static.petz.com.br/fotos/1623421393285.jpg"
+    },
+    {
+        "nome": "Ração Atakama",
+        "preco": 185,
+        "descricao": "Sabor Carne e Frango",
         "categoria": "cachorros",
         "tipoProduto": "racoes",
-        "id": 10,
-        "imagem": "https://static.petz.com.br/novaLoja/images/home/royal.jpg"
+        "id": 11,
+        "imagem": "https://static.petz.com.br/fotos/1643730857309.jpg"
     },
     {
         "nome": "Snack Petitos",
-        "preco": "39,99",
+        "preco": 40,
         "descricao": "Snack Petitos Para Cães Bifinho Sabor Carne.",
         "categoria": "cachorros",
         "tipoProduto": "petisco",
-        "id": 11,
+        "id": 12,
         "imagem": "https://static.petz.com.br/fotos/1463876864214.jpg"
     },
     {
         "nome": "Bifinho Keldog",
-        "preco": "22,00",
+        "preco": 22,
         "descricao": "Bifinho KelDog para Cães Adultos Sabor Churrasco",
         "categoria": "cachorros",
         "tipoProduto": "petisco",
-        "id": 12,
+        "id": 13,
         "imagem": "https://static.petz.com.br/fotos/10003280000005-1.jpg"
     },
     {
         "nome": "Macaco de Pelúcia",
-        "preco": "31,00",
+        "preco": 31,
         "descricao": "Macaco Chalesco Brinquedo Para Cães Pelúcia Marrom",
         "categoria": "cachorros",
         "tipoProduto": "brinquedo",
-        "id": 13,
+        "id": 14,
         "imagem": "https://static.petz.com.br/fotos/1531491431642.jpg"
     },
     {
         "nome": "Mordedor Ossinho",
-        "preco": "30,00",
+        "preco": 30,
         "descricao": "Mordedor Ossinho Petz P - Cores Sortidas",
         "categoria": "gatos",
         "tipoProduto": "brinquedo",
-        "id": 14,
+        "id": 15,
         "imagem": "https://static.petz.com.br/fotos/1608211837627.jpg"
     },
     {
         "nome": "Casaco moletom",
-        "preco": "89,99",
+        "preco": 90,
         "descricao": "Casaco de Moletom Urban Puppy com Capuz Cinza Mesclado para Cães e Gatos",
         "categoria": "gatos",
         "tipoProduto": "roupa",
-        "id": 15,
+        "id": 16,
         "imagem": "https://static.petz.com.br/fotos/1585760763219_mini.jpg"
     },
-
-
-
-
     {
         "nome": "Guia Retrátil",
-        "preco": "48,99",
+        "preco": 48,
         "descricao": "Guia Retrátil Chalesco para Cães - Cores Sortidas",
         "categoria": "cachorros",
         "tipoProduto": "guias e coleiras",
-        "id": 16,
+        "id": 17,
         "imagem": "https://static.petz.com.br/fotos/1623179760584.jpg"
     },
     {
         "nome": "Peitoral e Guia",
-        "preco": "111,00",
+        "preco": 111,
         "descricao": "Peitoral e Guia Toh Neoprene Eclipse para Cães",
         "categoria": "cachorros",
         "tipoProduto": "guias e coleiras",
-        "id": 17,
+        "id": 18,
         "imagem": "https://static.petz.com.br/fotos/1588261136736.jpg"
     },
     {
         "nome": "Bandana",
-        "preco": "9,00",
+        "preco": 9,
         "descricao": "Bandana Modernpet Festa Junina Estampada Verde para Cães",
         "categoria": "cachorros",
         "tipoProduto": "roupas",
-        "id": 18,
+        "id": 19,
         "imagem": "https://static.petz.com.br/fotos/1648739434485.jpg"
     },
     {
         "nome": "Antipulga",
-        "preco": "92,00",
+        "preco": 92,
         "descricao": "Antipulgas e Carrapatos NexGard para Cães de 4,1 a 10kg",
         "categoria": "cachorros",
         "tipoProduto": "farmacia",
-        "id": 19,
+        "id": 20,
         "imagem": "https://static.petz.com.br/fotos/1442780273728.jpg"
     }
 ]

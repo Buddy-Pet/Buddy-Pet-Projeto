@@ -3,10 +3,10 @@ const produtosController = require('../controller/produtosController');
 const router = express.Router();
 
 /*** CREATE ONE PRODUCT ***/
-router.get('/criar', produtosController.criarProdutos);
+router.get('/criar', produtosController.create);
 
 /*** EDIT ONE PRODUCT ***/
-router.get('/editar/:id', produtosController.show);
+router.get('/editar/:id', produtosController.edit);
 router.put('/editar/:id', produtosController.update);
 
 router.get('/detalhesProduto/:id', produtosController.show);

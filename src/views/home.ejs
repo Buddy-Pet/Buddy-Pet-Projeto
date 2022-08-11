@@ -3,7 +3,7 @@
 
 <!-- ========================HEAD========================HEAD=============================== -->
   
-<%- include('partials/head',{links:['header','index','footer','animation']}) %>
+<%- include('partials/head',{links:['header','home','footer','animation']}) %>
 
 <!-- ========================BODDY========================BODDY============================== -->
 
@@ -36,14 +36,14 @@
       <div class="ofertas"><h1>Mais ofertas imperdíveis</h1></div>
       <div class="imagens">
         <% ofertas.forEach(produto => { %>
-          <button type="submit"><a href=""><img src="<%= produto.imagem %>" alt=""><p><%= produto.nome %></p><%= produto.preco %> </button></a>
+          <button type="submit"><a href=""><img src="<%= produto.imagem %>" alt=""><p><%= produto.nome %></p></button></a>
         <% }) %>
       </div>
       
       <div class="vendidos"><h1>Os mais vendidos</h1></div>
-      <div class="ícones">
+      <div class="icones">
         <% maisVendidos.forEach(produto => { %>
-          <button type="submit"><a href=""><img src="<%= produto.imagem %>" alt=""><p><%= produto.nome %><p><%= produto.preco %></p></p></button></a>
+          <button type="submit"><a href=""><img src="<%= produto.imagem %>" alt=""><p><%= produto.nome %></p></button></a>
         <% }) %>
       </div>
     </section>
