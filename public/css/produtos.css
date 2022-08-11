@@ -104,8 +104,7 @@ main {
   .imagens button a img{
   height: 150px;
   width: 150px;
-  
-  }
+}
   
   .imagens button p {
   display: flex;

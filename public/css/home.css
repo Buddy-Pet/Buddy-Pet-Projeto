@@ -8,7 +8,7 @@
 /*-----------------------MAIN----------------------------------*/
 
 main {
-height: 250vh;
+height: 150vh;
 width: 100%;
 border: 15px solid #FFFFFF;
 box-shadow: 0px 1px 20px rgba(159, 159, 159, 0.65);
@@ -97,6 +97,7 @@ display: flex;
 justify-content: flex-start;
 color:#777777;
 font-size: 17px;
+padding-top: 1.5rem;
 padding-bottom: 1.5rem;
 }
 
@@ -127,6 +128,11 @@ border-radius: 0.5em;
 text-decoration: none;
 }
 
+.imagens button a img{
+  height: 150px;
+  width: 150px;  
+}
+
 .imagens button p {
 display: flex;
 align-self: flex-end;
@@ -145,10 +151,11 @@ display: flex;
 justify-content: flex-start;
 color:#777777;
 font-size: 18px;
+padding-top: 1.5rem;
 padding-bottom: 1.5rem;
 }
 
-.ícones {
+.icones {
 display: flex;
 flex-wrap: wrap;
 list-style: none;
@@ -159,7 +166,7 @@ height: 260px;
 padding-bottom: 1.5rem;
 }
 
-.ícones button {
+.icones button {
 display: block;
 font-family:'Times New Roman', Times, serif;
 padding: 1rem;
@@ -171,11 +178,16 @@ border: 1.9px solid rgb(231, 226, 226);
 border-radius: 0.5em;
 }
 
-.ícones button a {
+.icones button a {
 text-decoration: none;
 }
 
-.ícones button p {
+.icones button a img{
+  height: 150px;
+  width: 150px;  
+}
+
+.icones button p {
 display: flex;
 align-self: flex-end;
 justify-content: center;
@@ -184,7 +196,7 @@ color:#777777;
 padding-top: 1.4rem;
 }
 
-.ícones button:hover {
+.icones button:hover {
 border: solid 1px orange;
 }
 
