@@ -36,7 +36,7 @@ module.exports = {
 		}
 		
 		// res.send(produtos);
-		res.render('produtos', { ...detalhesPagina[category], produtos: produtos })
+		res.render('produtos', { ...detalhesPagina[category], produtos })
 	},
 
 	create(req, res){
@@ -55,7 +55,7 @@ module.exports = {
 		const { id } = req.params;
 		const produto = produtosModel.findById(id);
 
-		res.render('detalhesProduto',{title: 'Detalhes do Produto', produto});
+		res.render('detalhesProduto',{ title: 'Detalhes do Produto', produto });
 	},
 
 	store(req, res){
