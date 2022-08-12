@@ -178,5 +178,14 @@
         "tipoProduto": "farmacia",
         "id": 20,
         "imagem": "https://static.petz.com.br/fotos/1442780273728.jpg"
+    },
+    {
+        "nome": "Royal Canin Maxi ",
+        "preco": "185",
+        "descricao": "Filhote",
+        "categoria": "cachorros",
+        "tipoProduto": "racoes",
+        "imagem": "16603267215811660162896325.webp",
+        "id": 21
     }
 ]

@@ -16,7 +16,7 @@
     <!-- ==========================MAIN============================MAIN========================== -->
     
     <h1>Cadastrar Produto</h1>
-    <form action="/produtos" method="POST">
+    <form action="/produtos/criar" method="POST" enctype="multipart/form-data">
         <label for="secao-produto">Qual é a Seção do Produto?</label>
         <br>
         <select name="categoria" id="secao-produto">
@@ -31,10 +31,10 @@
         <br>
         <select name="tipoProduto" id="tipo-produto">
             <option selected disabled>Selecione o tipo de Produto</option>
-            <option value="racoes">Rações</option>
-            <option value="remedios">Remédios</option>
-            <option value="vacinas">Vacinas</option>
-            <option value="casinhas">Casinhas</option>
+            <option value="racoes">Ração</option>
+            <option value="remedios">Petiscos</option>
+            <option value="vacinas">Acessórios</option>
+            <option value="casinhas">Coleira</option>
         </select>
         <br>
         <br>
@@ -55,7 +55,7 @@
         <br>
         <label for="imagem-produto">Anexe uma imagem do Produto:</label>
         <br>
-        <input type="file" name="imagem" accept=".jpg">
+        <input type="file" name="imagem" id="image">
         <br>
         <br>
         <button type="reset">Limpar Campos</button>

@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Editar Produto</h1>
-    <form action="/produtos/editar/<%= produto.id %>?_method=PUT" method="POST">
+    <form action="/produtos/editar/<%= produto.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
         <label for="secao-produto">Qual é a Seção do Produto?</label>
         <br>
         <select name="categoria" id="secao-produto">
@@ -53,7 +53,7 @@
         <br>
         <label for="editar-imagem-produto">Anexe uma nova imagem do Produto:</label>
         <br>
-        <input type="file" name="imagem" accept=".jpg">
+        <input type="file" name="imagem">
         <br>
         <br>
         <button type="reset">Limpar Campos</button>
