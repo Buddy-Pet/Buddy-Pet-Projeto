@@ -8,52 +8,34 @@
 <body>
     <h1>Editar Produto</h1>
     <form action="/produtos/editar/<%= produto.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
-        <label for="secao-produto">Qual é a Seção do Produto?</label>
+        <label for="categoria">Editar a categoria do produto:</label>
         <br>
-        <select name="categoria" id="secao-produto">
-            <option selected disabled>Selecione a Seção</option>
-            <option value="cachorros">Cachorros</option>
-            <option value="gatos">Gatos</option>
-            <option value="aves">Aves</option>
-        </select>
+        <input type="text" id="categoria" name="categoria" value="<%= produto.categoria %>" placeholder="Digite a categoria do Produto" required>
         <br>
         <br>
-        <label for="tipo-produto">Tipo de Produto:</label>
+        <label for="tipoProduto">Editar o tipo do produto:</label>
         <br>
-        <select name="tipoProduto" id="tipo-produto">
-            <option selected disabled>Selecione o tipo de Produto</option>
-            <option value="racoes">Rações</option>
-            <option value="remedios">Remédios</option>
-            <option value="vacinas">Vacinas</option>
-            <option value="casinhas">Casinhas</option>
-        </select>
+        <input type="text" id="tipoProduto" name="tipoProduto" value="<%= produto.tipoProduto %>" placeholder="Digite o tipo do Produto" required>
         <br>
         <br>
-        <label for="buscar-produto">Buscar Produto:</label>
+        <label for="nome">Editar o nome do produto:</label>
         <br>
-        <select name="buscar-produto" id="tipo-produto">
-            <option selected disabled>Selecione o Produto</option>
-        </select>
+        <input type="text" id="nome" name="nome" value="<%= produto.nome %>" placeholder="Digite o nome do Produto" required>
         <br>
         <br>
-        <label for="editar-nome-produto">Editar Nome do Produto:</label>
+        <label for="preco">Editar o preço do produto:</label>
         <br>
-        <input type="text" id="editar-nome-produto" name="nome" placeholder="Digite o novo nome do Produto" required>
-        <br>
-        <br>
-        <label for="editar-preco-produto">Editar Preço do Produto:</label>
-        <br>
-        <input type="number" id="editar-preco-produto" name="preco" placeholder="Digite o novo preço do Produto" required>
+        <input type="number" id="preco" name="preco" value="<%= produto.preco %>" placeholder="Digite o preço do Produto" required>
         <br>
         <br>
-        <label for="editar-descricao-produto">Editar Descrição do Produto:</label>
+        <label for="descricao">Editar a descrição do produto:</label>
         <br>
-        <textarea name="descricao" id="editar-descricao-produto" cols="30" rows="10"></textarea>
+        <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
         <br>
         <br>
-        <label for="editar-imagem-produto">Anexe uma nova imagem do Produto:</label>
+        <label for="imagem">Anexe uma nova imagem do produto:</label>
         <br>
-        <input type="file" name="imagem">
+        <input type="file" name="imagem" value="<%= produto.imagem %>">
         <br>
         <br>
         <button type="reset">Limpar Campos</button>
