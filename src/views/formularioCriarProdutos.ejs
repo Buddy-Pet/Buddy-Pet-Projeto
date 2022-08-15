@@ -17,45 +17,50 @@
     
     <h1>Cadastrar Produto</h1>
     <form action="/produtos/criar" method="POST" enctype="multipart/form-data">
-        <label for="secao-produto">Qual é a Seção do Produto?</label>
+        <label for="categoria">Editar a categoria do produto:</label>
         <br>
         <select name="categoria" id="secao-produto">
             <option selected disabled>Selecione a Seção</option>
-            <option value="cachorros">Cachorros</option>
-            <option value="gatos">Gatos</option>
-            <option value="aves">Aves</option>
+            <option>Cachorros</option>
+            <option>Gatos</option>
+            <option>Aves</option>
+            <option>Outros</option>
+            <option>Promoções</option>
         </select>
         <br>
         <br>
-        <label for="tipo-produto">Tipo de Produto:</label>
+        <label for="tipoProduto">Editar o tipo do produto:</label>
         <br>
         <select name="tipoProduto" id="tipo-produto">
             <option selected disabled>Selecione o tipo de Produto</option>
-            <option value="racoes">Ração</option>
-            <option value="remedios">Petiscos</option>
-            <option value="vacinas">Acessórios</option>
-            <option value="casinhas">Coleira</option>
+            <option>Ração</option>
+            <option>Petiscos</option>
+            <option>Remédios</option>
+            <option>Coleiras</option>
+            <option>Brinquedos</option>
+            <option>Casinhas</option>
+            <option>Acessórios</option>
         </select>
         <br>
         <br>
-        <label for="nome-produto">Nome do Produto:</label>
+        <label for="nome">Editar o nome do produto:</label>
         <br>
-        <input type="text" id="nome-produto" name="nome" placeholder="Digite o nome do Produto" required>
-        <br>
-        <br>
-        <label for="preco-produto">Preço do Produto:</label>
-        <br>
-        <input type="text" id="preco-produto" name="preco" placeholder="Digite o preço do Produto" required>
+        <input type="text" id="nome" name="nome" placeholder="Digite o nome do Produto" required>
         <br>
         <br>
-        <label for="descricao-produto">Descrição do Produto:</label>
+        <label for="preco">Editar o preço do produto:</label>
         <br>
-        <textarea name="descricao" id="descricao-produto" cols="30" rows="10"></textarea>
+        <input type="number" id="preco" name="preco" placeholder="Digite o preço do Produto" required>
         <br>
         <br>
-        <label for="imagem-produto">Anexe uma imagem do Produto:</label>
+        <label for="descricao">Editar a descrição do produto:</label>
         <br>
-        <input type="file" name="imagem" id="image">
+        <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+        <br>
+        <br>
+        <label for="imagem">Anexe uma imagem do produto:</label>
+        <br>
+        <input type="file" name="imagem">
         <br>
         <br>
         <button type="reset">Limpar Campos</button>
