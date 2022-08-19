@@ -3,7 +3,7 @@
 
 <!-- ========================HEAD==============================HEAD======================== -->
   
-<%- include('partials/head',{links:['header','detalhes.Produto','footer']}) %>
+<%- include('partials/head',{links:['header','detalhesProduto','footer']}) %>
 
 <!-- ========================BODDY=============================BODDY======================== -->
 
@@ -24,7 +24,7 @@
 
   <div class="informacao">
     <h2><%= produto.nome %></h2>
-    <p><% produto.descricao %></p>
+    <p><%= produto.descricao %></p>
   </div>
 
     <section class="content">

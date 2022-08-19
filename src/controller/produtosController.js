@@ -25,14 +25,14 @@ const detalhesPagina = {
 
 module.exports = {
 	index(req, res) {
-		const { category } = req.query;
+		const { category, tipoProduto } = req.params;
 
 		let produtos;
 
-		if (category) {
-			produtos = produtosModel.findByCategory(category);
-		} else {
-			produtos = produtosModel.findAll();
+		produtos = produtosModel.findByCategory(category);
+
+		if (tipoProduto) {
+			produtos = produtos.filter(produto => produto.tipoProduto == tipoProduto)
 		}
 
 		// res.send(produtos);

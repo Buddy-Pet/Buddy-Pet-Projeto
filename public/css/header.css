@@ -111,7 +111,7 @@ header div a img {
 	display: none;
 }
 
-.container {
+nav .container {
 	display: flex;
 	width: 100%;
 	margin-right: 2rem;
