@@ -5,15 +5,6 @@
   font-family: Oxygen;
 }
 
-/*main{
-  height: 100vh;
-  width: 100%;
-  min-height: 150vh;
-  display: flex;
-  position: relative;
-  z-index: 2;
-}*/
-
 main *{
   font-family: 'Roboto', sans-serif;
 
