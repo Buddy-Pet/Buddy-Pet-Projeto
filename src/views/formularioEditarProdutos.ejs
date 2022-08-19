@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">.
-    <title>Buddy Pet - Editar Produto</title>
-</head>
+<!-- ========================HEAD=============================HEAD============================= -->
+  
+<%- include('partials/head',{links:['header',/*'criarProdutos'*/]}) %>
+
+<!-- ============================BODDY========================BODDY============================= -->
+
 <body>
+
+    <!-- ========================HEADER========================HEADER======================== -->
+
+    <%- include("partials/header2") %>
+  
+    <!-- ==========================MAIN============================MAIN========================== -->
+
     <h1>Editar Produto</h1>
     <form action="/produtos/editar/<%= produto.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
         <label for="categoria">Editar a categoria do produto:</label>
@@ -43,5 +51,8 @@
         <br>
         <button type="submit">Salvar Edição</button>
     </form>
+
+    <div class="copy"><p>Copyright© 2022 Buddy Pet Corporated - Todos os direitos reservados</p></div>
+    
 </body>
 </html>

@@ -29,10 +29,6 @@ router.get('/detalhesProduto/:id', produtosController.show);
 
 router.get('/', produtosController.index);
 
-//router.post('/', upload.single('imagem'), produtosController.store);
-
-//router.put('/:id', produtosController.update);
-
 router.delete('/:id', produtosController.delete);
 
 module.exports = router;
