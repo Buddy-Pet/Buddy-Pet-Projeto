@@ -3,7 +3,7 @@
 
 <!-- ========================HEAD=============================HEAD============================== -->
   
-<%- include('partials/head',{links:['header2',/*'criarProdutos'*/]}) %>
+<%- include('partials/head',{links:['header2','criarProdutos']}) %>
 
 <!-- ============================BODDY========================BODDY============================= -->
 
@@ -14,62 +14,65 @@
     <%- include("partials/header2") %>
   
     <!-- ==========================MAIN============================MAIN========================== -->
-    
-    <h1>Cadastrar Produto</h1>
-    <form action="/produtos/criar" method="POST" enctype="multipart/form-data">
-        <label for="categoria">Editar a categoria do produto:</label>
-        <br>
-        <select name="categoria" id="secao-produto">
-            <option selected disabled>Selecione a Seção</option>
-            <option value="cachorros">Cachorros</option>
-            <option value="gatos">Gatos</option>
-            <option value="aves">Aves</option>
-            <option value="outros">Outros</option>
-            <option value="promocoes">Promoções</option>
-        </select>
-        <br>
-        <br>
-        <label for="tipoProduto">Editar o tipo do produto:</label>
-        <br>
-        <select name="tipoProduto" id="tipo-produto">
-            <option selected disabled>Selecione o tipo de Produto</option>
-            <option value="racoes">Rações</option>
-            <option value="petiscos">Petiscos</option>
-            <option value="remedios">Remédios</option>
-            <option value="coleiras">Coleiras</option>
-            <option value="brinquedos">Brinquedos</option>
-            <option value="casinhas">Casinhas</option>
-            <option value="acessorios">Acessórios</option>
-        </select>
-        <br>
-        <br>
-        <label for="nome">Editar o nome do produto:</label>
-        <br>
-        <input type="text" id="nome" name="nome" placeholder="Digite o nome do Produto" required>
-        <br>
-        <br>
-        <label for="preco">Editar o preço do produto:</label>
-        <br>
-        <input type="number" id="preco" name="preco" placeholder="Digite o preço do Produto" required>
-        <br>
-        <br>
-        <label for="descricao">Editar a descrição do produto:</label>
-        <br>
-        <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
-        <br>
-        <br>
-        <label for="imagem">Anexe uma imagem do produto:</label>
-        <br>
-        <input type="file" name="imagem">
-        <br>
-        <br>
-        <button type="reset">Limpar Campos</button>
-        <br>
-        <br>
-        <button type="submit">Cadastrar Produto</button>
-    </form>
+    <section class="formulario">
+        <h1>Cadastrar Produto</h1>
+        <form action="/produtos/criar" method="POST" enctype="multipart/form-data">
+            <label for="categoria">Criar a categoria do produto:</label>
+            <br>
+            <select name="categoria" id="secao-produto">
+                <option selected disabled>Selecione a Seção</option>
+                <option value="cachorros">Cachorros</option>
+                <option value="gatos">Gatos</option>
+                <option value="aves">Aves</option>
+                <option value="outros">Outros</option>
+                <option value="promocoes">Promoções</option>
+            </select>
+            <br>
+            <br>
+            <label for="tipoProduto">Criar o tipo do produto:</label>
+            <br>
+            <select name="tipoProduto" id="tipo-produto">
+                <option selected disabled>Selecione o tipo de Produto</option>
+                <option value="racoes">Rações</option>
+                <option value="petiscos">Petiscos</option>
+                <option value="remedios">Remédios</option>
+                <option value="coleiras">Coleiras</option>
+                <option value="brinquedos">Brinquedos</option>
+                <option value="casinhas">Casinhas</option>
+                <option value="acessorios">Acessórios</option>
+            </select>
+            <br>
+            <br>
+            <label for="nome">Criar o nome do produto:</label>
+            <br>
+            <input type="text" id="nome" name="nome" placeholder="Digite o nome do Produto" required>
+            <br>
+            <br>
+            <label for="preco">Criar o preço do produto:</label>
+            <br>
+            <input type="number" id="preco" name="preco" placeholder="Digite o preço do Produto" required>
+            <br>
+            <br>
+            <label for="descricao">Criar a descrição do produto:</label>
+            <br>
+            <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+            <br>
+            <br>
+            <label for="imagem">Anexe uma imagem do produto:</label>
+            <br>
+            <input type="file" name="imagem">
+            <br>
+            <br>
+            <button type="reset">Limpar Campos</button>
+            <br>
+            <br>
+            <button type="submit">Cadastrar Produto</button>
+        </form>
 
-    <div class="copy"><p>Copyright© 2022 Buddy Pet Corporated - Todos os direitos reservados</p></div>
+        <div class="copy"><p>Copyright© 2022 Buddy Pet Corporated - Todos os direitos reservados</p></div>
+    </section>
+
+    
     
 </body>
 </html>
