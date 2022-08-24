@@ -27,11 +27,7 @@ router.put('/editar/:id', upload.single('imagem'), produtosController.update);
 
 router.get('/detalhesProduto/:id', produtosController.show);
 
-router.get('/', produtosController.index);
-
-//router.post('/', upload.single('imagem'), produtosController.store);
-
-//router.put('/:id', produtosController.update);
+router.get('/:category/:tipoProduto?', produtosController.index);
 
 router.delete('/:id', produtosController.delete);
 

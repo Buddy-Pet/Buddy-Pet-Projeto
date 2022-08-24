@@ -18,7 +18,7 @@ header {
 	justify-content: space-between;
 	padding-left: 20px;
 	border-bottom:solid 2px orange;
-	position: fixed;
+	/*position: fixed;*/
 	z-index: 5;
 }
 
@@ -96,8 +96,6 @@ header .link {
 	border: none;
 	cursor: pointer;
 	color:#777777;
-	
-	
 }
 
 .icon_x:hover {
@@ -113,7 +111,7 @@ header div a img {
 	display: none;
 }
 
-.container {
+nav .container {
 	display: flex;
 	width: 100%;
 	margin-right: 2rem;
@@ -138,8 +136,6 @@ font-size: 1.2em;
 border-radius: 0.2em;
 border: none;
 padding: 0.1em;
-
-
 }
 
 form button {
@@ -235,7 +231,7 @@ header #icon {
 		max-width: 50vw;
 		width: auto;
 		padding: 1em;
-		animation-duration: 1s;
+		transition: all 1s ease-in-out;
 		right: -100vw;
 		box-shadow: 0px 1px 20px rgba(159, 159, 159, 0.65);
 	}
@@ -360,7 +356,7 @@ header #icon {
 
 	.logo img{
 		margin-top: 1rem;
-		max-height: 72px;
+		height: 72px;
 	}
 
 	.btn_icon_header {
@@ -369,3 +365,4 @@ header #icon {
 	}
 
 }
+

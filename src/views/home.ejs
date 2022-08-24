@@ -2,58 +2,86 @@
 <html lang="pt-br">
 
 <!-- ========================HEAD========================HEAD=============================== -->
-  
+
 <%- include('partials/head',{links:['header','home','footer','animation']}) %>
 
-<!-- ========================BODDY========================BODDY============================== -->
+  <!-- ========================BODDY========================BODDY============================== -->
 
-<body>
+  <body>
 
-  <!-- ========================HEADER========================HEADER======================== -->
+    <!-- ========================HEADER========================HEADER======================== -->
 
-  <%- include('partials/header') %>
+    <%- include('partials/header') %>
 
-  <!-- ==========================MAIN============================MAIN========================== -->
+      <!-- ==========================MAIN============================MAIN========================== -->
 
-  <main>
-    <section class="galery">
-      <div class="promoções">
-        <h1>Favoritos dos buddypets com até 40% OFF</h1>
-        <i class="fa-solid fa-heart"></i>
-      </div>
-      
-      <!-- ==========================BANNER============================BANNER========================== -->
+      <main>
+        <section class="galery">
+          <div class="promoções">
+            <h1>Favoritos dos buddypets com até 40% OFF</h1>
+            <i class="fa-solid fa-heart"></i>
+          </div>
 
-      <%- include('partials/banner') %>
+          <!-- ==========================BANNER============================BANNER========================== -->
 
-      <!-- ==========================BANNER============================BANNER========================== -->
+          <%- include('partials/banner') %>
 
-    </section> 
+            <!-- ==========================BANNER============================BANNER========================== -->
 
-    <!-- ==========================PRODUCTS============================PRODUCTS========================== -->
+        </section>
 
-    <section class="produtos">
-      <div class="ofertas"><h1>Mais ofertas imperdíveis</h1></div>
-      <div class="imagens">
-        <% ofertas.forEach(produto => { %>
-          <button type="submit"><a href=""><img src="<%= produto.imagem %>" alt=""><p><%= produto.nome %></p></button></a>
-        <% }) %>
-      </div>
-      
-      <div class="vendidos"><h1>Os mais vendidos</h1></div>
-      <div class="icones">
-        <% maisVendidos.forEach(produto => { %>
-          <button type="submit"><a href=""><img src="<%= produto.imagem %>" alt=""><p><%= produto.nome %></p></button></a>
-        <% }) %>
-      </div>
-    </section>
-  </main>
+        <!-- ==========================PRODUCTS============================PRODUCTS========================== -->
 
-  <!-- ========================FOOTER========================FOOTER======================== -->
+        <section class="produtos">
 
-  <%- include('partials/footer') %>
+          <div class="ofertas">
+            <h1>Mais ofertas imperdíveis</h1>
+          </div>
 
-  <!-- ========================FOOTER========================FOOTER======================== -->
+          <div class="imagens">
+            <% ofertas.forEach(produto=> { %>
+              <button type="submit"><a href="/produtos/detalhesProduto/<%= produto.id %> "><img
+                    src="/img/<%= produto.imagem %>" alt="">
+                  <p id="nome">
+                    <%= produto.nome %>
+                  </p>
+                  <p id="descricao">
+                    <%= produto.descricao %>
+                  </p>
+                  <p id="preco">
+                    R$<%= produto.preco %>,00
+                  </p></button></a>
+              <% }) %>
+          </div>
 
-</body>
+          <div class="vendidos">
+            <h1>Os mais vendidos</h1>
+          </div>
+
+          <div class="icones">
+            <% maisVendidos.forEach(produto=> { %>
+              <button type="submit"><a href="/produtos/detalhesProduto/<%= produto.id %> "><img
+                    src="/img/<%= produto.imagem %>" alt="">
+                  <p id="nome">
+                    <%= produto.nome %>
+                  </p>
+                  <p id="descricao">
+                    <%= produto.descricao %>
+                  </p>
+                  <p id="preco">
+                    R$<%= produto.preco %>,00
+                  </p></button></a>
+              <% }) %>
+          </div>
+        </section>
+      </main>
+
+      <!-- ========================FOOTER========================FOOTER======================== -->
+
+      <%- include('partials/footer') %>
+
+        <!-- ========================FOOTER========================FOOTER======================== -->
+
+  </body>
+
 </html>
