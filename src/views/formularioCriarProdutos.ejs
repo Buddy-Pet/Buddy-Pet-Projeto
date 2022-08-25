@@ -1,35 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
-<!-- ========================HEAD=============================HEAD============================== -->
-  
-<%- include('partials/head',{links:['header2',/*'criarProdutos'*/]}) %>
-
-<!-- ============================BODDY========================BODDY============================= -->
-
+<html lang="pt-BR"> 
+<%- include('partials/head',{links:['header2','formularioCriarProdutos']}) %>
+<%- include("partials/header2") %>
 <body>
-
-    <!-- ========================HEADER========================HEADER=========================== -->
-
-    <%- include("partials/header2") %>
-  
-    <!-- ==========================MAIN============================MAIN========================== -->
-    
-    <h1>Cadastrar Produto</h1>
+    <main>
     <form action="/produtos/criar" method="POST" enctype="multipart/form-data">
-        <label for="categoria">Editar a categoria do produto:</label>
+        <h1>Cadastrar Produto</h1>
+        <br>
+        <br>
+        <label label for="categoria">Qual é a Seção do Produto:</label>
         <br>
         <select name="categoria" id="secao-produto">
             <option selected disabled>Selecione a Seção</option>
             <option value="cachorros">Cachorros</option>
             <option value="gatos">Gatos</option>
             <option value="aves">Aves</option>
-            <option value="outros">Outros</option>
-            <option value="promocoes">Promoções</option>
         </select>
         <br>
         <br>
-        <label for="tipoProduto">Editar o tipo do produto:</label>
+        <label for="tipoProduto">Tipo de Produto:</label>
         <br>
         <select name="tipoProduto" id="tipo-produto">
             <option selected disabled>Selecione o tipo de Produto</option>
@@ -43,17 +32,17 @@
         </select>
         <br>
         <br>
-        <label for="nome">Editar o nome do produto:</label>
+        <label for="nome">Nome do produto:</label>
         <br>
         <input type="text" id="nome" name="nome" placeholder="Digite o nome do Produto" required>
         <br>
         <br>
-        <label for="preco">Editar o preço do produto:</label>
+        <label for="preco">Preço do Produto:</label>
         <br>
         <input type="number" id="preco" name="preco" placeholder="Digite o preço do Produto" required>
         <br>
         <br>
-        <label for="descricao">Editar a descrição do produto:</label>
+        <label for="descricao">Descrição do Produto:</label>
         <br>
         <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
         <br>
@@ -67,9 +56,10 @@
         <br>
         <br>
         <button type="submit">Cadastrar Produto</button>
+        <br>
+        <br>
+        <div class="copy"><p>Copyright© 2022 Buddy Pet Corporated - Todos os direitos reservados.</p></div>
     </form>
-
-    <div class="copy"><p>Copyright© 2022 Buddy Pet Corporated - Todos os direitos reservados</p></div>
-    
+    </main> 
 </body>
 </html>
