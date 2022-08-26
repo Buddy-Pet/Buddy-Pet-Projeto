@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #303433;
+}
+
+body {
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+main {
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    max-width: 450px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.separator {
+    width: 150px;
+    height: 4px;
+    background-color: orange;
+    margin: 24px;
+}
+
+.welcome-message {
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 28px;
+    margin-bottom: 30px;
+    color: #696969;
+}
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    width: 100%;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+    background-color: red;
+}
+
+input {
+    width: 100%;
+    padding: 14px 64px;
+    background: #e6e6e6;
+    color: #333;
+    letter-spacing: 0.5px;
+}
+
+input ~ i {
+    position: absolute;
+    left: 32px;
+    top: 34%;
+    color: #888;
+    transition: color 0.4s;
+}
+
+input:focus ~ i {
+    color: orange;
+}
+
+button.submit {
+    width: 32px auto;
+    color: black;
+    padding: 14px 64px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background: linear-gradient(to right, orange, white);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button.submit:hover {
+    background: linear-gradient(to right, orange, orange);
+    letter-spacing: 0.9px;
+}
