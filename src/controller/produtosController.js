@@ -1,5 +1,6 @@
 const { lerDados } = require("../helper/manipularDados");
 const produtosModel = require("../model/produtosModel");
+
 const detalhesPagina = {
 	aves: {
 		title: 'Aves',
