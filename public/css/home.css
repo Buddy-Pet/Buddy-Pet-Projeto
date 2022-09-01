@@ -216,3 +216,129 @@ text-decoration: none;
 border: solid 1px orange;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> dev
+@media (max-width: 600px)
+{
+  main section nav {
+    display: none;
+    list-style: none;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    height: 260px;
+    padding-bottom: 1.5rem;
+  }
+
+  .contain {
+    display: block;
+  }
+
+  .promoções {
+    display: none;
+    
+    
+    margin-left: 0px;
+  }
+
+  .ofertas {
+    display: flex;
+    justify-content: flex-start;
+    color: #777777;
+    font-size: 17px;
+    
+   }
+
+   .footer {
+    display: flex;
+
+   }
+
+   
+    .vendidos{
+      display: flex;
+      margin-top: auto;
+      margin-left: auto;
+    }
+      
+.galery{
+    width: 0px;
+    height: 0px;
+    background-color: white;
+    overflow: auto;
+   }
+   .imagens button {
+    display: flex;
+    padding: 0px;
+    padding-bottom: 0px;
+    
+}
+
+button {
+  display: flex;
+}
+
+@media (max-width: 600px)
+{
+  main section nav {
+    display: none;
+    list-style: none;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    height: 260px;
+    padding-bottom: 1.5rem;
+  }
+
+  .contain {
+    display: block;
+  }
+
+  .promoções {
+    display: none;
+    
+    
+    margin-left: 0px;
+  }
+
+  .ofertas {
+    display: flex;
+    justify-content: flex-start;
+    color: #777777;
+    font-size: 17px;
+    
+   }
+
+   .footer {
+    display: flex;
+
+   }
+
+   
+    .vendidos{
+      display: flex;
+      margin-top: auto;
+      margin-left: auto;
+    }
+      
+.galery{
+    width: 0px;
+    height: 0px;
+    background-color: white;
+    overflow: auto;
+   }
+   .imagens button {
+    display: flex;
+    padding: 0px;
+    padding-bottom: 0px;
+    
+}
+
+button {
+  display: flex;
+}
+
+}
+}
