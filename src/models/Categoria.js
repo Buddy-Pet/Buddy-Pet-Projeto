@@ -12,9 +12,9 @@ module.exports = (sequelize, dataTypes) => {
     }
 
     const config = {
-        tablename: 'categorias',
-        timestamp: true
+        tableName: 'categorias',
+        timestamps: false
     }
 
-    return sequelize.define('categorias', cols, config);
+    return sequelize.define('Categoria', cols, config);
 }
