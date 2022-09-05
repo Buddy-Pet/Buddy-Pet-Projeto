@@ -1,65 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt-BR"> 
-<%- include('partials/headCriarProdutos',{links:['header2','formularioCriarProdutos']}) %>
-<%- include("partials/header2") %>
+<html lang="pt-BR">
+<%- include('partials/headCriarProdutos',{links:['header2','criarConta']}) %>
 <body>
-    <main>
-    <form action="/produtos/criar" method="POST" enctype="multipart/form-data">
-        <h1>Cadastrar Produto</h1>
-        <br>
-        <br>
-        <label label for="categoria">Qual é a Categoria do Produto:</label>
-        <br>
-        <select name="categoria" id="secao-produto">
-            <option selected disabled>Selecione a Categoria</option>
-            <option value="cachorros">Cachorros</option>
-            <option value="gatos">Gatos</option>
-            <option value="aves">Aves</option>
-        </select>
-        <br>
-        <br>
-        <label for="tipoProduto">Tipo de Produto:</label>
-        <br>
-        <select name="tipoProduto" id="tipo-produto">
-            <option selected disabled>Selecione o tipo de Produto</option>
-            <option value="racoes">Rações</option>
-            <option value="petiscos">Petiscos</option>
-            <option value="remedios">Remédios</option>
-            <option value="coleiras">Coleiras</option>
-            <option value="brinquedos">Brinquedos</option>
-            <option value="casinhas">Casinhas</option>
-            <option value="acessorios">Acessórios</option>
-        </select>
-        <br>
-        <br>
-        <label for="nome">Nome do produto:</label>
-        <br>
-        <input type="text" id="nome" name="nome" placeholder="Digite o nome do Produto" required>
-        <br>
-        <br>
-        <label for="preco">Preço do Produto:</label>
-        <br>
-        <input type="number" id="preco" name="preco" placeholder="Digite o preço do Produto" required>
-        <br>
-        <br>
-        <label for="descricao">Descrição do Produto:</label>
-        <br>
-        <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
-        <br>
-        <br>
-        <label for="imagem">Anexe uma imagem do produto:</label>
-        <br>
-        <input type="file" name="imagem">
-        <br>
-        <br>
-        <button type="reset">Limpar Campos</button>
-        <br>
-        <br>
-        <button type="submit">Cadastrar Produto</button>
-        <br>
-        <br>
-        <div class="copy"><p>Copyright© 2022 Buddy Pet Corporated - Todos os direitos reservados.</p></div>
-    </form>
-    </main> 
+<%- include("partials/header2") %>
+    <main> 
+      <div class="container">
+        <form action="/produtos/criar" method="POST" enctype="multipart/form-data">
+          <div class="titulo">Cadastrar Produto</div>
+          <div class="formulario">
+            <label label for="categoria">Qual é a Categoria do Produto:</label>
+            <br>
+            <select name="categoria" id="secao-produto">
+                <option selected disabled>Selecione a Categoria</option>
+                <option value="cachorros">Cachorros</option>
+                <option value="gatos">Gatos</option>
+                <option value="aves">Aves</option>
+            </select>
+            <br>
+            <br>
+            <label for="tipoProduto">Tipo de Produto:</label>
+            <br>
+            <select name="tipoProduto" class="" id="tipo-produto">
+                <option selected disabled>Selecione o tipo de Produto</option>
+                <option value="racoes">Rações</option>
+                <option value="petiscos">Petiscos</option>
+                <option value="remedios">Remédios</option>
+                <option value="coleiras">Coleiras</option>
+                <option value="brinquedos">Brinquedos</option>
+                <option value="casinhas">Casinhas</option>
+                <option value="acessorios">Acessórios</option>
+            </select>
+            <br>
+            <br>
+            <label for="nome">Nome do produto:</label>
+            <br>
+            <input type="text" id="nome" name="nome" placeholder="Digite o nome do Produto" required>
+            <br>
+            <br>
+            <label for="preco">Preço do Produto:</label>
+            <br>
+            <input type="number" id="preco" name="preco" placeholder="Digite o preço do Produto" required>
+            <br>
+            <br>
+            <label for="descricao">Descrição do Produto:</label>
+            <br>
+            <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+            <br>
+            <br>
+            <label for="imagem">Anexe uma imagem do produto:</label>
+            <br>
+            <input type="file" name="imagem">
+            <br>
+            <br>
+          </div>
+          <div class="termos"><input type="checkbox" id="termos" value="termos"><label for="integral">Concordo com os <a href="">termos e condições</a></label></div>
+          <div class="entrar"><button type="submit">Cadastrar</button></div>
+        </form>
+      </div> 
+      <div class="copy">Copyright© 2022 Buddy Pet Corporated - Todos os direitos reservados</div>
+    </main>
 </body>
 </html>
