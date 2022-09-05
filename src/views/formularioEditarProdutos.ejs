@@ -1,58 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<!-- ========================HEAD=============================HEAD============================= -->
-  
-<%- include('partials/head',{links:['header2',/*'criarProdutos'*/]}) %>
-
-<!-- ============================BODDY========================BODDY============================= -->
-
+<%- include('partials/headEditarProdutos',{links:['header2','criarConta']}) %>
 <body>
-
-    <!-- ========================HEADER========================HEADER======================== -->
-
-    <%- include("partials/header2") %>
-  
-    <!-- ==========================MAIN============================MAIN========================== -->
-
-    <h1>Editar Produto</h1>
-    <form action="/produtos/editar/<%= produto.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
-        <label for="categoria">Editar a categoria do produto:</label>
-        <br>
-        <input type="text" id="categoria" name="categoria" value="<%= produto.categoria %>" placeholder="Digite a categoria do Produto" required>
-        <br>
-        <br>
-        <label for="tipoProduto">Editar o tipo do produto:</label>
-        <br>
-        <input type="text" id="tipoProduto" name="tipoProduto" value="<%= produto.tipoProduto %>" placeholder="Digite o tipo do Produto" required>
-        <br>
-        <br>
-        <label for="nome">Editar o nome do produto:</label>
-        <br>
-        <input type="text" id="nome" name="nome" value="<%= produto.nome %>" placeholder="Digite o nome do Produto" required>
-        <br>
-        <br>
-        <label for="preco">Editar o preço do produto:</label>
-        <br>
-        <input type="number" id="preco" name="preco" value="<%= produto.preco %>" placeholder="Digite o preço do Produto" required>
-        <br>
-        <br>
-        <label for="descricao">Editar a descrição do produto:</label>
-        <br>
-        <textarea name="descricao" id="descricao" cols="30" rows="10"><%= produto.descricao %></textarea>
-        <br>
-        <br>
-        <label for="imagem">Anexe uma nova imagem do produto:</label>
-        <br>
-        <input type="file" name="imagem" value="<%= produto.imagem %>">
-        <br>
-        <br>
-        <button type="reset">Limpar Campos</button>
-        <br>
-        <br>
-        <button type="submit">Salvar Edição</button>
-    </form>
-
-    <div class="copy"><p>Copyright© 2022 Buddy Pet Corporated - Todos os direitos reservados</p></div>
-    
+<%- include("partials/header2") %>
+    <main> 
+      <div class="container">
+        <form action="/produtos/editar/<%= produto.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+          <div class="titulo">Editar Produto</div>
+          <div class="formulario">
+            <label label for="categoria">Editar a Categoria do Produto:</label>
+            <br>
+            <select name="categoria" id="secao-produto">
+                <option selected disabled>Selecione a Categoria</option>
+                <option value="cachorros">Cachorros</option>
+                <option value="gatos">Gatos</option>
+                <option value="aves">Aves</option>
+            </select>
+            <br>
+            <br>
+            <label for="tipoProduto">Editar o Tipo do Produto:</label>
+            <br>
+            <select name="tipoProduto" class="" id="tipo-produto">
+                <option selected disabled>Selecione o tipo de Produto</option>
+                <option value="racoes">Rações</option>
+                <option value="petiscos">Petiscos</option>
+                <option value="remedios">Remédios</option>
+                <option value="coleiras">Coleiras</option>
+                <option value="brinquedos">Brinquedos</option>
+                <option value="casinhas">Casinhas</option>
+                <option value="acessorios">Acessórios</option>
+            </select>
+            <br>
+            <br>
+            <label for="nome">Editar o Nome do Produto:</label>
+            <br>
+            <input type="text" id="nome" name="nome" placeholder="Digite o nome do Produto" required>
+            <br>
+            <br>
+            <label for="preco">Editar o preço do produto:</label>
+            <br>
+            <input type="number" id="preco" name="preco" placeholder="Digite o preço do Produto" required>
+            <br>
+            <br>
+            <label for="descricao">Editar a Descrição do Produto:</label>
+            <br>
+            <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+            <br>
+            <br>
+            <label for="imagem">Anexe uma nova imagem do produto:</label>
+            <br>
+            <input type="file" name="imagem">
+            <br>
+            <br>
+          </div>
+          <div class="termos"><input type="checkbox" id="termos" value="termos"><label for="integral">Concordo com os <a href="">termos e condições</a></label></div>
+          <div class="entrar"><button type="submit">Salvar Edição</button></div>
+        </form>
+      </div> 
+      <div class="copy">Copyright© 2022 Buddy Pet Corporated - Todos os direitos reservados</div>
+    </main>
 </body>
 </html>

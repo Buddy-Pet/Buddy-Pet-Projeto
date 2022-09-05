@@ -7,5 +7,14 @@
         "tipoProduto": "racoes",
         "imagem": "16603267215811660162896325.webp",
         "id": 1
+    },
+    {
+        "nome": "Ração Three Dogs",
+        "preco": "179",
+        "descricao": "Carne e Arroz para Cães Adultos Raças Médias e Grandes, Sabor Frango 20kg.",
+        "categoria": "cachorros",
+        "tipoProduto": "racoes",
+        "imagem": "1662388133340813lvbmoW6L._AC_SY879_.jpg",
+        "id": 2
     }
 ]

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<%- include('partials/headLogin',{links:['header2','login']}) %>
+<%- include("partials/header2") %>
+<body>
+    <main>
+        <section class="main">
+            <div class="login-container">
+                <p class="title">Bem Vindo</p>
+                <div class="separator"></div>
+                <p class="welcome-message">
+                    Por favor, forneça a credencial de login para prosseguir e ter
+                    acesso a todos os nossos serviços.
+                </p>
+                <form class="login-form">
+                    <div class="form-control">
+                        <input type="text" placeholder="Email">
+                        <i class="fa-solid fa-user"></i> 
+                    </div>
+                    <div class="form-control">
+                        <input type="password" placeholder="Senha">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <button class="submit">Login</button>
+                </form>
+                <br>
+                <br>
+                <div class="copy"><p>Copyright© 2022 Buddy Pet Corporated - Todos os direitos reservados.</p></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
