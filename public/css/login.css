@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #303433;
 }
 
@@ -46,7 +44,7 @@ section {
 .separator {
     width: 150px;
     height: 4px;
-    background-color: orange;
+    background-color: rgb(238, 128, 2);
     margin: 24px;
 }
 
@@ -96,7 +94,7 @@ input ~ i {
 }
 
 input:focus ~ i {
-    color: orange;
+    color: rgb(238, 128, 2);
 }
 
 button.submit {
@@ -106,7 +104,7 @@ button.submit {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
-    background: linear-gradient(to right, orange, white);
+    background: linear-gradient(to right, orange, rgb(238, 128, 2));
     cursor: pointer;
     transition: all 0.3s ease;
 }
