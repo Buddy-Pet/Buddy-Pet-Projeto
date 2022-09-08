@@ -55,7 +55,9 @@ main .formulario {
     padding-right: 3rem;
 }
 
-main .formulario input {
+main .formulario input, 
+main .formulario select, 
+main .formulario textarea {
     width: 30vw;
     height: 40px;
     left: 123px;
@@ -68,6 +70,10 @@ main .formulario input {
 	margin-top: 0.5rem;
 	outline-color:rgb(238, 128, 2);
 	outline: 1;
+}
+
+main .formulario textarea {
+	height: 160px;
 }
 
 main form .entrar {
