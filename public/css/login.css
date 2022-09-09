@@ -68,6 +68,10 @@ section {
     margin-bottom: 24px;
 }
 
+.copy {
+    text-align: center;
+}
+
 input,
 button {
     border: none;

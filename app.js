@@ -15,6 +15,7 @@ const loginRouter = require('./src/routes/login');
 const categoriasRouter = require('./src/routes/categoriasRoutes');
 const tipoProdutosRouter = require('./src/routes/tipoProdutosRoutes');
 const pedidosRouter = require('./src/routes/pedidosRoutes');
+const clientesRouter = require('./src/routes/clientesRoutes');
 
 const app = express();
 
@@ -37,6 +38,7 @@ app.use('/acessar', acessarRouter);
 app.use('/login', loginRouter);
 app.use('/categorias', categoriasRouter);
 app.use('/tipoProdutos', tipoProdutosRouter);
+app.use('/clientes', clientesRouter);
 
 
 // CRUD
