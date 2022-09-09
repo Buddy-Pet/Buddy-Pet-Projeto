@@ -14,6 +14,7 @@ const produtosRouter = require('./src/routes/produtos');
 const loginRouter = require('./src/routes/login');
 const categoriasRouter = require('./src/routes/categoriasRoutes');
 const tipoProdutosRouter = require('./src/routes/tipoProdutosRoutes');
+const pedidosRouter = require('./src/routes/pedidosRoutes');
 
 const app = express();
 
