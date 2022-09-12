@@ -39,6 +39,7 @@ app.use('/login', loginRouter);
 app.use('/categorias', categoriasRouter);
 app.use('/tipoProdutos', tipoProdutosRouter);
 app.use('/clientes', clientesRouter);
+app.use('/pedidos', pedidosRouter);
 
 
 // CRUD

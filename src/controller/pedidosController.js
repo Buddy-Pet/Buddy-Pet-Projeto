@@ -1,9 +1,9 @@
-const { Pedido } = require('../models');
+const { Pedidos } = require('../models');
 
 module.exports = {
     async list (req, res) {
-        const pedidos = await Pedido.findAll();
+        const pedidos = await Pedidos.findAll();
 
-        res.render('categorias', {pedidos})
+        res.render('pedidos', {pedidos})
     }
 }
