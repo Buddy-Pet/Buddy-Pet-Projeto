@@ -37,5 +37,18 @@ module.exports = (sequelize, dataTypes) => {
 			timestamps: false
 	}
 
-	return sequelize.define('PedidosProdutos', cols, config);
+	const PedidosProdutos = sequelize.define('PedidosProdutos', cols, config);
+
+	PedidosProdutos.associate = (models) => {
+	  PedidosProdutos.belongsTo(models.Pedidos, {
+		as: 'pedidos', 
+		foreignKey: 'id_pedido'
+	  });
+	  /*PedidosProdutos.belongsTo(models.Produtos, {
+		as: 'produtos', 
+		foreignKey: 'id_produto'
+	  })*/
+	}  
+	  	
+	return PedidosProdutos
 }
