@@ -40,11 +40,8 @@ app.use('/login', loginRouter);
 app.use('/categorias', categoriasRouter);
 app.use('/tipoProdutos', tipoProdutosRouter);
 app.use('/clientes', clientesRouter);
-<<<<<<< HEAD
 app.use('/pedidosProdutos', pedidosProdutosRouter);
-=======
 app.use('/pedidos', pedidosRouter);
->>>>>>> dev
 
 
 // CRUD
