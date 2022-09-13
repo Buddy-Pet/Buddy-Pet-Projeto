@@ -20,7 +20,9 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.STRING
         },
 
-      
+        id_cliente: {
+            type: dataTypes.INTEGER
+        }
 
     }
 
@@ -32,7 +34,7 @@ module.exports = (sequelize, dataTypes) => {
     const Pedidos = sequelize.define('Pedidos', cols, config);
 
     Pedidos.associate = (models) => {
-        Pedidos.belongsTo(models.Clientes, {
+        Pedidos.hasMany(models.Clientes, {
           as: 'clientes', 
           foreignKey: 'id_cliente'
         });

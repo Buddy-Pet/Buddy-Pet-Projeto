@@ -17,6 +17,7 @@ const tipoProdutosRouter = require('./src/routes/tipoProdutosRoutes');
 const pedidosRouter = require('./src/routes/pedidosRoutes');
 const clientesRouter = require('./src/routes/clientesRoutes');
 const pedidosProdutosRouter = require('./src/routes/pedidosProdutos');
+const produtoRouter = require('./src/routes/produtoRoutes');
 
 const app = express();
 
@@ -42,6 +43,7 @@ app.use('/tipoProdutos', tipoProdutosRouter);
 app.use('/clientes', clientesRouter);
 app.use('/pedidosProdutos', pedidosProdutosRouter);
 app.use('/pedidos', pedidosRouter);
+app.use('/produto', produtoRouter);
 
 
 // CRUD
