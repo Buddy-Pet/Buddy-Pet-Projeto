@@ -29,5 +29,14 @@ module.exports = (sequelize, dataTypes) => {
         timestamps: false ,
      
 }
-return sequelize.define('Pedidos', cols, config)
+    const Pedidos = sequelize.define('Pedidos', cols, config);
+
+    Pedidos.associate = (models) => {
+        Pedidos.belongsTo(models.Clientes, {
+          as: 'clientes', 
+          foreignKey: 'id_cliente'
+        });
+      }
+    
+    return Pedidos
 }
