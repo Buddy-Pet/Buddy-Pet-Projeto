@@ -117,3 +117,91 @@ button.submit:hover {
     background: linear-gradient(to right, orange, orange);
     letter-spacing: 0.9px;
 }
+
+@media (max-width: 2560px){
+    .title {
+        font-size: 3em;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-top: 15vh;
+    }
+}
+
+@media (max-width: 1980px){
+    .title {
+        font-size: 3em;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-top: 15vh;
+    }
+}
+
+@media (max-width: 1440px){
+    .title {
+        font-size: 3em;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-top: 15vh;
+    }
+}    
+
+@media (max-width: 1024px){
+    .title {
+        font-size: 3em;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-top: 15vh;
+    }
+}
+
+@media (max-width: 768px){
+    .title {
+        font-size: 3em;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-top: 15vh;
+    }
+}
+
+@media (max-width: 425px){
+    .title {
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-top: 15vh;
+    }
+}
+
+@media (max-width: 375px){
+    .title {
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-top: 15vh;
+    }
+}    
+
+@media (max-width: 320px){
+    .title {
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-top: 15vh;
+    }
+}
