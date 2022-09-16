@@ -1,5 +1,4 @@
-const { lerDados } = require("../helper/manipularDados");
-const produtosModel = require("../model/produtosModel");
+const { Produtos, TipoProduto, Categoria } = require("../models");
 
 const detalhesPagina = {
 	aves: {
@@ -30,18 +29,17 @@ const detalhesPagina = {
 }
 
 module.exports = {
-	index(req, res) {
+	async index(req, res) {
 		const { category, tipoProduto } = req.params;
 
 		res.locals.url = '/produtos' + detalhesPagina[category].base;
 
-		produtos = produtosModel.findByCategory(category);
+		let produtos = await Produtos.findAll({ where: {category} });
 
 		if (tipoProduto) {
 			produtos = produtos.filter(produto => produto.tipoProduto == tipoProduto)
 		}
 
-		// res.send(produtos);
 		res.render('produtos', { ...detalhesPagina[category], produtos })
 	},
 
@@ -49,41 +47,50 @@ module.exports = {
 		res.render('formularioCriarProdutos', { title: "Formulário" });
 	},
 
-	edit(req, res) {
+	async edit(req, res) {
 		const { id } = req.params;
-		const produto = produtosModel.findById(id);
+		const produto = await Produtos.findByPk(id);
 
 		res.render('formularioEditarProdutos', { title: "Formulário", produto });
 	},
 
-	show(req, res) {
+	async show(req, res) {
 		const { id } = req.params;
-		const produto = produtosModel.findById(id);
+		const produto = await Produtos.findByPk(id);
 
 		res.render('detalhesProduto', { title: 'Detalhes do Produto', produto });
 	},
 
-	store(req, res) {
+	async store(req, res) {
 		const { nome, preco, descricao, categoria, tipoProduto } = req.body;
 		const imagem = req.file.filename;
-		const produtos = produtosModel.store({ nome, preco, descricao, categoria, tipoProduto, imagem });
-		const produto = produtos.at(-1)
-
+		const tipoProdutoData = await TipoProduto.findOne({
+			where: {
+				name: tipoProduto
+			}
+		});
+		const categoriaData = await Categoria.findOne({
+			where: {
+				name: categoria
+			}
+		})
+		const produto = await Produtos.create({ nome, preco, descricao, id_categoria: categoriaData.id_categoria, id_tipo_produto: tipoProdutoData.id_tipo_produto, imagem });
+	
 		res.render('detalhesProduto', { title: 'Detalhes do Produto', produto });
 	},
 
-	update(req, res) {
+	async update(req, res) {
 		const { id } = req.params;
 		const imagem = req.file.filename;
 		const { nome, preco, descricao, categoria, tipoProduto } = req.body;
-		const produtoAtualizado = produtosModel.update(id, { nome, preco, descricao, categoria, tipoProduto, imagem });
+		const produtoAtualizado = await Produtos.update({ nome, preco, descricao, categoria, tipoProduto, imagem }, { where: {id} });
 
 		res.render('detalhesProduto', { title: 'Detalhes do Produto', produto: produtoAtualizado });
 	},
 
-	delete(req, res) {
+	async destroy(req, res) {
 		const { id } = req.params;
-		const produtosAtualizado = produtosModel.delete(id);
+		const produtosAtualizado = await Produtos.destroy({ where: {id} });
 
 		res.send(produtosAtualizado);
 	},

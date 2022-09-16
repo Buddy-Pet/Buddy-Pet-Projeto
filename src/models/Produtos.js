@@ -30,8 +30,6 @@ module.exports = (sequelize, dataTypes) => {
 				type: dataTypes.INTEGER
 			}
 
-		
-
 	}
 
 	const config = {

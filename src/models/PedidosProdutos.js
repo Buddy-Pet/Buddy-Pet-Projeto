@@ -25,10 +25,6 @@ module.exports = (sequelize, dataTypes) => {
 			id_produto: {
 				type: dataTypes.INTEGER
 			},
-			
-			
-			
-
 	}
 
 	const config = {

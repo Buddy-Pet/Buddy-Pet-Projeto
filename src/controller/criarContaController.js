@@ -1,8 +1,6 @@
-const dados = require("../model/criarContaModel")
-
 const criarcontaController = {
 	criarConta: function(req, res, next) {
-		res.render('criarConta', { title: dados.title });
+		res.render('criarConta', { title: "Criar Conta" });
 	}
 }
 
