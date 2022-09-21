@@ -22,6 +22,10 @@ module.exports = (sequelize, dataTypes) => {
 				type: dataTypes.INTEGER
 			},
 
+			imagem: {
+				type: dataTypes.STRING
+			},
+
 			id_tipo_produto: {
 				type: dataTypes.INTEGER
 			},
