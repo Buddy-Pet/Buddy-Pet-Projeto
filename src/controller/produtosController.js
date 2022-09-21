@@ -43,7 +43,7 @@ module.exports = {
 		res.render('produtos', { ...detalhesPagina[category], produtos })
 	},
 
-	create(req, res) {
+	async create(req, res) {
 		res.render('formularioCriarProdutos', { title: "Formulário" });
 	},
 
@@ -66,15 +66,22 @@ module.exports = {
 		const imagem = req.file.filename;
 		const tipoProdutoData = await TipoProduto.findOne({
 			where: {
-				name: tipoProduto
+				nome: tipoProduto
 			}
 		});
 		const categoriaData = await Categoria.findOne({
 			where: {
-				name: categoria
+				nome: categoria
 			}
 		})
-		const produto = await Produtos.create({ nome, preco, descricao, id_categoria: categoriaData.id_categoria, id_tipo_produto: tipoProdutoData.id_tipo_produto, imagem });
+		const produto = await Produtos.create({ 
+			nome, 
+			preco, 
+			descricao, 
+			id_categoria: categoriaData.id_categoria, 
+			id_tipo_produto: tipoProdutoData.id_tipo_produto, 
+			imagem
+		 });
 	
 		res.render('detalhesProduto', { title: 'Detalhes do Produto', produto });
 	},
