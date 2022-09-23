@@ -34,7 +34,14 @@ module.exports = {
 
 		res.locals.url = '/produtos' + detalhesPagina[category].base;
 
-		let produtos = await Produtos.findAll({ where: {category} });
+		let produtos = await Produtos.findAll({
+			include: {
+				model: Categoria,
+				where: {
+					nome: category
+				}
+			}
+		});
 		
 		if (tipoProduto) {
 			produtos = produtos.filter(produto => produto.tipoProduto == tipoProduto)
@@ -50,8 +57,11 @@ module.exports = {
 	async edit(req, res) {
 		const { id } = req.params;
 		const produto = await Produtos.findByPk(id);
-
-		res.render('formularioEditarProdutos', { title: "Formulário", produto });
+		if(produto){
+			res.render('formularioEditarProdutos', { title: "Formulário", produto });
+		} else{
+			res.render('produtoNaoEncontrado')
+		}
 	},
 
 	async show(req, res) {
@@ -66,7 +76,7 @@ module.exports = {
 		const imagem = req.file.filename;
 		const produto = await Produtos.create({ 
 			nome, 
-			preco, 
+			preco: Number(preco), 
 			descricao, 
 			id_categoria, 
 			id_tipo_produto, 
@@ -80,9 +90,10 @@ module.exports = {
 		const { id } = req.params;
 		const imagem = req.file.filename;
 		const { nome, preco, descricao, categoria, tipoProduto } = req.body;
-		const produtoAtualizado = await Produtos.update({ nome, preco, descricao, categoria, tipoProduto, imagem }, { where: {id} });
+		const produtoAtualizado = await Produtos.update({ nome, preco, descricao, categoria, tipoProduto, imagem }, { where: {id_produto:id} });
 
-		res.render('detalhesProduto', { title: 'Detalhes do Produto', produto: produtoAtualizado });
+		//res.render('detalhesProduto', { title: 'Detalhes do Produto', produto: produtoAtualizado });
+		res.redirect('/produtos/detalhesProduto/' + id)
 	},
 
 	async destroy(req, res) {

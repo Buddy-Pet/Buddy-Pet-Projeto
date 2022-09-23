@@ -40,7 +40,7 @@
 
           <div class="imagens">
             <% ofertas.forEach(produto=> { %>
-              <button type="submit"><a href="/produtos/detalhesProduto/<%= produto.id %> "><img
+              <button type="submit"><a href="/produtos/detalhesProduto/<%= produto.id_produto %> "><img
                     src="/img/<%= produto.imagem %>" alt="">
                   <p id="nome">
                     <%= produto.nome %>
@@ -49,7 +49,7 @@
                     <%= produto.descricao %>
                   </p>
                   <p id="preco">
-                    R$<%= produto.preco %>,00
+                    R$ <%= produto.preco %>
                   </p></button></a>
               <% }) %>
           </div>
@@ -60,7 +60,7 @@
 
           <div class="icones">
             <% maisVendidos.forEach(produto=> { %>
-              <button type="submit"><a href="/produtos/detalhesProduto/<%= produto.id %> "><img
+              <button type="submit"><a href="/produtos/detalhesProduto/<%= produto.id_produto %> "><img
                     src="/img/<%= produto.imagem %>" alt="">
                   <p id="nome">
                     <%= produto.nome %>
@@ -69,7 +69,7 @@
                     <%= produto.descricao %>
                   </p>
                   <p id="preco">
-                    R$<%= produto.preco %>,00
+                    R$ <%= produto.preco %>
                   </p></button></a>
               <% }) %>
           </div>

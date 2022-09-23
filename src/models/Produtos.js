@@ -11,7 +11,7 @@ module.exports = (sequelize, dataTypes) => {
             },
 
             preco: {
-				type: dataTypes.DECIMAL(12,2)
+				type: dataTypes.DECIMAL(10,2)
 			},
 
             descricao: {
@@ -49,7 +49,6 @@ module.exports = (sequelize, dataTypes) => {
 		foreignKey: 'id_tipo_produto'
 	  }),
 	  Produtos.belongsTo(models.Categoria, {
-		as: 'categorias', 
 		foreignKey: 'id_categoria'
 	  });
 	}
