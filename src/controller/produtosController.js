@@ -34,19 +34,35 @@ module.exports = {
 
 		res.locals.url = '/produtos' + detalhesPagina[category].base;
 
-		let produtos = await Produtos.findAll({
-			include: {
-				model: Categoria,
-				where: {
-					nome: category
+		let produtos;
+ 
+		if (tipoProduto){
+			produtos = await Produtos.findAll({
+				include: [{
+					model: Categoria,
+					where: {
+						nome: category
+					}
+				},
+				{
+					model: TipoProduto,
+					where: {
+						nome: tipoProduto
+					}
+				}]
+			})
+		} else{
+			produtos = await Produtos.findAll({
+				include: {
+					model: Categoria,
+					where: {
+						nome: category
+					}
 				}
-			}
-		});
-		
-		if (tipoProduto) {
-			produtos = produtos.filter(produto => produto.tipoProduto == tipoProduto)
+				
+			});
 		}
-
+		
 		res.render('produtos', { ...detalhesPagina[category], produtos })
 	},
 
