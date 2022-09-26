@@ -18,27 +18,34 @@
     <main> 
       <div class="container">
         <form action="acessar" method="post">
-          <div class="titulo">Crie sua conta</div>
           <div class="formulario">
+            <h3 class="titulo">Crie sua conta</h3>
             <label for="nome">Nome Completo</label>
+            <br>
             <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
-            <br></br>
+            <br>
             <label for="email">Email</label>
+            <br>
             <input type="email" id="email" name="email" placeholder="Digite seu email" required> 
-            <br></br>
+            <br>
             <label for="celular">Celular</label>
+            <br>
             <input type="tel" id="celular" name="celular" placeholder="DDD + celular" required> 
-            <br></br>
+            <br>            
             <label for="nascimento">Nascimento</label>
+            <br>
             <input type="text" id="nascimento" name="nascimento" onfocus="(this.type='date')" placeholder="Digite sua data de nascimento" required> 
-            <br></br>
+            <br>
             <label for="cpf">CPF</label>
+            <br>
             <input type="text" id="cpf" name="cpf" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" placeholder="Digite o seu CPF" required> 
-            <br></br>
+            <br>
             <label for="email">Senha</label>
+            <br>
             <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
-            <br></br>
+            <br>
             <label for="email">Confirmar a senha</label>
+            <br>
             <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
           </div>
           
