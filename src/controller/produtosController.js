@@ -32,7 +32,7 @@ module.exports = {
 	async index(req, res) {
 		const { category, tipoProduto } = req.params;
 
-		res.locals.url = '/produtos' + detalhesPagina[category].base;
+		res.locals.url = '/produtos/categories' + detalhesPagina[category].base;
 
 		let produtos;
  
