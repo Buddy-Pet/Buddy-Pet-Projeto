@@ -50,7 +50,6 @@ module.exports = {
 	async edit(req, res) {
 		const { id } = req.params;
 		const produto = await Produtos.findByPk(id);
-
 		res.render('formularioEditarProdutos', { title: "Formulário", produto });
 	},
 
