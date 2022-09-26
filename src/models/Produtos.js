@@ -11,7 +11,7 @@ module.exports = (sequelize, dataTypes) => {
             },
 
             preco: {
-				type: dataTypes.DECIMAL(12,2)
+				type: dataTypes.DECIMAL(10,2)
 			},
 
             descricao: {
@@ -20,6 +20,10 @@ module.exports = (sequelize, dataTypes) => {
 
 			quantidade: {
 				type: dataTypes.INTEGER
+			},
+
+			imagem: {
+				type: dataTypes.STRING
 			},
 
 			id_tipo_produto: {
@@ -41,11 +45,9 @@ module.exports = (sequelize, dataTypes) => {
 
 	Produtos.associate = (models) => {
 	  Produtos.belongsTo(models.TipoProduto, {
-		as: 'tipo_produto', 
 		foreignKey: 'id_tipo_produto'
 	  }),
 	  Produtos.belongsTo(models.Categoria, {
-		as: 'categorias', 
 		foreignKey: 'id_categoria'
 	  });
 	}

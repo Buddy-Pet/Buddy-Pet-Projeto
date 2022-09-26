@@ -110,7 +110,7 @@ padding-bottom: 1.5rem;
 display: flex;
 flex-wrap: wrap;
 list-style: none;
-justify-content: space-between;
+justify-content: flex-start;
 height: 220px;
 }
 
@@ -124,6 +124,7 @@ border: 1.9px solid rgb(231, 226, 226);
 border-radius: 0.5em;
 width: 200px;
 height: 270px;
+margin-right: 1rem;
 }
 
 .imagens button a {
@@ -172,7 +173,7 @@ display: flex;
 justify-content: flex-start;
 color:#777777;
 font-size: 18px;
-padding-top: 1.5rem;
+padding-top: 4.5rem;
 padding-bottom: 1.5rem;
 }
 
@@ -180,7 +181,7 @@ padding-bottom: 1.5rem;
 display: flex;
 flex-wrap: wrap;
 list-style: none;
-justify-content: space-between;
+justify-content: flex-start;
 margin: 0;
 padding: 0;
 height: 220px;
@@ -199,6 +200,7 @@ border: 1.9px solid rgb(231, 226, 226);
 border-radius: 0.5em;
 width: 200px;
 height: 270px;
+margin-right: 1rem;
 }
 
 .icones button a {

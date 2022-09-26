@@ -5,16 +5,17 @@
 <%- include("partials/header2") %>
     <main> 
       <div class="container">
-        <form action="/produtos/editar/<%= produto.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+        <form action="/produtos/editar/<%= produto.id_produto %>?_method=PUT" method="POST" enctype="multipart/form-data">
           <div class="formulario">
             <h3 class="titulo">Editar Produto</h3>
             <label label for="categoria">Editar a Categoria do Produto:</label>
             <br>
             <select name="categoria" id="secao-produto">
                 <option selected disabled>Selecione a Categoria</option>
-                <option value="cachorros">Cachorros</option>
-                <option value="gatos">Gatos</option>
-                <option value="aves">Aves</option>
+                <option value="1">Cachorros</option>
+                <option value="2">Gatos</option>
+                <option value="3">Aves</option>
+                <option value="4">Outros</option>
             </select>
             <br>
             <br>
@@ -22,13 +23,13 @@
             <br>
             <select name="tipoProduto" class="" id="tipo-produto">
                 <option selected disabled>Selecione o tipo de Produto</option>
-                <option value="racoes">Rações</option>
-                <option value="petiscos">Petiscos</option>
-                <option value="remedios">Remédios</option>
-                <option value="coleiras">Coleiras</option>
-                <option value="brinquedos">Brinquedos</option>
-                <option value="casinhas">Casinhas</option>
-                <option value="acessorios">Acessórios</option>
+                <option value="1">Rações</option>
+                <option value="2">Petiscos</option>
+                <option value="3">Remédios</option>
+                <option value="4">Coleiras</option>
+                <option value="5">Brinquedos</option>
+                <option value="6">Casinhas</option>
+                <option value="7">Acessórios</option>
             </select>
             <br>
             <br>

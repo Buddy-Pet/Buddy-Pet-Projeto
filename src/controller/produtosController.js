@@ -34,23 +34,50 @@ module.exports = {
 
 		res.locals.url = '/produtos' + detalhesPagina[category].base;
 
-		let produtos = await Produtos.findAll({ where: {category} });
-
-		if (tipoProduto) {
-			produtos = produtos.filter(produto => produto.tipoProduto == tipoProduto)
+		let produtos;
+ 
+		if (tipoProduto){
+			produtos = await Produtos.findAll({
+				include: [{
+					model: Categoria,
+					where: {
+						nome: category
+					}
+				},
+				{
+					model: TipoProduto,
+					where: {
+						nome: tipoProduto
+					}
+				}]
+			})
+		} else{
+			produtos = await Produtos.findAll({
+				include: {
+					model: Categoria,
+					where: {
+						nome: category
+					}
+				}
+				
+			});
 		}
-
+		
 		res.render('produtos', { ...detalhesPagina[category], produtos })
 	},
 
-	create(req, res) {
+	async create(req, res) {
 		res.render('formularioCriarProdutos', { title: "Formulário" });
 	},
 
 	async edit(req, res) {
 		const { id } = req.params;
 		const produto = await Produtos.findByPk(id);
-		res.render('formularioEditarProdutos', { title: "Formulário", produto });
+		if(produto){
+			res.render('formularioEditarProdutos', { title: "Formulário", produto });
+		} else{
+			res.render('produtoNaoEncontrado')
+		}
 	},
 
 	async show(req, res) {
@@ -61,20 +88,17 @@ module.exports = {
 	},
 
 	async store(req, res) {
-		const { nome, preco, descricao, categoria, tipoProduto } = req.body;
+		const { nome, preco, descricao, id_categoria, id_tipo_produto } = req.body;
 		const imagem = req.file.filename;
-		const tipoProdutoData = await TipoProduto.findOne({
-			where: {
-				name: tipoProduto
-			}
-		});
-		const categoriaData = await Categoria.findOne({
-			where: {
-				name: categoria
-			}
-		})
-		const produto = await Produtos.create({ nome, preco, descricao, id_categoria: categoriaData.id_categoria, id_tipo_produto: tipoProdutoData.id_tipo_produto, imagem });
-	
+		const produto = await Produtos.create({ 
+			nome, 
+			preco: Number(preco), 
+			descricao, 
+			id_categoria, 
+			id_tipo_produto, 
+			imagem
+		 });
+
 		res.render('detalhesProduto', { title: 'Detalhes do Produto', produto });
 	},
 
@@ -82,9 +106,10 @@ module.exports = {
 		const { id } = req.params;
 		const imagem = req.file.filename;
 		const { nome, preco, descricao, categoria, tipoProduto } = req.body;
-		const produtoAtualizado = await Produtos.update({ nome, preco, descricao, categoria, tipoProduto, imagem }, { where: {id} });
+		const produtoAtualizado = await Produtos.update({ nome, preco, descricao, categoria, tipoProduto, imagem }, { where: {id_produto:id} });
 
-		res.render('detalhesProduto', { title: 'Detalhes do Produto', produto: produtoAtualizado });
+		//res.render('detalhesProduto', { title: 'Detalhes do Produto', produto: produtoAtualizado });
+		res.redirect('/produtos/detalhesProduto/' + id)
 	},
 
 	async destroy(req, res) {
