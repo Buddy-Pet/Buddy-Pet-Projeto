@@ -96,8 +96,7 @@ module.exports = {
 			descricao, 
 			id_categoria, 
 			id_tipo_produto, 
-			imagem,
-			quantidade
+			imagem
 		 });
 
 		res.render('detalhesProduto', { title: 'Detalhes do Produto', produto });

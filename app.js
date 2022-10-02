@@ -4,6 +4,7 @@ const methodOverride = require('method-override')
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const session = require('express-session');
 const homeRouter = require('./src/routes/home');
 const politicasRouter = require('./src/routes/politicas');
 const criarContaRouter = require('./src/routes/criarConta');
@@ -24,6 +25,12 @@ const app = express();
 // view engine setup
 app.set('views', path.join(__dirname,'src','views'));
 app.set('view engine', 'ejs');
+
+app.use(session({
+  secret:"buddyPetLogin",
+  resave: true,
+  saveUninitialized: true
+}));
 
 app.use(methodOverride('_method'));
 app.use(logger('dev'));
