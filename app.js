@@ -5,18 +5,15 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const session = require('express-session');
-const homeRouter = require('./src/routes/home');
 const politicasRouter = require('./src/routes/politicas');
-const criarContaRouter = require('./src/routes/criarConta');
 const quemSomosRouter = require('./src/routes/quemSomos');
 const carrinhoRouter = require('./src/routes/carrinho');
-const acessarRouter = require('./src/routes/acessar');
+const acessosRouter = require('./src/routes/acessos');
 const produtosRouter = require('./src/routes/produtos');
-const loginRouter = require('./src/routes/login');
 const categoriasRouter = require('./src/routes/categoriasRoutes');
 const tipoProdutosRouter = require('./src/routes/tipoProdutosRoutes');
 const pedidosRouter = require('./src/routes/pedidosRoutes');
-const clientesRouter = require('./src/routes/clientesRoutes');
+const clientesRouter = require('./src/routes/clientes');
 const pedidosProdutosRouter = require('./src/routes/pedidosProdutos');
 const produtoRouter = require('./src/routes/produtoRoutes');
 
@@ -27,7 +24,7 @@ app.set('views', path.join(__dirname,'src','views'));
 app.set('view engine', 'ejs');
 
 app.use(session({
-  secret:"buddyPetLogin",
+  secret:"buddy pet app",
   resave: true,
   saveUninitialized: true
 }));
@@ -38,13 +35,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/', homeRouter);
+app.use('/', acessosRouter);
 app.use('/politicas', politicasRouter);
-app.use('/criarConta', criarContaRouter);
 app.use('/quemsomos', quemSomosRouter);
 app.use('/carrinho', carrinhoRouter);
-app.use('/acessar', acessarRouter);
-app.use('/login', loginRouter);
 app.use('/categorias', categoriasRouter);
 app.use('/tipoProdutos', tipoProdutosRouter);
 app.use('/clientes', clientesRouter);
