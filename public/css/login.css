@@ -173,6 +173,18 @@ button.submit:hover {
     }
 }
 
+@media (max-width: 623px){
+    .title {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 506px){
+    .title {
+        margin-top: 20vh;
+    }
+}
+
 @media (max-width: 425px){
     .title {
         font-size: 2em;
@@ -180,7 +192,7 @@ button.submit:hover {
         text-align: center;
         letter-spacing: 1px;
         text-transform: uppercase;
-        margin-top: 15vh;
+        margin-top: 20vh;
     }
 }
 
@@ -191,7 +203,7 @@ button.submit:hover {
         text-align: center;
         letter-spacing: 1px;
         text-transform: uppercase;
-        margin-top: 15vh;
+        margin-top: 20vh;
     }
 }    
 
@@ -202,6 +214,6 @@ button.submit:hover {
         text-align: center;
         letter-spacing: 1px;
         text-transform: uppercase;
-        margin-top: 15vh;
+        margin-top: 20vh;
     }
 }

@@ -4,4 +4,4 @@ const acessarController = {acessar: function(req, res, next) {
 }
 
 
-module.exports = acessarController
+module.exports = acessarController;
