@@ -20,7 +20,9 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.STRING
         },
 
-      
+        id_cliente: {
+            type: dataTypes.INTEGER
+        }
 
     }
 
@@ -29,5 +31,14 @@ module.exports = (sequelize, dataTypes) => {
         timestamps: false ,
      
 }
-return sequelize.define('Pedidos', cols, config)
+    const Pedidos = sequelize.define('Pedidos', cols, config);
+
+    Pedidos.associate = (models) => {
+        Pedidos.hasMany(models.Clientes, {
+          as: 'clientes', 
+          foreignKey: 'id_cliente'
+        });
+      }
+    
+    return Pedidos
 }

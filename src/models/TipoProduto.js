@@ -16,5 +16,14 @@ module.exports = (sequelize, dataTypes) => {
         timestamps: false
     }
 
-    return sequelize.define('TipoProduto', cols, config);
+    const TipoProduto = sequelize.define('TipoProduto', cols, config);
+
+    TipoProduto.associate = (models) => {
+        TipoProduto.hasMany(models.Produtos, {
+          as: 'produtos', 
+          foreignKey: 'id_tipo_produto'
+        });
+      }
+    
+    return TipoProduto
 }

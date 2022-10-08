@@ -1,8 +1,6 @@
-const dados = require("../model/politicasModel")
-
 const politicasController = {
 	politicas: function(req, res, next) {
-		res.render('politicas', { title: dados.title });
+		res.render('politicas', { title: "politicas" });
 	}
 }
 
