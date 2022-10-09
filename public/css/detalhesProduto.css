@@ -190,15 +190,7 @@ main * {
       justify-content: center;
       margin-top: 0px;
 
-    }
-    .informacao p{
-      display: flex;
-      flex-direction: column;
-      right: 100px;
-      color: #777777;
-      left: 30px;
-      margin-top: 50px;
-      margin-bottom: 0px;
+
 
     }
     .content {
