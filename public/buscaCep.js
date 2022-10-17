@@ -10,7 +10,11 @@ btnCep.onclick = () => {
 
 	if (!cep) return
 
-fetch(`https://viacep.com.br/ws/${cep})/json/`)
+	fetch(`https://viacep.com.br/ws/${cep}/json/`,{
+		method:'GET',
+		mode:'cors',
+		cache:'default'
+	})
 
 	.then(response => response.json())
 	.then(jsonResponse => {
