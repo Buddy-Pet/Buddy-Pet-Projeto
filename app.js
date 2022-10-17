@@ -44,7 +44,6 @@ app.use('/tipoProdutos', tipoProdutosRouter);
 app.use('/clientes', clientesRouter);
 app.use('/pedidosProdutos', pedidosProdutosRouter);
 app.use('/pedidos', pedidosRouter);
-app.use('/produto', produtoRouter);
 
 
 // CRUD
