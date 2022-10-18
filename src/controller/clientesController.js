@@ -1,12 +1,8 @@
 const { Clientes } = require('../models');
+const bcrypt = require('bcryptjs');
 
 module.exports = {
-    async list (req, res) {
-        const clientes = await Clientes.findAll();
-
-        res.render('clientes', {clientes})
-    },
-
+    
     async create(req, res) {
 		res.render('criarConta', { title: "Criar Conta" });
 	},
@@ -23,5 +19,37 @@ module.exports = {
 		 });
 
 		res.render('detalhesProduto', { title: 'Detalhes do Produto', produto });
+	},
+
+	login (req, res) {
+		return res.render('login', { erros: null });
+	  },
+	
+	autenticar (req, res) {
+		const requestUser = req.body;
+		const erros = [];
+	
+		if (!requestUser) {
+		  erros.push({ msg: 'Login ou senha inválidos' });
+		  return res.render('login', { erros });
+		}
+	
+		const user = UserModel.buscar(requestUser);
+	
+		if (!user) {
+		  erros.push({ msg: 'Login ou senha inválidos' });
+		  return res.render('login', { erros });
+		}
+	
+		const senhasIguais = bcrypt.compareSync(requestUser.senha, user.senha);
+	
+		if (!senhasIguais) {
+		  erros.push({ msg: 'Login ou senha inválidos' });
+		  return res.render('login', { erros });
+		}
+	
+		req.session.usuario = user;
+	
+		return res.redirect('/servicos/admin');
 	}
 }
