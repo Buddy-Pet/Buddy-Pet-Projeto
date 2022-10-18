@@ -18,15 +18,18 @@
 <main class="corpo"> 
 
 <section class="firstbloco">
-  <div class="product">
-     <img src="/img/<%= produto.imagem %>" alt="racaoSeca">
-  </div>
+  <div class="img-nameProduct">
+    <div class="product">
+      <img class="img-pat" src="/img/<%= produto.imagem %>" alt="racaoSeca">
+      <p class="information"><%= produto.descricao %></p>
+      </div>
+      <div class="informacao">
+        <h2><%= produto.nome %></h2>
+        <!-- <p><%= produto.descricao %></p> -->
+      </div>
 
-  <div class="informacao">
-    <h2><%= produto.nome %></h2>
-    <p><%= produto.descricao %></p>
-  </div>
-
+    </div>
+    
     <section class="content">
       <form class="tamanho">
         <select id="peso">
@@ -48,7 +51,7 @@
        <div class="container">
         <form class="unidades">
           <select id="unid">
-            <option selected disabled>UNIDADES</option>
+            <option selected disabled>QUANTIDADE</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>

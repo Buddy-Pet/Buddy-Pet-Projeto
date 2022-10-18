@@ -32,7 +32,7 @@ module.exports = {
 	async index(req, res) {
 		const { category, tipoProduto } = req.params;
 
-		res.locals.url = '/produtos' + detalhesPagina[category].base;
+		res.locals.url = '/produtos/categories' + detalhesPagina[category].base;
 
 		let produtos;
  
@@ -106,9 +106,9 @@ module.exports = {
 		const { id } = req.params;
 		const imagem = req.file.filename;
 		const { nome, preco, descricao, categoria, tipoProduto } = req.body;
-		const produtoAtualizado = await Produtos.update({ nome, preco, descricao, categoria, tipoProduto, imagem }, { where: {id_produto:id} });
+		
+		await Produtos.update({ nome, preco, descricao, categoria, tipoProduto, imagem }, { where: {id_produto:id} });
 
-		//res.render('detalhesProduto', { title: 'Detalhes do Produto', produto: produtoAtualizado });
 		res.redirect('/produtos/detalhesProduto/' + id)
 	},
 
