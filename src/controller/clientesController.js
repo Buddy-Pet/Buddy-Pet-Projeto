@@ -1,5 +1,5 @@
 const { Clientes } = require('../models');
-const bcrypt = require('bcryptjs');
+const bcrypt = require('bcrypt');
 
 module.exports = {
     
@@ -15,17 +15,17 @@ module.exports = {
 			telefone, 
 			data_nascimento: nascimento, 
 			cpf,
-            senha
+            senha: bcrypt.hashSync(senha, 12)
 		 });
 
-		res.render('detalhesProduto', { title: 'Detalhes do Produto', produto });
+		res.redirect('/acessar');
 	},
 
 	login (req, res) {
 		return res.render('login', { erros: null });
 	  },
 	
-	autenticar (req, res) {
+	async autenticar (req, res) {
 		const requestUser = req.body;
 		const erros = [];
 	
@@ -34,22 +34,24 @@ module.exports = {
 		  return res.render('login', { erros });
 		}
 	
-		const user = UserModel.buscar(requestUser);
+		const user = await Clientes.findOne({where: {email: requestUser.email}});
 	
 		if (!user) {
 		  erros.push({ msg: 'Login ou senha inválidos' });
 		  return res.render('login', { erros });
 		}
-	
+		console.log(requestUser);
+		console.log(user);
 		const senhasIguais = bcrypt.compareSync(requestUser.senha, user.senha);
 	
 		if (!senhasIguais) {
 		  erros.push({ msg: 'Login ou senha inválidos' });
 		  return res.render('login', { erros });
 		}
-	
+		
+		delete user.senha;
 		req.session.usuario = user;
 	
-		return res.redirect('/servicos/admin');
+		return res.redirect('/');
 	}
 }

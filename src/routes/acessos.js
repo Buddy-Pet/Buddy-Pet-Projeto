@@ -11,6 +11,4 @@ router.get('/', async function(req, res, next) {
 
 });
 
-router.get('/acessar', (req, res, next) => res.render('acessar', { title: "Acessar Conta" }));
-
 module.exports = router;
