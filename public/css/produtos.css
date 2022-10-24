@@ -172,16 +172,8 @@ main {
       margin-bottom: 50px;
       font-size: 0px;
       margin-bottom: 0px;
-      text-align: justify center;
-      
+      text-align: center;
    }
-   .products p {
-    display: none;
-    
    
-   }
-   .products h4 {
-    display: none;
-    
-  }
 }
+

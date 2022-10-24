@@ -125,7 +125,7 @@ border-radius: 0.3rem;
 outline: none;
 background-color: orange;
 border: none;
-box-shadow: 0px 1px 10px #777777;
+/box-shadow: 0px 1px 10px #777777;/
 font-weight: 500;
 cursor: pointer;
 }
@@ -159,7 +159,7 @@ margin-left: 2rem;
 }
 
 #unid {
-width: 150px;
+width: 10vw;
 height: 40px;
 font-size: 20px;
 text-align: center;
@@ -189,16 +189,7 @@ footer {
 margin-top: 200px;
 }
 
-
-
 @media only screen and (max-width: 600px) {
-  .option {
-    display: none;
-
-  }
-  .tamanho {
-    display: flex;
-  }
 
   .information {
     display: flex;

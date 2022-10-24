@@ -132,7 +132,6 @@ header form input {
 }
 
 form input, form button {
-width: 150px;
 font-size: 1.2em;
 border-radius: 0.2em;
 border: none;
