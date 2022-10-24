@@ -25,7 +25,7 @@
       </div>
       <div class="informacao">
         <h2><%= produto.nome %></h2>
-        <!-- <p><%= produto.descricao %></p> -->
+         
       </div>
 
     </div>
@@ -33,7 +33,8 @@
     <section class="content">
       <form class="tamanho">
         <select id="peso">
-          <option selected disabled>Selecione o tamanho</option>
+          <option id="option" selected disabled>Selecione o tamanho</option>
+          <option id="tamanho" selected disabled>Tamanho</option>
           <option value="1">1Kg</option>
           <option value="3">3Kg</option>
           <option value="15">15Kg</option>
@@ -43,15 +44,15 @@
        </form>
 
        <div class="preco">
-        <p>a partir de</p>
-        <h1><% produto.preco %> </h1>
-        <P>ou 3x de R$ 17,96</P>
+        
+        <h1><%= produto.preco %> </h1>
+        
        </div>
 
        <div class="container">
         <form class="unidades">
           <select id="unid">
-            <option selected disabled>QUANTIDADE</option>
+            <option selected disabled>Quantidade</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
