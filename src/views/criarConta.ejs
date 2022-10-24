@@ -17,7 +17,7 @@
    
     <main> 
       <div class="container">
-        <form action="/clientes" method="post">
+        <form action="acessar" method="post">
           <div class="formulario">
             <h3 class="titulo">Crie sua conta</h3>
             <label for="nome">Nome Completo</label>
@@ -46,46 +46,18 @@
             <br>
             <label for="email">Confirmar a senha</label>
             <br>
-            <input type="password" id="senha" name="confirmarSenha" placeholder="Digite sua senha" required>
-            <br>
-
-            <label for="cep">CEP</label>
-            <br>
-            <input type="text" id="cep" name="cep" placeholder="Digite seu CEP" pattern=pattern="\d{5}\-?\d{3}" required>
-            <br>
-            <button id="btn-cep" type="button">pesquisar</button>
-            <br>
-            <label for="logradouro">Rua</label>
-            <br>
-            <input type="text" id="logradouro" name="logradouro" placeholder="Digite o Logradouro" required>
-            <br>
-            <label for="numero">Número</label>
-            <br>
-            <input type="number" id="numero" name="numero" placeholder="Digite o numero da residência" required>
-            <br>
-            <label for="bairro">Bairro</label>
-            <br>
-            <input type="text" id="bairro" name="bairro" placeholder="Digite seu Bairro"  required>
-            <br><label for="localidade">Cidade</label>
-            <br>
-            <input type="text" id="localidade" name="localidade" placeholder="Digite sua Cidade"  required>
-            <br>
-            <br><label for="uf">Estado</label>
-            <br>
-            <input type="text" id="uf" name="uf" placeholder="Digite seu Estado"  required>
-            <br>
-            
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
           </div>
           
           <div class="termos"><input type="checkbox" id="termos" value="termos"><label for="integral">Concordo com os <a href="">termos e condições</a></label></div>
 
           <div class="entrar"><button type="submit">Cadastrar</button></div>
+  
         </form>
       </div> 
       
       <div class="copy">Copyright© 2022 Buddy Pet Corporated - Todos os direitos reservados</div>
-
+      
     </main>
-    <script src="/buscaCep.js"></script>
 </body>
 </html>

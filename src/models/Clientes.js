@@ -15,8 +15,7 @@ module.exports = (sequelize, dataTypes) => {
         },
 
         telefone: {
-            type: dataTypes.STRING, 
-            defaultValue: "0000000000" 
+            type: dataTypes.STRING
         },
 
         senha: {
@@ -24,16 +23,8 @@ module.exports = (sequelize, dataTypes) => {
         },
 
         admin: {
-            type: dataTypes.BOOLEAN 
+            type: dataTypes.BOOLEAN
         },
-
-        data_nascimento: {
-            type: dataTypes.STRING
-        },
-
-        cpf: {
-            type: dataTypes.STRING
-        }
 
     }
 

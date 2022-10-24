@@ -63,7 +63,7 @@ module.exports = {
 			});
 		}
 		
-		res.render('produtos', { ...detalhesPagina[category], produtos, user: req.session.usuario })
+		res.render('produtos', { ...detalhesPagina[category], produtos })
 	},
 
 	async create(req, res) {
@@ -106,9 +106,9 @@ module.exports = {
 		const { id } = req.params;
 		const imagem = req.file.filename;
 		const { nome, preco, descricao, categoria, tipoProduto } = req.body;
-		
-		await Produtos.update({ nome, preco, descricao, categoria, tipoProduto, imagem }, { where: {id_produto:id} });
+		const produtoAtualizado = await Produtos.update({ nome, preco, descricao, categoria, tipoProduto, imagem }, { where: {id_produto:id} });
 
+		//res.render('detalhesProduto', { title: 'Detalhes do Produto', produto: produtoAtualizado });
 		res.redirect('/produtos/detalhesProduto/' + id)
 	},
 
