@@ -18,7 +18,7 @@ module.exports = {
             senha: bcrypt.hashSync(senha, 12)
 		 });
 
-		res.redirect('/acessar');
+		res.redirect('/clientes/login');
 	},
 
 	login (req, res) {
@@ -53,5 +53,11 @@ module.exports = {
 		req.session.usuario = user;
 	
 		return res.redirect('/');
+	},
+	logout: (req, res) => {
+		if(req.session.usuario && req.session.usuario.email){
+			delete req.session.usuario
+		}
+		res.redirect('/');
 	}
 }
