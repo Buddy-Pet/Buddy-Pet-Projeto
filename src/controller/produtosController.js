@@ -63,7 +63,7 @@ module.exports = {
 			});
 		}
 		
-		res.render('produtos', { ...detalhesPagina[category], produtos })
+		res.render('produtos', { ...detalhesPagina[category], produtos, user: req.session.usuario })
 	},
 
 	async create(req, res) {
