@@ -172,8 +172,16 @@ main {
       margin-bottom: 50px;
       font-size: 0px;
       margin-bottom: 0px;
-      text-align: center;
+      text-align: justify center;
+      
    }
+   .products p {
+    display: none;
+    
    
+   }
+   .products h4 {
+    display: none;
+    
+  }
 }
-

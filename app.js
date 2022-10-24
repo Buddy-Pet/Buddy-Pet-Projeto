@@ -24,7 +24,7 @@ app.set('views', path.join(__dirname,'src','views'));
 app.set('view engine', 'ejs');
 
 app.use(session({
-  secret:"buddy pet app",
+  secret:"projetoBuddyPetEcommerce",
   resave: true,
   saveUninitialized: true
 }));
@@ -44,7 +44,6 @@ app.use('/tipoProdutos', tipoProdutosRouter);
 app.use('/clientes', clientesRouter);
 app.use('/pedidosProdutos', pedidosProdutosRouter);
 app.use('/pedidos', pedidosRouter);
-app.use('/produto', produtoRouter);
 
 
 // CRUD
