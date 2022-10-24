@@ -1,33 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<%- include('partials/headLogin',{links:['headerLogin','login']}) %>
-<%- include("partials/headerLogin") %>
+<html lang="pt-br">
+
+<!-- ========================HEAD========================HEAD======================== -->
+  
+<%- include('partials/head',{links:['header2','acessar']}) %>
+
+<!-- ========================BODDY========================BODDY======================== -->
+
 <body>
-    <main>
-        <section class="main">
-            <div class="login-container">
-                <p class="title">Bem Vindo</p>
-                <div class="separator"></div>
-                <p class="welcome-message">
-                    Por favor, forneça a credencial de login para prosseguir e ter
-                    acesso a todos os nossos serviços.
-                </p>
-                <form class="login-form">
-                    <div class="form-control">
-                        <input type="text" placeholder="Email">
-                        <i class="fa-solid fa-user"></i> 
-                    </div>
-                    <div class="form-control">
-                        <input type="password" placeholder="Senha">
-                        <i class="fa-solid fa-lock"></i>
-                    </div>
-                    <button class="submit">Login</button>
-                </form>
-                <br>
-                <br>
-                <div class="copy"><p>Copyright© 2022 Buddy Pet Corporated - Todos os direitos reservados.</p></div>
-            </div>
-        </section>
-    </main>
+
+  <!-- ========================HEADER========================HEADER======================== -->
+
+  <%- include("partials/header2") %> 
+
+  <!-- ==========================MAIN============================MAIN========================== -->
+
+  <main> 
+    <div class="container">
+      <form action="/clientes/login" method="post">
+        <div class="titulo">Acesse sua conta</div>
+        <div class="formulario">
+          <label for="email">Email</label>
+          <input id="email" type="email" id="email" name="email" placeholder="Digite seu email*" required> 
+          <div class="branco"></div>
+          <label for="email">Senha</label>
+          <input type="password" id="senha" name="senha" placeholder="Digite sua senha*" required>
+        </div>
+
+        <div class="entrar"><button type="submit">Entrar</button></div>
+
+        <div class="aqui">Não tem conta? <a href="/clientes/criarconta">Crie uma agora!</a></div>
+      </form>
+    </div> 
+    
+    <div class="copy"><p>Copyright© 2022 Buddy Pet Corporated - Todos os direitos reservados</p></div>
+    
+  </main>
 </body>
 </html>
