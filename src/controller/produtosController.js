@@ -84,7 +84,7 @@ module.exports = {
 		const { id } = req.params;
 		const produto = await Produtos.findByPk(id);
 
-		res.render('detalhesProduto', { title: 'Detalhes do Produto', produto });
+		res.render('detalhesProduto', { title: 'Detalhes do Produto', produto, user: req.session.usuario });
 	},
 
 	async store(req, res) {
@@ -99,7 +99,7 @@ module.exports = {
 			imagem
 		 });
 
-		res.render('detalhesProduto', { title: 'Detalhes do Produto', produto });
+		res.render('detalhesProduto', { title: 'Detalhes do Produto', produto, user: req.session.usuario });
 	},
 
 	async update(req, res) {
